@@ -1,10 +1,13 @@
 ---
-title: "Onboard"
+title: "PayFunc Onboard"
 date: "2019-08-01"
 weight: 30
 menu: 
     main:
-        parent: integrations
+        parent: dev-ui
+        name: Onboard
+aliases:
+    - /content/integrations/onboard/
 ---
 
 PayFunc Onboard guides your users through the process of creating an account used for later transactions. It handles the full process of entering the credit card information as well as performing the full 3D secure authentication procedure. Once everything is done you will receive an account number that you then can use to perform payments towards the users credit card without the need for any interaction with the user.
@@ -92,7 +95,7 @@ Authentication: Bearer <your.api.key>
     {
         "id": "<order id>",
         "event": [
-            "type": "charge"
+            { "type": "charge" }
         ]
     }
 ]
