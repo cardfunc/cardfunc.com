@@ -1,0 +1,13 @@
+article > * {
+    padding: 1em;
+}
+article > header > p,
+article > nav {
+    display: none;
+}
+article > main > div.highlight > pre {
+    padding: 1em;
+}
+body > footer > p {
+    text-align: center;
+}
