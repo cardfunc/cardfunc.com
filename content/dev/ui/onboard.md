@@ -23,21 +23,25 @@ The PayFunc Onboard user interface is web based. It can either be integrated in 
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Onboard</title>
+	<title>PayFunc Onboard</title>
 	<script type="module" src="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.esm.js"></script>
 	<script nomodule src="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.js"></script>
 	<link href="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.css" rel="stylesheet">
 </head>
 <body>
-	<header><h1>Onboard</h1></header>
+	<header><h1>PayFunc Onboard</h1></header>
 	<main>
-		<form method="post">
-			<payfunc-onboard token="<your.api.key>"></payfunc-onboard>
+		<form action="done" method="get">
+			<payfunc-onboard
+				number="<your-customer-number>"
+				api-key="<public-api-key>"
+				></payfunc-onboard>
 		</form>
 	</main>
 </body>
 </html>
 ```
+A fully working example can be viewed is available on [GitHub](https://github.com/payfunc/onboard-example).
 
 Once the user has entered their card information and successfully performed the 3D Secure authentication the form will be submitted with the follwing data in the `payment-methods` field.
 
