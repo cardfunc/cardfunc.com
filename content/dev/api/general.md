@@ -10,7 +10,7 @@ menu:
 # URL
 The PayFunc API is reachable at the following URL:
 ```
-https://api.payfunc.com/
+https://payfunc.azurewebsites.net/api/
 ```
 The same URL is used both for testing and for production. It is the API key that determines if you are using the system for testing or production.
 

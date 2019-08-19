@@ -15,7 +15,7 @@ The `order` endpoint is the primary endpoint used for creating and administratin
 ### Card Account Payment
 #### Request
 ```json
-POST https://api.payfunc.com/order
+POST https://payfunc.azurewebsites.net/api/order
 Authentication: Bearer <your.api.key>
 
 {
@@ -60,7 +60,7 @@ Once the end user has placed the order you can then _charge_ or _cancel_ the ord
 ### Cancel Single Order 
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+PATCH https://payfunc.azurewebsites.net/api/order/
 Authentication: Bearer <your.api.key>
 
 [
@@ -75,7 +75,7 @@ Authentication: Bearer <your.api.key>
 ### Charge Single Order 
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+PATCH https://payfunc.azurewebsites.net/api/order/
 Authentication: Bearer <your.api.key>
 
 [
@@ -92,7 +92,7 @@ A order that has been charged can be refunded. This is usefull if the customer e
 ### Refund Single Order 
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+PATCH https://payfunc.azurewebsites.net/api/order/
 Authentication: Bearer <your.api.key>
 
 [
@@ -108,7 +108,7 @@ Authentication: Bearer <your.api.key>
 The API allows for manipulating several orders with one single API call.
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+PATCH https://payfunc.azurewebsites.net/api/order/
 Authentication: Bearer <your.api.key>
 
 [

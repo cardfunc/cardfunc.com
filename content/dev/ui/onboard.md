@@ -24,9 +24,9 @@ The PayFunc Onboard user interface is web based. It can either be integrated in 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Onboard</title>
-	<script type="module" src="https://api.payfunc.com/ui/onboard/onboard.esm.js"></script>
-	<script nomodule src="https://api.payfunc.com/ui/onboard/onboard.js"></script>
-	<link href="https://api.payfunc.com/ui/onboard/onboard.css" rel="stylesheet">
+	<script type="module" src="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.esm.js"></script>
+	<script nomodule src="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.js"></script>
+	<link href="https://payfunc.azurewebsites.net/onboard/build/payfunc-onboard.css" rel="stylesheet">
 </head>
 <body>
 	<header><h1>Onboard</h1></header>
@@ -58,7 +58,7 @@ Once the user has set up an account with account number `<account id>` you can t
 ### Create an Order
 #### Request
 ```json
-POST https://api.payfunc.com/order
+POST https://payfunc.azurewebsites.net/api/order
 Authentication: Bearer <your.api.key>
 
 {
@@ -88,7 +88,7 @@ Authentication: Bearer <your.api.key>
 ### Charge Order
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+PATCH https://payfunc.azurewebsites.net/api/order/
 Authentication: Bearer <your.api.key>
 
 [
