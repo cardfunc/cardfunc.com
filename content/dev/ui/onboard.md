@@ -48,11 +48,18 @@ Once the user has entered their card information and successfully performed the 
 ```json
 [
     {
-        "type": "card",
-        "id": "<account-id>",
+      "id": "6s-e3dPs6LYS",
+      "number": "customer-number-001",
+      "created": "2019-09-04T11:05:49+00:00",
+      "card": {
+        "id": "cwjDQWsv",
         "scheme": "visa",
-        "last4": "9000",
-        "country": "SE",
+        "last4": "1111",
+        "expires": [
+          1,
+          20
+        ]
+      }
     }
 ]
 ```
