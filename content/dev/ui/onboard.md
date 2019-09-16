@@ -55,10 +55,7 @@ Once the user has entered their card information and successfully performed the 
         "id": "cwjDQWsv",
         "scheme": "visa",
         "last4": "1111",
-        "expires": [
-          1,
-          20
-        ]
+        "expires": [1, 20]
       }
     }
 ]
