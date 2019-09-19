@@ -92,17 +92,13 @@ A order that has been charged can be refunded. This is usefull if the customer e
 ### Refund Single Order 
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+POST https://api.payfunc.com/order/<order id>/event
 Authentication: Bearer <your.api.key>
 
-[
-    {
-        "id": "<order id>",
-        "event": [
-            { "type": "refund" }
-        ]
-    }
-]
+{
+	"type": "charge",
+	"amount": 1000
+}
 ```
 ## Multiple Orders
 The API allows for manipulating several orders with one single API call.

@@ -96,15 +96,11 @@ Authentication: Bearer <your.api.key>
 ### Charge Order
 #### Request
 ```json
-PATCH https://api.payfunc.com/order/
+POST https://api.payfunc.com/order/<order id>/event
 Authentication: Bearer <your.api.key>
 
-[
-    {
-        "id": "<order id>",
-        "event": [
-            { "type": "charge" }
-        ]
-    }
-]
+{
+	"type": "charge",
+	"amount": 1000
+}
 ```
