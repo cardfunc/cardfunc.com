@@ -24,9 +24,8 @@ The PayFunc Onboard user interface is web based. It can either be integrated in 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>PayFunc Onboard</title>
-	<script type="module" src="https://api.payfunc.com/ui/onboard/build/payfunc-onboard.esm.js"></script>
-	<script nomodule src="https://api.payfunc.com/ui/onboard/build/payfunc-onboard.js"></script>
-	<link href="https://api.payfunc.com/ui/onboard/build/payfunc-onboard.css" rel="stylesheet">
+	<script src="https://api.payfunc.com/ui/onboard/payfunc-onboard.js"></script>
+	<link href="https://theme.payfunc.com/ct-light/index.css" rel="stylesheet">
 </head>
 <body>
 	<header><h1>PayFunc Onboard</h1></header>
@@ -47,17 +46,18 @@ Once the user has entered their card information and successfully performed the 
 
 ```json
 [
-    {
-      "id": "6s-e3dPs6LYS",
-      "number": "customer-number-001",
-      "created": "2019-09-04T11:05:49+00:00",
-      "card": {
-        "id": "cwjDQWsv",
-        "scheme": "visa",
-        "last4": "1111",
-        "expires": [1, 20]
-      }
+  {
+    "id": "6s-e3dPs6LYS",
+    "number": "customer-number-001",
+    "created": "2019-09-04T11:05:49+00:00",
+    "card": {
+      "id": "cwjDQWsv",
+      "scheme": "visa",
+      "iin": "41000000",
+      "last4": "1111",
+      "expires": [1, 20]
     }
+  }
 ]
 ```
 
