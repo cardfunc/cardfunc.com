@@ -1,14 +1,9 @@
 
 body {
     color: #eeeeec;
-    background: #2e3436;
+    background: rgb(85, 87, 83);
 }
-body > header {
-	border-bottom: 1mm solid #cc0000;
-}
-body > main {
-	background: linear-gradient(#555753, #2e3436)
-}
+
 body > footer {
 	border-top: 1mm solid #cc0000;
 }
@@ -16,11 +11,6 @@ body > footer {
 html:not(.home) > body > main.list.intro > article:not(:first-of-type),
 html:not(.home) > body > main.list:not(.intro) > article {
 	border: 1mm solid #cc0000;
-	background: linear-gradient(#555753, #2e3436)
-}
-html:not(.home) > body > main.list.intro > article:not(:first-of-type):hover,
-html:not(.home) > body > main.list:not(.intro) > article:hover {
-	background: linear-gradient(#2e3436, #555753)
 }
 article > header {
 	border-bottom: .5mm solid #cc0000;

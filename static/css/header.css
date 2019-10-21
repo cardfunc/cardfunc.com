@@ -1,0 +1,47 @@
+body {
+    padding-top: 68px;
+}
+body > header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+	background: rgb(30, 30, 30);
+    box-shadow: 0 6px 2px -2px rgba(rgb(30, 30, 30), .25);
+}
+body > header > h1 {
+    margin: 0;
+}
+body > header > h1 > a > img {
+    display: block;
+    height: 2.6em;
+    width: auto;
+}
+body > header > nav > ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-size: 110%;
+}
+body > header > nav > ul > li {
+    display: block;
+    height: 100%;
+}
+body > header > nav > ul > li > a {
+    display: block;
+    height: calc(100% - 2.6em);
+    padding: 1.3em 1em;
+}
+body > header > nav > ul > li.current-parent > a,
+body > header > nav > ul > li.current > a {
+    background: rgb(204, 0, 0);
+}
+body > header > nav > ul > li > a:hover {
+    background: rgb(164, 0, 0);
+}
+body > header > nav > ul > li > ul {
+    display: none;
+}
