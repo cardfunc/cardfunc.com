@@ -1,11 +1,18 @@
 article > * {
     padding: 1em;
+    max-width: 40em;
+    margin: 0 auto;
+    border-left: solid .5px #282828;
+    border-right: solid .5px #282828;
+    box-shadow: 0 0 2px 0 rgba(30, 30, 30, .15);
+    background: rgb(48, 49, 47);
 }
 article > header > p,
 article > nav {
     display: none;
 }
 article > main > div.highlight > pre {
+    margin: 0 -1em;
     padding: 1em;
 }
 body > footer > p {
