@@ -3,9 +3,9 @@ title: "Order"
 date: "2019-08-01"
 weight: 30
 menu: 
-    main:
-        parent: dev-api
-        name: Order
+  main:
+    parent: dev-api
+    name: Order
 ---
 
 The `order` endpoint is the primary endpoint used for creating and administrating orders.
@@ -19,36 +19,36 @@ POST https://api.payfunc.com/order
 Authentication: Bearer <your.api.key>
 
 {
-    "number": "your order identifier",
-    "items": 1337.42,
-    "currency": "EUR",
-    "payment": {
-        "type": "card",
-        "account": "<account id>"
-    }
+	"number": "your order identifier",
+	"items": 1337.42,
+	"currency": "EUR",
+	"payment": {
+		"type": "card",
+		"account": "<account id>"
+	}
 }
 ```
 #### Response
 ```json
 {
-    "id": "<order id>",
-    "number": "your order identifier",
-    "items": 1337.42,
-    "currency": "EUR",
-    "created": "2019-01-01T13:37Z",
-    "payment": {
-        "id": "<payment id>",
-        "type": "card",
-        "account": "<account id>",
-        "amount": 1337.42,
-        "currency": "EUR"
-    },
-    "event": [
-        { 
-            "type": "created",
-            "date": "2019-01-01T13:37Z",
-        }
-    ]
+	"id": "<order id>",
+	"number": "your order identifier",
+	"items": 1337.42,
+	"currency": "EUR",
+	"created": "2019-01-01T13:37Z",
+	"payment": {
+		"id": "<payment id>",
+		"type": "card",
+		"account": "<account id>",
+		"amount": 1337.42,
+		"currency": "EUR"
+	},
+	"event": [
+		{ 
+			"type": "created",
+			"date": "2019-01-01T13:37Z",
+		}
+	]
 }
 ```
 
@@ -64,12 +64,12 @@ PATCH https://api.payfunc.com/order/
 Authentication: Bearer <your.api.key>
 
 [
-    {
-        "id": "<order id>",
-        "event": [
-            { "type": "cancel" }
-        ]
-    }
+	{
+		"id": "<order id>",
+		"event": [
+			{ "type": "cancel" }
+		]
+	}
 ]
 ```
 ### Charge Single Order 
@@ -79,12 +79,12 @@ PATCH https://api.payfunc.com/order/
 Authentication: Bearer <your.api.key>
 
 [
-    {
-        "id": "<order id>",
-        "event": [
-            { "type": "charge" }
-        ]
-    }
+	{
+		"id": "<order id>",
+		"event": [
+			{ "type": "charge" }
+		]
+	}
 ]
 ```
 ## Refund
@@ -108,8 +108,8 @@ PATCH https://api.payfunc.com/order/
 Authentication: Bearer <your.api.key>
 
 [
-    { "id": "<order id 0>", "event": [ { "type": "cancel" } ] }
-    { "id": "<order id 1>", "event": [ { "type": "charge" } ] }
-    { "id": "<order id 2>", "event": [ { "type": "charge" } ] }
+	{ "id": "<order id 0>", "event": [ { "type": "cancel" } ] }
+	{ "id": "<order id 1>", "event": [ { "type": "charge" } ] }
+	{ "id": "<order id 2>", "event": [ { "type": "charge" } ] }
 ]
 ```
