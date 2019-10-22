@@ -1,7 +1,7 @@
 ---
 title: "PayFunc Develper Documentation"
 date: "2019-08-01"
-weight: 20
+weight: 40
 menu: 
     main:
         identifier: dev

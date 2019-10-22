@@ -1,7 +1,7 @@
 ---
 title: "PayFunc Pricing"
 date: "2019-08-01"
-weight: 40
+weight: 20
 menu: 
     main:
         name: Pricing
