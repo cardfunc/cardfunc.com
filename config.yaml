@@ -17,6 +17,7 @@ params:
     - "css/list.css"
     - "css/menu.css"
     - "css/text.css"
+    - "css/code.css"
   ListMode: "header"
   FrontPageMode: "full"
   FrontPageSection: "start"
@@ -26,6 +27,7 @@ params:
 googleAnalytics: "UA-72875022-1"
 PluralizeListTitles: false
 pygmentsCodeFences: true
+pygmentsUseClasses: true
 blackfriday:
   extensions:
     - hardLineBreak
