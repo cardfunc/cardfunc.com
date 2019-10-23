@@ -7,4 +7,6 @@ menu:
         name: Pricing
 ---
 
-PayFunc is available in the following pricing tiers.
+# Card Transactions
+
+# Mash Invoice &amp; Installment Plans

@@ -7,6 +7,8 @@ menu:
         parent: dev-api
         name: General
 ---
+This details the general usage of the PayFunc API.
+<!--more-->
 # URL
 The PayFunc API is reachable at the following URL:
 ```

@@ -9,7 +9,7 @@ menu:
 ---
 
 The PayFunc Checkout is perfect for e-commerce applications where the end user checks out after having selected items into a virtual shopping cart.
-
+<!--more-->
 ``` html
 <!doctype html>
 <html lang="en">

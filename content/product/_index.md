@@ -7,4 +7,11 @@ menu:
         identifier: product
         name: Products
 ---
-The PayFunc Products.
+
+# Payment Methods
+
+| Method                     | Target        | Reccurring     |
+|----------------------------|---------------|----------------|
+| Credit Card                | B & C         | yes            |
+| Mash Invoice & Installment | Consumer      | no             |
+| Swish                      | Consumer      | no             |

@@ -9,7 +9,7 @@ menu:
 ---
 
 The `order` endpoint is the primary endpoint used for creating and administrating orders.
-
+<!--more-->
 # Creating
 
 ### Card Account Payment
