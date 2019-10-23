@@ -8,7 +8,7 @@ menu:
         name: Contact
         parent: about
 ---
-
+<!--more-->
 # Form
 
 # Address

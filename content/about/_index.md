@@ -7,4 +7,4 @@ menu:
         identifier: about
         name: About
 ---
-PayFunc the Company.
+The company behind PayFunc is called Nordic Transaction Partner AB.
