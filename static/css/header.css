@@ -12,6 +12,7 @@ body > header {
     justify-content: space-between;
 	background: rgb(30, 30, 30);
     box-shadow: 0 6px 2px -2px rgba(30, 30, 30, .25);
+    z-index: 10;
 }
 body > header > h1 {
     margin: 0;
