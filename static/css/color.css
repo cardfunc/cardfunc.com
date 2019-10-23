@@ -8,11 +8,6 @@ body {
 body > footer {
 	border-top: 1mm solid #cc0000;
 }
-/* list pages */
-html:not(.home) > body > main.list.intro > article:not(:first-of-type),
-html:not(.home) > body > main.list:not(.intro) > article {
-	border: 1mm solid #cc0000;
-}
 article > header {
 	border-bottom: .5mm solid #cc0000;
 }

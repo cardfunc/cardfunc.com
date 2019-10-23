@@ -8,9 +8,10 @@ MetaDataFormat: yaml
 params:
   onlyLogotype: true
   logotype: "logo/payfunc-d1.svg"
-  footer: "copyright &copy; 2019 PayFunc"
+  footer: "© PayFunc"
   CSS:
     - "css/header.css"
+    - "css/footer.css"
     - "css/color.css"
     - "css/content.css"
     - "css/layout.css"
@@ -18,7 +19,7 @@ params:
     - "css/menu.css"
     - "css/text.css"
     - "css/code.css"
-  ListMode: "header"
+  ListMode: "summary"
   FrontPageMode: "full"
   FrontPageSection: "start"
   NavigationInHeader: true
