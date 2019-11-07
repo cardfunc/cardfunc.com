@@ -31,10 +31,10 @@
 		transform: rotate(-90deg);
 	}
 	body > header > nav > input[type=checkbox]:not(:checked) + label + ul {
-		transform: scaleY(0);
+		right: -100%;
 	}
 	body > header > nav > ul {
-		transition-property: transform;
+		transition-property: right;
 		transition-duration: .1s;
     transition-timing-function: ease-in-out;
 		position: absolute;
