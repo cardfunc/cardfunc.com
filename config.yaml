@@ -19,6 +19,7 @@ params:
     - "css/menu.css"
     - "css/text.css"
     - "css/code.css"
+    - "css/narrow.css"
   ListMode: "summary"
   FrontPageMode: "full"
   FrontPageSection: "start"

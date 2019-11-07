@@ -25,6 +25,9 @@ body > header > h1 > a > img {
     margin-left: -.2em;
 }
 /* nav */
+body > header > nav > input[type=checkbox] {
+    display: none;
+}
 body > header > nav > ul {
     display: flex;
     padding: 0;
