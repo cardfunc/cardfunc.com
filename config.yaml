@@ -20,6 +20,7 @@ params:
     - "css/text.css"
     - "css/code.css"
     - "css/narrow.css"
+    - "css/form.css"
   ListMode: "summary"
   FrontPageMode: "full"
   FrontPageSection: "start"
