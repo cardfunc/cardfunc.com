@@ -1,3 +1,31 @@
+/* Tabs */
+code::before {
+	visibility: visible;
+	z-index: 10;
+	content: attr(data-lang);
+	float: right;
+	padding: .5em;
+	margin-right: -1em;
+	margin-top: -1em;
+	font-weight: 600;
+	font-size: 1rem;
+	line-height: 1rem;
+}
+code[data-lang=json]::before,
+code[data-lang=js]::before {
+	color: #282828;
+	background: #edd400;
+}
+code[data-lang=html]::before {
+	color: #282828;
+	background: #73d216;
+}
+code[data-lang=bash]::before {
+	color: #d0d0d0;
+	background: #cc0000;
+	content: "curl"
+}
+
 code {
     tab-size: 2;
     -moz-tab-size: 2;

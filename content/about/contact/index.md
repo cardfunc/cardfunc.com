@@ -8,6 +8,7 @@ menu:
         name: Contact
         parent: about
 ---
+Contact us using one of the following options.
 <!--more-->
 # Form
 
