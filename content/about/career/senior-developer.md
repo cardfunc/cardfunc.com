@@ -4,7 +4,7 @@ date: "2019-11-08"
 location: Uppsala, Sweden
 weight: 50
 ---
-As a _Senior Software Engineer with PAyments Expertice_ you will be key part of growing our development team. Not only will you be an _individual contributer_ but you will also _coach junior engineers_ to become more skilled and productive.
+As a _Senior Software Engineer with Payments Expertice_ you will be key part of growing our development team. Not only will you be an _individual contributer_ but you will also _coach junior engineers_ to become more skilled and productive.
 
 <!--more-->
 # What you will do:
