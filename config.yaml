@@ -27,7 +27,7 @@ params:
   NavigationInHeader: true
   Prefix:
     - "og: http://opy.me/ns#"
-googleAnalytics: "UA-72875022-1"
+googleAnalytics: "UA-151967911-1"
 PluralizeListTitles: false
 pygmentsCodeFences: true
 pygmentsUseClasses: true
