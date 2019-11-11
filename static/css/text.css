@@ -47,3 +47,8 @@ table th,
 table td {
     padding: .2em .4em;
 }
+/* emphasize */
+em {
+	font-weight: 400;
+	font-style: normal;
+}

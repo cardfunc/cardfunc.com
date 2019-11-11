@@ -7,10 +7,16 @@ article > *:not(.self-link) {
     box-shadow: 0 0 2px 0 rgba(30, 30, 30, .15);
     background: rgb(48, 49, 47);
 }
+article > header {
+	display: flex;
+}
 article > header > h1 {
     margin: 0;
 }
-article > header > p,
+article > header > :first-child {
+	flex-grow: 1;
+}
+article > header > p > *:not(.article-location),
 article > nav {
     display: none;
 }
