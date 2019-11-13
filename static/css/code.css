@@ -30,6 +30,7 @@ code {
     tab-size: 2;
     -moz-tab-size: 2;
 }
+.chroma .nx { color: #3677a9 }
 /* Background */ .chroma { color: #d0d0d0; background-color: #282828 }
 /* Error */ .chroma .err { color: #cc0000 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
@@ -60,7 +61,7 @@ code {
 /* LiteralStringChar */ .chroma .sc { color: #f57900 }
 /* LiteralStringDelimiter */ .chroma .dl { color: #f57900 }
 /* LiteralStringDoc */ .chroma .sd { color: #f57900 }
-/* LiteralStringDouble */ .chroma .s2 { color: #f57900 }
+/* LiteralStringDouble */ .chroma .s2 { color: #cc0000 }
 /* LiteralStringEscape */ .chroma .se { color: #f57900 }
 /* LiteralStringHeredoc */ .chroma .sh { color: #f57900 }
 /* LiteralStringInterpol */ .chroma .si { color: #f57900 }
