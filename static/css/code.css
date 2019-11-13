@@ -55,7 +55,7 @@ code {
 /* NameNamespace */ .chroma .nn { color: #3465a4; text-decoration: underline }
 /* NameTag */ .chroma .nt { color: #73d216; }
 /* NameVariable */ .chroma .nv { color: #40ffff }
-/* LiteralString */ .chroma .s { color: #f57900 }
+/* LiteralString */ .chroma .s { color: #cc0000 }
 /* LiteralStringAffix */ .chroma .sa { color: #f57900 }
 /* LiteralStringBacktick */ .chroma .sb { color: #f57900 }
 /* LiteralStringChar */ .chroma .sc { color: #f57900 }
