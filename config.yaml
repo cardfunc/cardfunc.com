@@ -21,9 +21,10 @@ params:
     - "css/code.css"
     - "css/narrow.css"
     - "css/form.css"
+    - "css/home.css"
   ListMode: "summary"
   FrontPageMode: "full"
-  FrontPageSection: "start"
+  FrontPageSection: "home"
   NavigationInHeader: true
   Prefix:
     - "og: http://opy.me/ns#"
