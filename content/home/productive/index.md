@@ -1,7 +1,7 @@
 ---
 title: "Be Productive"
 date: "2019-11-18"
-weight: 40
+weight: 70
 image: "./home/productive/nihon-graphy-nCvi-gS5r88-unsplash.jpg"
 link: /dev/
 ---

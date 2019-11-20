@@ -1,7 +1,7 @@
 ---
 title: "Cloud First"
 date: "2019-11-18"
-weight: 40
+weight: 70
 image: "./home/cloud/patrick-lindenberg-1iVKwElWrPA-unsplash.jpg"
 link: /dev/
 ---

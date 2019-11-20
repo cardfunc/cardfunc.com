@@ -1,7 +1,7 @@
 ---
 title: "Example JS"
 date: 2019-08-01T13:35:37+02:00
-weight: 20
+weight: 30
 mode: body
 ---
 ```js

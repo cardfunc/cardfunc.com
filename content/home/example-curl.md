@@ -1,7 +1,7 @@
 ---
 title: "Example Curl"
 date: 2019-08-01T13:35:37+02:00
-weight: 40
+weight: 61
 mode: body
 ---
 ```bash

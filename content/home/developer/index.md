@@ -1,8 +1,7 @@
 ---
 title: "Developer Focus"
 date: "2019-11-18"
-weight: 50
-image: "./home/developer/max-duzij-qAjJk-un3BI-unsplash.jpg"
+weight: 40
 link: /dev/
 ---
 
