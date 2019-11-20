@@ -73,25 +73,27 @@ article > .self-link > a {
 article > aside:not(.self-link) {
 	padding: 0;
 }
-article.has-image:nth-child(odd) > header,
-article.has-image:nth-child(odd) > main {
-	margin-left: 50%;
-}
-article.has-image:nth-child(odd) > aside {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 50%;
-}
-article.has-image:nth-child(even) > header,
-article.has-image:nth-child(even) > main {
-	margin-right: 50%;
-}
-article.has-image:nth-child(even) > aside {
-	position: absolute;
-	right: 0;
-	top: 0;
-	width: 50%;
+@media only screen and (min-width: 721px) {
+	article.has-image:nth-child(odd) > header,
+	article.has-image:nth-child(odd) > main {
+		margin-left: 50%;
+	}
+	article.has-image:nth-child(odd) > aside {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+	}
+	article.has-image:nth-child(even) > header,
+	article.has-image:nth-child(even) > main {
+		margin-right: 50%;
+	}
+	article.has-image:nth-child(even) > aside {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+	}
 }
 article > aside > img {
 	width: 100%;
