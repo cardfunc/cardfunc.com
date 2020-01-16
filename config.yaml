@@ -1,13 +1,16 @@
 baseURL: //payfunc.com/
-languageCode: en-us
+languageCode: en
 DefaultContentLanguage: "en"
 title: PayFunc
-tagline: "Easy to integrate Payment API for the Nordics."
 theme: hugo-theme-html5
 MetaDataFormat: yaml
 params:
   onlyLogotype: true
   logotype: "logo/payfunc-d1.svg"
+  tagline: "Payments for Programmers"
+  description: "PayFunc provides easy to integrate solutions for payments and monetary transactions for your web and app based needs."
+  keywords: "Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard"
+  author: "PayFunc"
   footer: "© PayFunc"
   CSS:
     - "css/header.css"
@@ -28,6 +31,10 @@ params:
   NavigationInHeader: true
   Prefix:
     - "og: http://opy.me/ns#"
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
 googleAnalytics: "UA-151967911-1"
 PluralizeListTitles: false
 pygmentsCodeFences: true

@@ -24,6 +24,10 @@ body > header > h1 > a > img {
     padding-top: .1em;
     margin-left: -.2em;
 }
+/* p */
+body > header > p {
+	display: none;
+}
 /* nav */
 body > header > nav > input[type=checkbox] {
     display: none;
@@ -71,7 +75,7 @@ body > header > nav > ul li > ul {
 }
 body > header > nav > ul > li li > ul {
     top: 0;
-} 
+}
 body > header > nav > ul li:hover > ul {
     display: table;
 }
