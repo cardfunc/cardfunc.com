@@ -1,6 +1,6 @@
 baseURL: //payfunc.com/
 languageCode: en
-DefaultContentLanguage: "en"
+defaultContentLanguage: "en"
 title: PayFunc
 theme: hugo-theme-html5
 MetaDataFormat: yaml
@@ -35,6 +35,8 @@ sitemap:
   changefreq: monthly
   filename: sitemap.xml
   priority: 0.5
+enableGitInfo: true
+enableRobotsTXT: true
 googleAnalytics: "UA-151967911-1"
 PluralizeListTitles: false
 pygmentsCodeFences: true
