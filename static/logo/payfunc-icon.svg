@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="10.01101mm"
+   height="10.011mm"
+   viewBox="0 0 10.01101 10.010999"
+   version="1.1"
+   id="svg864"
+   sodipodi:docname="payfunc-icon.svg"
+   inkscape:export-filename="/home/smika/versioned/github/payfunc/payfunc.com/static/logo/payfunc-icon.png"
+   inkscape:export-xdpi="299.39069"
+   inkscape:export-ydpi="299.39069"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <metadata
+     id="metadata9">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs7" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2517"
+     inkscape:window-height="1376"
+     id="namedview5"
+     showgrid="false"
+     fit-margin-top="1.60555"
+     fit-margin-left="1.60555"
+     fit-margin-right="1.60555"
+     fit-margin-bottom="1.60555"
+     inkscape:zoom="1.0339889"
+     inkscape:cx="145.25744"
+     inkscape:cy="-19.766723"
+     inkscape:window-x="2603"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg864" />
+  <path
+     id="circle5433"
+     d="M 8.405456,5.0055 A 3.3999529,3.3999529 0 0 1 5.005502,8.40545 3.3999529,3.3999529 0 0 1 1.60555,5.0055 3.3999529,3.3999529 0 0 1 5.005502,1.60555 3.3999529,3.3999529 0 0 1 8.405456,5.0055 Z"
+     style="opacity:1;fill:#cc0000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.00563145;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:4.80000019;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+</svg>
