@@ -88,7 +88,7 @@ Authentication: Bearer <your.api.key>
 ]
 ```
 ## Refund
-A order that has been charged can be refunded. This is usefull if the customer ends up returning the ordered items.
+A order that has been charged can be refunded. This is useful if the customer ends up returning the ordered items.
 ### Refund Single Order 
 #### Request
 ```json

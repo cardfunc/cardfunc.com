@@ -33,8 +33,8 @@ Authorization: Bearer <your.api.key>
 ```
 
 API keys always come in pairs of two:
-1. _private_ Used for priviligade access to the administration parts of the API.
-2. _public_ Used for creating new orders from the end users browser.
+1. _private_ Used for privileged access to the administration parts of the API.
+2. _public_ Used for creating new orders from the end user's browser.
 
 The API keys determine whether you use the system in test or production mode.
 

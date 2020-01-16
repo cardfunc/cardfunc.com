@@ -4,18 +4,18 @@ date: "2019-11-08"
 location: Uppsala, Sweden
 weight: 50
 ---
-As a _Senior Software Engineer with Payments Expertice_ you will be key part of growing our development team. Not only will you be an _individual contributer_ but you will also _coach junior engineers_ to become more skilled and productive.
+As a _Senior Software Engineer with Payments Expertice_ you will be a key part of growing our development team. Not only will you be an _individual contributer_ but you will also _coach junior engineers_ to become more skilled and productive.
 
 <!--more-->
 # What you will do:
 
 - Coach junior engineers
 - Review code and set the bar of excellence within the team
-- Ensure that the software is architected with maintanability and a long term mindset
+- Ensure that the software is architected with maintainability and a long term mindset
 - Develop payment products in [TypesScript](http://typescriptlang.org). For the user interface we use [Stencil.JS](http://stenciljs.com) and our backend is using Azure Functions
 - Deploy your code to production daily
 - Work directly with our customers to solve their needs
-- Every second week estimate and plan the comming sprint together with the rest of the team
+- Every second week estimate and plan the upcoming sprint together with the rest of the team
 
 # What we are looking for:
 

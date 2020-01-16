@@ -12,7 +12,7 @@ As a _Junior Full Stack Engineer_ you will be a part of our growing development 
 - Develop payment products in [TypeScript](http://typescriptlang.org). For the user interface we use [Stencil.JS](http://stenciljs.com) and our backend is using [Azure Functions](https://azure.microsoft.com/sv-se/services/functions/).
 - Deploy your code to production daily
 - Work directly with our customers to solve their needs
-- Every second week estimate and plan the comming sprint together with the rest of the team
+- Every second week estimate and plan the upcoming sprint together with the rest of the team
 
 # What we are looking for:
 

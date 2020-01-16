@@ -10,7 +10,7 @@ aliases:
     - /content/integrations/onboard/
 ---
 
-PayFunc Onboard guides your users through the process of creating an account used for later transactions. It handles the full process of entering the credit card information as well as performing the full 3D secure authentication procedure. Once everything is done you will receive an account number that you then can use to perform payments towards the users credit card without the need for any interaction with the user.
+PayFunc Onboard guides your users through the process of creating an account used for later transactions. It handles the full process of entering the credit card information as well as performing the full 3D secure authentication procedure. Once everything is done you will receive an account number that you then can use to perform payments towards the user's credit card without the need for any interaction with the user.
 
 # Integrating PayFunc Onboard
 
@@ -40,7 +40,7 @@ The PayFunc Onboard user interface is web based. It can either be integrated in 
 </body>
 </html>
 ```
-A fully working example can be viewed is available on [GitHub](https://github.com/payfunc/onboard-example).
+A fully working example is available on [GitHub](https://github.com/payfunc/onboard-example).
 
 Once the user has entered their card information and successfully performed the 3D Secure authentication the form will be submitted with the follwing data in the `payment-methods` field.
 
@@ -61,7 +61,7 @@ Once the user has entered their card information and successfully performed the 
 ]
 ```
 
-# Performining a Payment
+# Performing a Payment
 Once the user has set up an account with account number `<account id>` you can then:
 ### Create an Order
 #### Request
@@ -83,7 +83,7 @@ Authentication: Bearer <your.api.key>
 ```json
 {
     "id": "<order id>",
-    "number": "your order identifier",
+    "number": "your order [Uppsala.JS #30](https://www.meetup.com/Uppsalajs/events/266590693/)identifier",
     "items": 1337.42,
     "currency": "EUR",
     "payment": {

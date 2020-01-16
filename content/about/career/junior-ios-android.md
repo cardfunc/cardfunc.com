@@ -13,7 +13,7 @@ As a _Junior iOS & Android Engineer_ you will be a part of our growing developme
 - Develop our payment backend using [TypeScript](http://typescriptlang.org) and Azure Functions
 - Deploy your code to production daily
 - Work directly with our customers to solve their needs
-- Every second week estimate and plan the comming sprint together with the rest of the team
+- Every second week estimate and plan the upcoming sprint together with the rest of the team
 
 # What we are looking for:
 
