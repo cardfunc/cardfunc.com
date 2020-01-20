@@ -27,7 +27,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 # Authentication
-All request to the API except login requests to the [`me`](./me) endpoint are done using the bearer authentication pattern.
+All request to the API except login requests to the [`me`](../me) endpoint are done using the bearer authentication pattern.
 ```http
 Authorization: Bearer <your.api.key>
 ```
