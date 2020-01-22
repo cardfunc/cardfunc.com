@@ -6,19 +6,10 @@
     <description>Recent content on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Junior Full Stack Engineer</title>
-      <link>https://cardfunc.com/about/career/junior-full-stack/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/junior-full-stack/</guid>
-      <description>&lt;p&gt;As a &lt;em&gt;Junior Full Stack Engineer&lt;/em&gt; you will be a part of our growing development team. You will be involved in both &lt;em&gt;backend and front end development&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title></title>
@@ -26,25 +17,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/banner-developer/</guid>
-      <description>Payments for Programmers </description>
+      <description>Card Payments for PSP:s </description>
     </item>
     
     <item>
-      <title>Payment Gateway for Card Payments</title>
-      <link>https://cardfunc.com/product/payment-gateway/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/payment-gateway/</guid>
-      <description>We provide smooth payments for Visa and Mastercard. Via the PayFunc Payment Gateway you can reach a wide network of acquirers and optimize your card acceptance.</description>
-    </item>
-    
-    <item>
-      <title>Payments for Programmers</title>
+      <title>Card Payments for PSP:s</title>
       <link>https://cardfunc.com/home/welcome/</link>
       <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
       
       <guid>https://cardfunc.com/home/welcome/</guid>
-      <description>PayFunc provides easy to integrate solutions for payments and monetary transactions for your web and app based needs.</description>
+      <description>CardFunc provides easy to integrate solutions for Payment System Providers to offer credit card payments with minimal PCI and compliance work needed.</description>
     </item>
     
     <item>
@@ -57,39 +39,14 @@
     </item>
     
     <item>
-      <title>PayFunc Checkout</title>
-      <link>https://cardfunc.com/dev/ui/checkout/</link>
+      <title>CardFunc UI</title>
+      <link>https://cardfunc.com/dev/ui/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/ui/checkout/</guid>
-      <description>&lt;p&gt;The PayFunc Checkout is perfect for e-commerce applications where the end user checks out after having selected items into a virtual shopping cart.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Alternative Payment Methods for the Nordics</title>
-      <link>https://cardfunc.com/product/alternative-payments/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/alternative-payments/</guid>
-      <description>Increase Your revenue with alternative payment methods. Instant payment and invoice based payments like Swish and Mash grow rapidly in the Nordics. A wider payment portfolio can increase Your revenue significantly.</description>
-    </item>
-    
-    <item>
-      <title>Junior UX Specialist</title>
-      <link>https://cardfunc.com/about/career/junior-ux/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/junior-ux/</guid>
-      <description>&lt;p&gt;As a &lt;em&gt;Junior User Experience Specialist&lt;/em&gt; you will be a part of our growing development team. Your work will be focused on improving the &lt;em&gt;usabilibty of our products&lt;/em&gt;.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Example JS</title>
-      <link>https://cardfunc.com/home/example-js/</link>
-      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
-      
-      <guid>https://cardfunc.com/home/example-js/</guid>
-      <description>const response = await fetch(&amp;#34;https://api.payfunc.com/order&amp;#34;, { method: &amp;#34;POST&amp;#34;, headers: { Authentication: &amp;#34;Bearer &amp;lt;public api key&amp;gt;&amp;#34; } body: JSON.stringify( { &amp;#34;number&amp;#34;: &amp;#34;&amp;lt;unique order identifier&amp;gt;&amp;#34;, &amp;#34;items&amp;#34;: 1337.42, &amp;#34;currency&amp;#34;: &amp;#34;EUR&amp;#34;, &amp;#34;payment&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;card&amp;#34;, &amp;#34;account&amp;#34;: &amp;#34;&amp;lt;account id&amp;gt;&amp;#34; } } ) } </description>
+      <guid>https://cardfunc.com/dev/ui/</guid>
+      <description>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
+Usage CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
+Embedding CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:</description>
     </item>
     
     <item>
@@ -99,15 +56,6 @@
       
       <guid>https://cardfunc.com/dev/api/order/</guid>
       <description>&lt;p&gt;The &lt;code&gt;order&lt;/code&gt; endpoint is the primary endpoint used for creating and administrating orders.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PayFunc Onboard</title>
-      <link>https://cardfunc.com/dev/ui/onboard/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/ui/onboard/</guid>
-      <description>PayFunc Onboard guides your users through the process of creating an account used for later transactions. It handles the full process of entering the credit card information as well as performing the full 3D secure authentication procedure. Once everything is done you will receive an account number that you then can use to perform payments towards the user&amp;rsquo;s credit card without the need for any interaction with the user.</description>
     </item>
     
     <item>
@@ -138,57 +86,12 @@
     </item>
     
     <item>
-      <title>High Risk Merchants</title>
-      <link>https://cardfunc.com/product/high-risk-merchants/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/high-risk-merchants/</guid>
-      <description>A high risk merchant account is a payment processing account for businesses that are classified as high risk services by banks, such as airplane tickets, online services, gaming, crypto currencies, insurance products, etc.. We help high risk merchants to find right payment methods for their site. Contact us and we tell You more.</description>
-    </item>
-    
-    <item>
-      <title>Merchant Portal</title>
-      <link>https://cardfunc.com/product/merchant-portal/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/merchant-portal/</guid>
-      <description>We offer an extensive reporting platform and back office portal allowing merchants to run report and to administer their payments wherever they are via a simple web interface.</description>
-    </item>
-    
-    <item>
-      <title>Senior Software Engineer with Payments Expertice</title>
-      <link>https://cardfunc.com/about/career/senior-developer/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/senior-developer/</guid>
-      <description>&lt;p&gt;As a &lt;em&gt;Senior Software Engineer with Payments Expertice&lt;/em&gt; you will be a key part of growing our development team. Not only will you be an &lt;em&gt;individual contributer&lt;/em&gt; but you will also &lt;em&gt;coach junior engineers&lt;/em&gt; to become more skilled and productive.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Customer</title>
       <link>https://cardfunc.com/dev/reference/customer/</link>
       <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/dev/reference/customer/</guid>
       <description>&lt;p&gt;Data type representing a customer.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Fraud Management</title>
-      <link>https://cardfunc.com/product/fraud-management/</link>
-      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/fraud-management/</guid>
-      <description>PayFunc uses the latest technology and services in anti fraud technology in order to protect our contracted clients and all card users. Let us be your expertise partner in helping your company maximize profit and minimize losses.</description>
-    </item>
-    
-    <item>
-      <title>Junior iOS &amp; Android Engineer</title>
-      <link>https://cardfunc.com/about/career/junior-ios-android/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/junior-ios-android/</guid>
-      <description>&lt;p&gt;As a &lt;em&gt;Junior iOS &amp;amp; Android Engineer&lt;/em&gt; you will be a part of our growing development team. You will be involved in &lt;em&gt;building and maintaining SDK:s&lt;/em&gt; for Android and iOS.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -207,42 +110,6 @@
       
       <guid>https://cardfunc.com/home/banner-phone/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Example Curl</title>
-      <link>https://cardfunc.com/home/example-curl/</link>
-      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
-      
-      <guid>https://cardfunc.com/home/example-curl/</guid>
-      <description>curl -X POST https://api.payfunc.com/order \ 	-u &amp;#34;Bearer &amp;lt;your api key&amp;gt;&amp;#34; \ 	-d &amp;#34;number=&amp;lt;your order identifier&amp;gt;&amp;#34; \ 	-d &amp;#34;items=1337.42&amp;#34; \ 	-d &amp;#34;currency=EUR&amp;#34; \ 	-d &amp;#34;payment[type]=card&amp;#34; \ 	-d &amp;#34;payment[account]=&amp;lt;account id&amp;gt;&amp;#34;</description>
-    </item>
-    
-    <item>
-      <title>PayFunc Checkout</title>
-      <link>https://cardfunc.com/product/payfunc-checkout/</link>
-      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/payfunc-checkout/</guid>
-      <description>&lt;p&gt;PayFunc Checkout is suited to be the last step of your customer&amp;rsquo;s order process. Once all order items have been selected through other means, PayFunc Checkout allows your customer to select from available payment options and complete the payment.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PayFunc Onboard</title>
-      <link>https://cardfunc.com/product/payfunc-onboard/</link>
-      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/payfunc-onboard/</guid>
-      <description>&lt;p&gt;PayFunc Onboard is a dialog to onboard customers to PayFunc based services.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>PayFunc Send</title>
-      <link>https://cardfunc.com/product/payfunc-send/</link>
-      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/product/payfunc-send/</guid>
-      <description>&lt;p&gt;PayFunc Send is a payment solution where a link to PayFunc Checkout is sent to the customer via sms or email.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -309,25 +176,6 @@
     </item>
     
     <item>
-      <title>Uppsala.JS</title>
-      <link>https://cardfunc.com/about/event/20191203-uppsala-js/</link>
-      <pubDate>Tue, 03 Dec 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/event/20191203-uppsala-js/</guid>
-      <description> We where hosting Uppsala.JS #30. Simon Mika talked about our approach to JSON Web Tokens and Päivö Eerola talked about Card Payments.
-Slides About PayFunc  Authly  </description>
-    </item>
-    
-    <item>
-      <title>Apply</title>
-      <link>https://cardfunc.com/about/career/apply/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/apply/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Quotation</title>
       <link>https://cardfunc.com/price/quotation/</link>
       <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
@@ -343,15 +191,6 @@ Slides About PayFunc  Authly  </description>
       
       <guid>https://cardfunc.com/price/register/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Thank You</title>
-      <link>https://cardfunc.com/about/career/thanks/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/about/career/thanks/</guid>
-      <description>Thank you for your application. We will contact you by email as soon as we have read your application.</description>
     </item>
     
     <item>

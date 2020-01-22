@@ -124,57 +124,12 @@
 <ul>
 	
 	<li>
-		<a href="/product/">Products</a>
-		
-		<ul>
-	
-	<li>
-		<a href="/product/payfunc-checkout/">PayFunc Checkout</a>
-		
-	</li>
-	
-	<li>
-		<a href="/product/payfunc-onboard/">PayFunc Onboard</a>
-		
-	</li>
-	
-	<li>
-		<a href="/product/payfunc-send/">PayFunc Send</a>
-		
-	</li>
-	
-</ul>
-
-		
-	</li>
-	
-	<li>
-		<a href="/price/">Pricing</a>
-		
-	</li>
-	
-	<li>
 		<a href="/dev/">Developers</a>
 		
 		<ul>
 	
 	<li>
 		<a href="/dev/ui/">UI</a>
-		
-		<ul>
-	
-	<li>
-		<a href="/dev/ui/checkout/">Checkout</a>
-		
-	</li>
-	
-	<li>
-		<a href="/dev/ui/onboard/">Onboard</a>
-		
-	</li>
-	
-</ul>
-
 		
 	</li>
 	
@@ -253,16 +208,6 @@
 		
 	</li>
 	
-	<li>
-		<a href="/about/event/">Events</a>
-		
-	</li>
-	
-	<li>
-		<a href="/about/career/">Career</a>
-		
-	</li>
-	
 </ul>
 
 		
@@ -292,7 +237,7 @@
 
 				<main>
 					
-						<h1 style="font-size: 6.5vw; width: 100%; margin: 0; padding: calc(40vh - 74px) 0; text-align: center; font-weight: 600; text-shadow: 0 0 4px rgba(0, 0, 0, .50);">Payments for Programmers</h1>
+						<h1 style="font-size: 6.5vw; width: 100%; margin: 0; padding: calc(40vh - 74px) 0; text-align: center; font-weight: 600; text-shadow: 0 0 4px rgba(0, 0, 0, .50);">Card Payments for PSP:s</h1>
 
 					
 				</main>
@@ -313,9 +258,9 @@
 
 
 
-			<article id="payments-for-programmers" class="mode-full">
+			<article id="card-payments-for-psps" class="mode-full">
 				<header>
-					<h1>Payments for Programmers</h1>
+					<h1>Card Payments for PSP:s</h1>
 			<p>
 				<time>2019-08-01</time>
 
@@ -338,52 +283,8 @@
 
 				<main>
 					
-						<p>PayFunc provides <em>easy to integrate</em> solutions for <em>payments and monetary transactions</em> for your <em>web and app</em> based needs.</p>
+						<p>CardFunc provides <em>easy to integrate</em> solutions for <em>Payment System Providers</em> to offer <em>credit card payments</em> with <em>minimal PCI and compliance work needed</em>.</p>
 
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="example-js" class="mode-body">
-
-
-				
-				
-				
-
-				<main>
-					
-						<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s2">&#34;https://api.payfunc.com/order&#34;</span><span class="p">,</span> <span class="p">{</span>
-	<span class="nx">method</span><span class="o">:</span> <span class="s2">&#34;POST&#34;</span><span class="p">,</span>
-	<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span> <span class="nx">Authentication</span><span class="o">:</span> <span class="s2">&#34;Bearer &lt;public api key&gt;&#34;</span> <span class="p">}</span>
-	<span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span>
-		<span class="p">{</span>
-			<span class="s2">&#34;number&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;unique order identifier&gt;&#34;</span><span class="p">,</span>
-			<span class="s2">&#34;items&#34;</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span>
-			<span class="s2">&#34;currency&#34;</span><span class="o">:</span> <span class="s2">&#34;EUR&#34;</span><span class="p">,</span>
-			<span class="s2">&#34;payment&#34;</span><span class="o">:</span> <span class="p">{</span>
-				<span class="s2">&#34;type&#34;</span><span class="o">:</span> <span class="s2">&#34;card&#34;</span><span class="p">,</span>
-				<span class="s2">&#34;account&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;account id&gt;&#34;</span>
-			<span class="p">}</span>
-		<span class="p">}</span>
-	<span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div>
 					
 				</main>
 
@@ -461,41 +362,6 @@
 				<main>
 					
 						
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="example-curl" class="mode-body">
-
-
-				
-				
-				
-
-				<main>
-					
-						<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl -X POST https://api.payfunc.com/order <span class="se">\
-</span><span class="se"></span>	-u <span class="s2">&#34;Bearer &lt;your api key&gt;&#34;</span>               <span class="se">\
-</span><span class="se"></span>	-d <span class="s2">&#34;number=&lt;your order identifier&gt;&#34;</span>      <span class="se">\
-</span><span class="se"></span>	-d <span class="s2">&#34;items=1337.42&#34;</span>                       <span class="se">\
-</span><span class="se"></span>	-d <span class="s2">&#34;currency=EUR&#34;</span>                        <span class="se">\
-</span><span class="se"></span>	-d <span class="s2">&#34;payment[type]=card&#34;</span>                  <span class="se">\
-</span><span class="se"></span>	-d <span class="s2">&#34;payment[account]=&lt;account id&gt;&#34;</span></code></pre></div>
 					
 				</main>
 
@@ -745,57 +611,12 @@
     <ul>
 	
 	<li>
-		<a href="/product/">Products</a>
-		
-		<ul>
-	
-	<li>
-		<a href="/product/payfunc-checkout/">PayFunc Checkout</a>
-		
-	</li>
-	
-	<li>
-		<a href="/product/payfunc-onboard/">PayFunc Onboard</a>
-		
-	</li>
-	
-	<li>
-		<a href="/product/payfunc-send/">PayFunc Send</a>
-		
-	</li>
-	
-</ul>
-
-		
-	</li>
-	
-	<li>
-		<a href="/price/">Pricing</a>
-		
-	</li>
-	
-	<li>
 		<a href="/dev/">Developers</a>
 		
 		<ul>
 	
 	<li>
 		<a href="/dev/ui/">UI</a>
-		
-		<ul>
-	
-	<li>
-		<a href="/dev/ui/checkout/">Checkout</a>
-		
-	</li>
-	
-	<li>
-		<a href="/dev/ui/onboard/">Onboard</a>
-		
-	</li>
-	
-</ul>
-
 		
 	</li>
 	
@@ -871,16 +692,6 @@
 	
 	<li>
 		<a href="/about/contact/">Contact</a>
-		
-	</li>
-	
-	<li>
-		<a href="/about/event/">Events</a>
-		
-	</li>
-	
-	<li>
-		<a href="/about/career/">Career</a>
 		
 	</li>
 	

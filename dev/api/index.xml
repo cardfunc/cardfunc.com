@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>PayFunc API on CardFunc</title>
+    <title>CardFunc API on CardFunc</title>
     <link>https://cardfunc.com/dev/api/</link>
-    <description>Recent content in PayFunc API on CardFunc</description>
+    <description>Recent content in CardFunc API on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/dev/api/index.xml" rel="self" type="application/rss+xml" />
     

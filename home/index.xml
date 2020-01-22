@@ -17,25 +17,16 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/banner-developer/</guid>
-      <description>Payments for Programmers </description>
+      <description>Card Payments for PSP:s </description>
     </item>
     
     <item>
-      <title>Payments for Programmers</title>
+      <title>Card Payments for PSP:s</title>
       <link>https://cardfunc.com/home/welcome/</link>
       <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
       
       <guid>https://cardfunc.com/home/welcome/</guid>
-      <description>PayFunc provides easy to integrate solutions for payments and monetary transactions for your web and app based needs.</description>
-    </item>
-    
-    <item>
-      <title>Example JS</title>
-      <link>https://cardfunc.com/home/example-js/</link>
-      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
-      
-      <guid>https://cardfunc.com/home/example-js/</guid>
-      <description>const response = await fetch(&amp;#34;https://api.payfunc.com/order&amp;#34;, { method: &amp;#34;POST&amp;#34;, headers: { Authentication: &amp;#34;Bearer &amp;lt;public api key&amp;gt;&amp;#34; } body: JSON.stringify( { &amp;#34;number&amp;#34;: &amp;#34;&amp;lt;unique order identifier&amp;gt;&amp;#34;, &amp;#34;items&amp;#34;: 1337.42, &amp;#34;currency&amp;#34;: &amp;#34;EUR&amp;#34;, &amp;#34;payment&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;card&amp;#34;, &amp;#34;account&amp;#34;: &amp;#34;&amp;lt;account id&amp;gt;&amp;#34; } } ) } </description>
+      <description>CardFunc provides easy to integrate solutions for Payment System Providers to offer credit card payments with minimal PCI and compliance work needed.</description>
     </item>
     
     <item>
@@ -54,15 +45,6 @@
       
       <guid>https://cardfunc.com/home/banner-phone/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Example Curl</title>
-      <link>https://cardfunc.com/home/example-curl/</link>
-      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
-      
-      <guid>https://cardfunc.com/home/example-curl/</guid>
-      <description>curl -X POST https://api.payfunc.com/order \ 	-u &amp;#34;Bearer &amp;lt;your api key&amp;gt;&amp;#34; \ 	-d &amp;#34;number=&amp;lt;your order identifier&amp;gt;&amp;#34; \ 	-d &amp;#34;items=1337.42&amp;#34; \ 	-d &amp;#34;currency=EUR&amp;#34; \ 	-d &amp;#34;payment[type]=card&amp;#34; \ 	-d &amp;#34;payment[account]=&amp;lt;account id&amp;gt;&amp;#34;</description>
     </item>
     
     <item>
