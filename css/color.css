@@ -1,0 +1,26 @@
+
+body {
+    color: #eeeeec;
+    background: rgb(85,87,83);
+    background: linear-gradient(0deg, rgba(75,77,73,1) 35%, rgba(52,52,52,1) 100%);
+}
+
+body > footer {
+	border-top: 1mm solid #edd400;
+}
+article > header {
+	border-bottom: .5mm solid #edd400;
+}
+
+/* menu */
+nav a {
+    color: #eeeeec;
+}
+nav li.current > a,
+nav a:hover {
+    color: #eeeeec;
+}
+/* tables */
+table > tbody > tr:nth-child(odd) {
+	background: #6886a01e;
+}

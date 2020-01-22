@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PayFunc Products on CardFunc</title>
+    <link>https://cardfunc.com/product/</link>
+    <description>Recent content in PayFunc Products on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 21 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/product/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Payment Gateway for Card Payments</title>
+      <link>https://cardfunc.com/product/payment-gateway/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/payment-gateway/</guid>
+      <description>We provide smooth payments for Visa and Mastercard. Via the PayFunc Payment Gateway you can reach a wide network of acquirers and optimize your card acceptance.</description>
+    </item>
+    
+    <item>
+      <title>Alternative Payment Methods for the Nordics</title>
+      <link>https://cardfunc.com/product/alternative-payments/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/alternative-payments/</guid>
+      <description>Increase Your revenue with alternative payment methods. Instant payment and invoice based payments like Swish and Mash grow rapidly in the Nordics. A wider payment portfolio can increase Your revenue significantly.</description>
+    </item>
+    
+    <item>
+      <title>High Risk Merchants</title>
+      <link>https://cardfunc.com/product/high-risk-merchants/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/high-risk-merchants/</guid>
+      <description>A high risk merchant account is a payment processing account for businesses that are classified as high risk services by banks, such as airplane tickets, online services, gaming, crypto currencies, insurance products, etc.. We help high risk merchants to find right payment methods for their site. Contact us and we tell You more.</description>
+    </item>
+    
+    <item>
+      <title>Merchant Portal</title>
+      <link>https://cardfunc.com/product/merchant-portal/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/merchant-portal/</guid>
+      <description>We offer an extensive reporting platform and back office portal allowing merchants to run report and to administer their payments wherever they are via a simple web interface.</description>
+    </item>
+    
+    <item>
+      <title>Fraud Management</title>
+      <link>https://cardfunc.com/product/fraud-management/</link>
+      <pubDate>Tue, 12 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/fraud-management/</guid>
+      <description>PayFunc uses the latest technology and services in anti fraud technology in order to protect our contracted clients and all card users. Let us be your expertise partner in helping your company maximize profit and minimize losses.</description>
+    </item>
+    
+    <item>
+      <title>PayFunc Checkout</title>
+      <link>https://cardfunc.com/product/payfunc-checkout/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/payfunc-checkout/</guid>
+      <description>&lt;p&gt;PayFunc Checkout is suited to be the last step of your customer&amp;rsquo;s order process. Once all order items have been selected through other means, PayFunc Checkout allows your customer to select from available payment options and complete the payment.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PayFunc Onboard</title>
+      <link>https://cardfunc.com/product/payfunc-onboard/</link>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/payfunc-onboard/</guid>
+      <description>&lt;p&gt;PayFunc Onboard is a dialog to onboard customers to PayFunc based services.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PayFunc Send</title>
+      <link>https://cardfunc.com/product/payfunc-send/</link>
+      <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/product/payfunc-send/</guid>
+      <description>&lt;p&gt;PayFunc Send is a payment solution where a link to PayFunc Checkout is sent to the customer via sms or email.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

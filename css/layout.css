@@ -1,0 +1,101 @@
+article {
+	max-width: calc(40em + 2em);
+	margin: 0 auto;
+	border-left: solid .5px #282828;
+	border-right: solid .5px #282828;
+	box-shadow: 0 0 2px 0 rgba(30, 30, 30, .15);
+	background: rgb(47, 47, 49);
+}
+article.mode-body > *:not(.self-link)  {
+  padding: 0 1em;
+}
+article > *:not(.self-link)  {
+  padding: 1em;
+}
+article > header {
+	display: flex;
+}
+article > header > h1 {
+    margin: 0;
+}
+article > header > :first-child {
+	flex-grow: 1;
+}
+article > header > p > *:not(.article-location),
+article > nav {
+    display: none;
+}
+article > main > div.highlight > pre {
+    margin: 0 -1em;
+    padding: 1em;
+}
+article > footer {
+    display: none;
+}
+html:not(.home) article:not(:first-child) {
+    margin-top: 1em;
+}
+article:not(:first-child) > * > p {
+    margin: 0;
+}
+article:not(:first-child) > *:not(.self-link) > * {
+    font-size: 90%;
+}
+article:not(:first-child) > header {
+    border-top: solid .5px #282828;
+}
+html:not(.home) article:not(:last-child) > main {
+    border-bottom: solid .5px #282828;
+}
+article {
+    position: relative;
+}
+article.summary > main > p:first-child,
+article.summary > main > p:last-child {
+    display: none;
+}
+
+article > .self-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+article > .self-link > a {
+    display: block;
+    width: 100%;
+    max-width: 42em;
+    margin: 0 auto;
+    height: 100%;
+    z-index: 1;
+}
+article > aside:not(.self-link) {
+	padding: 0;
+}
+@media only screen and (min-width: 721px) {
+	article.has-image:nth-child(odd) > header,
+	article.has-image:nth-child(odd) > main {
+		margin-left: 50%;
+	}
+	article.has-image:nth-child(odd) > aside {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+	}
+	article.has-image:nth-child(even) > header,
+	article.has-image:nth-child(even) > main {
+		margin-right: 50%;
+	}
+	article.has-image:nth-child(even) > aside {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+	}
+}
+article > aside > img {
+	width: 100%;
+	height: auto;
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Work at PayFunc on CardFunc</title>
+    <link>https://cardfunc.com/about/career/</link>
+    <description>Recent content in Work at PayFunc on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/about/career/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Junior Full Stack Engineer</title>
+      <link>https://cardfunc.com/about/career/junior-full-stack/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/junior-full-stack/</guid>
+      <description>&lt;p&gt;As a &lt;em&gt;Junior Full Stack Engineer&lt;/em&gt; you will be a part of our growing development team. You will be involved in both &lt;em&gt;backend and front end development&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Junior UX Specialist</title>
+      <link>https://cardfunc.com/about/career/junior-ux/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/junior-ux/</guid>
+      <description>&lt;p&gt;As a &lt;em&gt;Junior User Experience Specialist&lt;/em&gt; you will be a part of our growing development team. Your work will be focused on improving the &lt;em&gt;usabilibty of our products&lt;/em&gt;.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Senior Software Engineer with Payments Expertice</title>
+      <link>https://cardfunc.com/about/career/senior-developer/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/senior-developer/</guid>
+      <description>&lt;p&gt;As a &lt;em&gt;Senior Software Engineer with Payments Expertice&lt;/em&gt; you will be a key part of growing our development team. Not only will you be an &lt;em&gt;individual contributer&lt;/em&gt; but you will also &lt;em&gt;coach junior engineers&lt;/em&gt; to become more skilled and productive.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Junior iOS &amp; Android Engineer</title>
+      <link>https://cardfunc.com/about/career/junior-ios-android/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/junior-ios-android/</guid>
+      <description>&lt;p&gt;As a &lt;em&gt;Junior iOS &amp;amp; Android Engineer&lt;/em&gt; you will be a part of our growing development team. You will be involved in &lt;em&gt;building and maintaining SDK:s&lt;/em&gt; for Android and iOS.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Apply</title>
+      <link>https://cardfunc.com/about/career/apply/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/apply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Thank You</title>
+      <link>https://cardfunc.com/about/career/thanks/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/career/thanks/</guid>
+      <description>Thank you for your application. We will contact you by email as soon as we have read your application.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contact PayFunc on CardFunc</title>
+    <link>https://cardfunc.com/about/contact/</link>
+    <description>Recent content in Contact PayFunc on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/about/contact/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Thank You</title>
+      <link>https://cardfunc.com/about/contact/thanks/</link>
+      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/about/contact/thanks/</guid>
+      <description>Thank you for reaching out. We will get back to you with our response.</description>
+    </item>
+    
+  </channel>
+</rss>

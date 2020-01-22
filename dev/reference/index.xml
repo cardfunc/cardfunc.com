@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PayFunc Reference on CardFunc</title>
+    <link>https://cardfunc.com/dev/reference/</link>
+    <description>Recent content in PayFunc Reference on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 17 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/dev/reference/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Order</title>
+      <link>https://cardfunc.com/dev/reference/order/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/order/</guid>
+      <description>&lt;p&gt;When creating orders, the Creatable Order datatype is used. In the response from the endpoint an object of the Order data type will be returned.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Customer</title>
+      <link>https://cardfunc.com/dev/reference/customer/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/customer/</guid>
+      <description>&lt;p&gt;Data type representing a customer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Item</title>
+      <link>https://cardfunc.com/dev/reference/item/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/item/</guid>
+      <description>&lt;p&gt;Data type used to specify what products are included in an order.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>https://cardfunc.com/dev/reference/other/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/other/</guid>
+      <description>&lt;p&gt;Some simple data types used in requests to and responses from our endpoints.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PayFunc UI on CardFunc</title>
+    <link>https://cardfunc.com/dev/ui/</link>
+    <description>Recent content in PayFunc UI on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/dev/ui/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>PayFunc Checkout</title>
+      <link>https://cardfunc.com/dev/ui/checkout/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/ui/checkout/</guid>
+      <description>&lt;p&gt;The PayFunc Checkout is perfect for e-commerce applications where the end user checks out after having selected items into a virtual shopping cart.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>PayFunc Onboard</title>
+      <link>https://cardfunc.com/dev/ui/onboard/</link>
+      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/ui/onboard/</guid>
+      <description>PayFunc Onboard guides your users through the process of creating an account used for later transactions. It handles the full process of entering the credit card information as well as performing the full 3D secure authentication procedure. Once everything is done you will receive an account number that you then can use to perform payments towards the user&amp;rsquo;s credit card without the need for any interaction with the user.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on CardFunc</title>
+    <link>https://cardfunc.com/home/</link>
+    <description>Recent content in Home on CardFunc</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://cardfunc.com/home/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://cardfunc.com/home/banner-developer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/banner-developer/</guid>
+      <description>Payments for Programmers </description>
+    </item>
+    
+    <item>
+      <title>Payments for Programmers</title>
+      <link>https://cardfunc.com/home/welcome/</link>
+      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
+      
+      <guid>https://cardfunc.com/home/welcome/</guid>
+      <description>PayFunc provides easy to integrate solutions for payments and monetary transactions for your web and app based needs.</description>
+    </item>
+    
+    <item>
+      <title>Example JS</title>
+      <link>https://cardfunc.com/home/example-js/</link>
+      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-js/</guid>
+      <description>const response = await fetch(&amp;#34;https://api.payfunc.com/order&amp;#34;, { method: &amp;#34;POST&amp;#34;, headers: { Authentication: &amp;#34;Bearer &amp;lt;public api key&amp;gt;&amp;#34; } body: JSON.stringify( { &amp;#34;number&amp;#34;: &amp;#34;&amp;lt;unique order identifier&amp;gt;&amp;#34;, &amp;#34;items&amp;#34;: 1337.42, &amp;#34;currency&amp;#34;: &amp;#34;EUR&amp;#34;, &amp;#34;payment&amp;#34;: { &amp;#34;type&amp;#34;: &amp;#34;card&amp;#34;, &amp;#34;account&amp;#34;: &amp;#34;&amp;lt;account id&amp;gt;&amp;#34; } } ) } </description>
+    </item>
+    
+    <item>
+      <title>Developer Focus</title>
+      <link>https://cardfunc.com/home/developer/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/developer/</guid>
+      <description>We put programmers first. That is why all your integration questions are answered by our developers directly. No first line support staff to try to get past.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cardfunc.com/home/banner-phone/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/banner-phone/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Example Curl</title>
+      <link>https://cardfunc.com/home/example-curl/</link>
+      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-curl/</guid>
+      <description>curl -X POST https://api.payfunc.com/order \ 	-u &amp;#34;Bearer &amp;lt;your api key&amp;gt;&amp;#34; \ 	-d &amp;#34;number=&amp;lt;your order identifier&amp;gt;&amp;#34; \ 	-d &amp;#34;items=1337.42&amp;#34; \ 	-d &amp;#34;currency=EUR&amp;#34; \ 	-d &amp;#34;payment[type]=card&amp;#34; \ 	-d &amp;#34;payment[account]=&amp;lt;account id&amp;gt;&amp;#34;</description>
+    </item>
+    
+    <item>
+      <title>Be Productive</title>
+      <link>https://cardfunc.com/home/productive/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/productive/</guid>
+      <description>Easy to integrate API:s make you more productive so you can focus on creating your innovation.</description>
+    </item>
+    
+    <item>
+      <title>Cloud First</title>
+      <link>https://cardfunc.com/home/cloud/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/cloud/</guid>
+      <description>Our solutions are designed for the requirements of modern cloud based applications. Payments can be initiated directly from the client code and be confirmed for authenticity without any need to double check with our servers first.</description>
+    </item>
+    
+    <item>
+      <title>Grow With Us</title>
+      <link>https://cardfunc.com/home/grow/</link>
+      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/grow/</guid>
+      <description>Don&amp;rsquo;t become irrelevant customer for a big company. As a smaller, fast growing company, every customer matters to us.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://cardfunc.com/home/banner-computer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/banner-computer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://cardfunc.com/home/start/</link>
+      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/start/</guid>
+      <description>Use the &amp;ldquo;Contact Us&amp;rdquo; tab in the lower right corner to get in direct contact with us and we help you get you started with your project.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,3 @@
+Sitemap: https://cardfunc.com/sitemap.xml
+User-agent:*
+Disallow:

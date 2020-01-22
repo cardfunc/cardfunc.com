@@ -1,0 +1,100 @@
+body {
+    padding-top: 74px;
+}
+body > header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: calc(100vw - (100vw - 100%));
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+	background: rgb(30, 30, 30);
+  box-shadow: 0 6px 2px -2px rgba(30, 30, 30, .25);
+  z-index: 10;
+}
+body > header > h1 {
+    margin: 0;
+}
+body > header > h1 > a > img {
+  display: block;
+  height: 1.8em;
+  width: auto;
+  padding-top: .1em;
+  margin-left: -.2em;
+}
+/* p */
+body > header > p {
+	display: none;
+}
+/* nav */
+body > header > nav > input[type=checkbox] {
+  display: none;
+}
+body > header > nav > ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  font-size: 110%;
+  font-weight: 400;
+}
+body > header > nav > ul > li {
+  position: relative;
+  display: block;
+  height: 100%;
+}
+body > header > nav > ul > li > a {
+  display: block;
+  height: calc(100% - 2.2em);
+  padding: 1.1em 1em;
+}
+/* nav color */
+body > header > nav > ul li.current-parent > a,
+body > header > nav > ul li.current > a {
+	color: rgb(46, 52, 54);
+  background: #edd400;
+}
+body > header > nav > ul > li a:hover {
+  background: rgb(46, 52, 54);
+  text-decoration: none;
+}
+body > header > nav > ul li.current-parent > a:hover,
+body > header > nav > ul li.current > a:hover {
+  background: #ffe70e;
+}
+/* nav submenu */
+body > header > nav > ul > li > ul {
+  font-size: 90%;
+}
+body > header > nav > ul li > ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+}
+body > header > nav > ul > li li > ul {
+    top: 0;
+}
+body > header > nav > ul li:hover > ul {
+    display: table;
+}
+body > header > nav > ul > li ul > li {
+    display: table-row;
+    position: relative;
+}
+body > header > nav > ul > li ul > li > a {
+    display: table-cell;
+    width: 100%;
+    min-width: 5em;
+    padding: .4em .6em;
+	background: rgb(30, 30, 30);
+    box-shadow: 6px 6px 2px -2px rgba(30, 30, 30, .25);
+}
+body > header > nav > ul > li > ul {
+    padding: .2em 0;
+}
+body > header > nav > ul > li > ul > li ul {
+    padding: 0 0 0 .2em;
+}

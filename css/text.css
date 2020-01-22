@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Ubuntu+Mono:400,700&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    font-size: 14pt;
+}
+code {
+    font-family: 'Ubuntu Mono', monospace;
+		font-weight: 400;
+}
+h1 {
+    font-weight: 400;
+}
+/* links */
+a {
+    color: #edd400;
+    text-decoration: unset;
+    font-weight: 400;
+}
+a:hover {
+    text-decoration: underline;
+}
+/* h1, h2, h3 */
+main > article > header > h1 { font-size: 160%; }
+main > article h1 { font-size: 116%; }
+main > article h2 { font-size: 114%; }
+main > article h3 { font-size: 112%; }
+main > article h4 { font-size: 108%; }
+main > article h5 { font-size: 104%; }
+main > article h6 { font-weight: 400; }
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+}
+/* paragraphs */
+p:first-child {
+    margin-top: 0;
+}
+/* table */
+table {
+    margin: 1em auto;
+}
+table th {
+    text-align: left;
+}
+table th,
+table td {
+    padding: .2em .4em;
+}
+/* emphasize */
+em {
+	font-weight: 400;
+	font-style: normal;
+}

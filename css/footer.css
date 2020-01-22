@@ -1,0 +1,53 @@
+body  > footer {
+	width: 100%;
+	background: rgb(66, 68, 64);
+}
+body  > footer > nav {
+	padding: 1em;
+	max-width: 40em;
+	margin: 0 auto;
+	border-left: solid .5px #282828;
+	border-right: solid .5px #282828;
+	box-shadow: 0 0 2px 0 rgba(30, 30, 30, .25);
+	background: rgba(48, 49, 47, .5);
+}
+body > footer > nav ul {
+	padding: 0;
+	margin-top: .2em;
+}
+body > footer > nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	flex-wrap: wrap;
+}
+body > footer > nav > ul > li {
+	display: block;
+}
+body > footer > nav > ul > li {
+	padding: 1em;
+}
+body > footer > nav > ul > li > a {
+	font-weight: 600;
+}
+body > footer > nav > ul > li > ul > li > ul > li > a {
+	font-weight: 200;
+}
+body > footer > nav li.current {
+	list-style: disc;
+}
+body > footer > nav li.current::marker {
+	color: #575757;
+}
+body > footer > main {
+	width: 100%;
+	text-align: center;
+	background: rgb(30, 30, 30);
+	box-shadow: 0 -6px 2px -2px rgba(30, 30, 30, .25);
+	padding: 1em 0;
+}
+body > footer > main > p {
+	font-size: 80%;
+	font-weight: 400;
+	margin: 0;
+}
