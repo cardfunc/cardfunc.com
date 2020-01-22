@@ -1,5 +1,5 @@
 ---
-title: "Contact PayFunc"
+title: "Contact CardFunc"
 date: "2019-08-01"
 weight: 20
 menu: 
@@ -27,7 +27,7 @@ Contact us using one of the following options.
 
 # Address
 
-PayFunc
+CardFunc
 Salagatan 18A
 752 39 Uppsala
 Sweden

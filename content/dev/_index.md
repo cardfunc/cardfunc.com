@@ -1,5 +1,5 @@
 ---
-title: "PayFunc Develper Documentation"
+title: "CardFunc Develper Documentation"
 date: "2019-08-01"
 weight: 40
 menu: 
@@ -7,4 +7,4 @@ menu:
         identifier: dev
         name: Developers
 ---
-Different ways to integrate PayFunc.
+How to to integrate CardFunc.

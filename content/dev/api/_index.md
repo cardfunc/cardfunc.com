@@ -1,6 +1,6 @@
 ---
-title: "PayFunc API"
-date: "2019-08-01"
+title: "CardFunc API"
+date: "2020-01-22"
 weight: 40
 menu: 
     main:

@@ -1,6 +1,6 @@
 ---
-title: "Payments for Programmers"
+title: "Card Payments for PSP:s"
 date: 2019-08-01T13:35:37+02:00
 weight: 20
 ---
-PayFunc provides _easy to integrate_ solutions for _payments and monetary transactions_ for your _web and app_ based needs.
+CardFunc provides _easy to integrate_ solutions for _Payment System Providers_ to offer _credit card payments_ with _minimal PCI and compliance work needed_.
