@@ -1,17 +1,17 @@
-baseURL: https://payfunc.com/
+baseURL: https://cardfunc.com/
 languageCode: en
 defaultContentLanguage: "en"
-title: PayFunc
+title: CardFunc
 theme: hugo-theme-html5
 MetaDataFormat: yaml
 params:
   onlyLogotype: true
-  logotype: "logo/payfunc-d1.svg"
-  tagline: "Payments for Programmers"
-  description: "PayFunc provides easy to integrate solutions for payments and monetary transactions for your web and app based needs."
+  logotype: "logo/cardfunc-d1.svg"
+  tagline: "Card Processing for PSP:s"
+  description: "CardFunc provides easy to integrate solutions for card payments for payment system providers."
   keywords: "Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard"
-  author: "PayFunc"
-  footer: "© PayFunc"
+  author: "CardFunc"
+  footer: "© CardFunc"
   CSS:
     - "css/header.css"
     - "css/footer.css"
