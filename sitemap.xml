@@ -11,7 +11,7 @@
   
   <url>
     <loc>https://cardfunc.com/dev/api/general/</loc>
-    <lastmod>2020-01-23T12:44:24+01:00</lastmod>
+    <lastmod>2020-01-23T14:10:49+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -32,7 +32,7 @@
   
   <url>
     <loc>https://cardfunc.com/dev/api/authorization/</loc>
-    <lastmod>2020-01-23T14:04:22+01:00</lastmod>
+    <lastmod>2020-01-23T14:10:49+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -172,7 +172,7 @@
   
   <url>
     <loc>https://cardfunc.com/</loc>
-    <lastmod>2020-01-23T14:04:22+01:00</lastmod>
+    <lastmod>2020-01-23T14:10:49+01:00</lastmod>
     <priority>0</priority>
   </url>
   
