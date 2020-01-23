@@ -27,7 +27,7 @@ Authentication: Bearer <public.api.key>
     "card": {
         "pan": "4111111111111111",
         "expires" : [10, 21],
-        "csc": "123"
+        "csc": "987"
     }
 }
 ```
