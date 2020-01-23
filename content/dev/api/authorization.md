@@ -65,3 +65,36 @@ Previously created authorizations can be listed.
 GET https://api.cardfunc.com/authorization
 Authentication: Bearer <your.private.api.key>
 ```
+
+# Capture authorization
+
+### Request
+
+Replace {authorization} with the id for the specific authorization.
+
+```json
+POST https://api.cardfunc.com/authorization/{authorization}/capture
+Authentication: Bearer <your.private.api.key>
+```
+
+# Cancel authorization
+
+### Request
+
+Replace {authorization} with the id for the specific authorization.
+
+```json
+POST https://api.cardfunc.com/authorization/{authorization}/cancel
+Authentication: Bearer <your.private.api.key>
+```
+
+# Refund authorization
+
+### Request
+
+Replace {authorization} with the id for the specific authorization.
+
+```json
+POST https://api.cardfunc.com/authorization/{authorization}/refund
+Authentication: Bearer <your.private.api.key>
+```
