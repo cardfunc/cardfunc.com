@@ -1,18 +1,18 @@
 ---
 title: "General"
-date: "2019-08-01"
+date: "2020-01-22"
 weight: 20
 menu: 
     main:
         parent: dev-api
         name: General
 ---
-This details the general usage of the PayFunc API.
+This details the general usage of the CardFunc API.
 <!--more-->
 # URL
-The PayFunc API is reachable at the following URL:
+The CardFunc API is reachable at the following URL:
 ```
-https://api.payfunc.com/
+https://api.cardfunc.com/
 ```
 The same URL is used both for testing and for production. It is the API key that determines if you are using the system for testing or production.
 
