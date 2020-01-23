@@ -6,7 +6,7 @@
     <description>Recent content on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>General</title>
+      <link>https://cardfunc.com/dev/api/general/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/api/general/</guid>
+      <description>&lt;p&gt;This details the general usage of the CardFunc API.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Card Payments for PSP:s</title>
       <link>https://cardfunc.com/home/welcome/</link>
       <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
@@ -30,12 +39,12 @@
     </item>
     
     <item>
-      <title>General</title>
-      <link>https://cardfunc.com/dev/api/general/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <title>Authorization</title>
+      <link>https://cardfunc.com/dev/api/authorization/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/api/general/</guid>
-      <description>&lt;p&gt;This details the general usage of the PayFunc API.&lt;/p&gt;</description>
+      <guid>https://cardfunc.com/dev/api/authorization/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;authorization&lt;/code&gt; endpoint is used for creating and listing authorizations.&lt;/p&gt;</description>
     </item>
     
     <item>

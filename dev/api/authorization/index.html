@@ -6,9 +6,9 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>Price &middot; CardFunc</title>
+		<title>Authorization &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/price/">
+		<link rel="canonical" href="https://cardfunc.com/dev/api/authorization/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -28,7 +28,6 @@
  		<link rel="icon" type="image/png" sizes="16x16" href='https://cardfunc.com/icon/favicon-16x16.png'>
 		<meta name="msapplication-TileImage" content='https://cardfunc.com/icon/ms-icon-144x144.png'>
 
-		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/price/index.xml" title="CardFunc" />
 		
 		<link rel="stylesheet" href="https://cardfunc.com/css/header.css"/>
 		<link rel="stylesheet" href="https://cardfunc.com/css/footer.css"/>
@@ -110,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Price &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -123,7 +122,7 @@
 
 <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -133,7 +132,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/api/">API</a>
 		
 		<ul>
@@ -143,7 +142,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/api/authorization/">Authorization</a>
 		
 	</li>
@@ -227,17 +226,196 @@
 
 
 
-
-		<main class="list">
-
+		<main class="single">
 
 
-			<footer>
-				<nav>
+
+			<article id="authorization" class="mode-full">
+				<header>
+					<h1>Authorization</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>200 words</span>
+				<span class='article-reading-time'>1 minutes</span>
 
 
-				</nav>
-			</footer>
+
+
+
+</p>
+
+				</header>
+
+				
+				<nav id="TableOfContents">
+<ul>
+<li><a href="#create-authorization">Create authorization</a>
+<ul>
+<li>
+<ul>
+<li><a href="#example-request">Example request</a></li>
+</ul></li>
+<li><a href="#authorization-data-type">Authorization data type</a></li>
+<li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
+</ul></li>
+<li><a href="#list-authorizations">List authorizations</a>
+<ul>
+<li>
+<ul>
+<li><a href="#request">Request</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+				
+
+
+
+				<main>
+					
+						<p>The <code>authorization</code> endpoint is used for creating and listing authorizations.</p>
+
+<h1 id="create-authorization">Create authorization</h1>
+
+<p>An authorization can be created using card data directly.</p>
+
+<h3 id="example-request">Example request</h3>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.public.api.key&gt;</span>
+
+<span class="p">{</span>
+    <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+    <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+    <span class="nt">&#34;card&#34;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;1111222233334444123&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;expires&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
+        <span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;123&#34;</span>
+    <span class="p">}</span>
+<span class="p">}</span></code></pre></div>
+<p>The body of the request contains an object of the Authorization data type.</p>
+
+<h2 id="authorization-data-type">Authorization data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>number</code></td>
+<td><code>string</code></td>
+<td>(optional) your order number</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>(optional) replaces your default descriptor if provided</td>
+</tr>
+
+<tr>
+<td><code>ip</code></td>
+<td><code>string</code></td>
+<td>(optional) your customer&rsquo;s ip number</td>
+</tr>
+
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>(optional) amount the authorization is valid for</td>
+</tr>
+
+<tr>
+<td><code>currency</code></td>
+<td><code>string</code></td>
+<td>(optional) three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
+</tr>
+
+<tr>
+<td><code>account</code></td>
+<td><code>string</code></td>
+<td>(optional) &ldquo;create&rdquo; or account number</td>
+</tr>
+
+<tr>
+<td><code>card</code></td>
+<td><code>Card.Creatable</code></td>
+<td>(optional) see Card.Creatable</td>
+</tr>
+
+<tr>
+<td>&lt;!&ndash;</td>
+<td><code>pares</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="card-creatable-data-type">Card.Creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>pan</code></td>
+<td><code>string</code></td>
+<td>primary account number</td>
+</tr>
+
+<tr>
+<td><code>expires</code></td>
+<td><code>number[]</code></td>
+<td>expiration month and year</td>
+</tr>
+
+<tr>
+<td><code>csc</code></td>
+<td><code>string</code></td>
+<td>(optional) csc code</td>
+</tr>
+
+<tr>
+<td>&lt;!&ndash;</td>
+<td></td>
+<td><code>pares</code></td>
+</tr>
+</tbody>
+</table>
+
+<h1 id="list-authorizations">List authorizations</h1>
+
+<p>Previously created authorizations can be listed.</p>
+
+<h3 id="request">Request</h3>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">GET</span> <span class="err">https://api.cardfunc.com/authorization</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+					
+				</main>
+
+				<footer>
+					<p>
+						
+						
+					</p>
+				</footer>
+
+
+
+
+			</article>
 
 		</main>
 
@@ -245,7 +423,7 @@
                 <nav>
     <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -255,7 +433,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/api/">API</a>
 		
 		<ul>
@@ -265,7 +443,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/api/authorization/">Authorization</a>
 		
 	</li>
