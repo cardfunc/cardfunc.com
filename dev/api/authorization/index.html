@@ -236,7 +236,7 @@
 			<p>
 				<time>2020-01-23</time>
 
-				<span class='article-length'>200 words</span>
+				<span class='article-length'>300 words</span>
 				<span class='article-reading-time'>1 minutes</span>
 
 
@@ -264,6 +264,27 @@
 <li>
 <ul>
 <li><a href="#request">Request</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#capture-authorization">Capture authorization</a>
+<ul>
+<li>
+<ul>
+<li><a href="#request-1">Request</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#cancel-authorization">Cancel authorization</a>
+<ul>
+<li>
+<ul>
+<li><a href="#request-2">Request</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#refund-authorization">Refund authorization</a>
+<ul>
+<li>
+<ul>
+<li><a href="#request-3">Request</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -401,6 +422,27 @@
 
 <h3 id="request">Request</h3>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">GET</span> <span class="err">https://api.cardfunc.com/authorization</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<h1 id="capture-authorization">Capture authorization</h1>
+
+<h3 id="request-1">Request</h3>
+
+<p>Replace {authorization} with the id for the specific authorization.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<h1 id="cancel-authorization">Cancel authorization</h1>
+
+<h3 id="request-2">Request</h3>
+
+<p>Replace {authorization} with the id for the specific authorization.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/cancel</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<h1 id="refund-authorization">Refund authorization</h1>
+
+<h3 id="request-3">Request</h3>
+
+<p>Replace {authorization} with the id for the specific authorization.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/refund</span>
 <span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
 					
 				</main>
