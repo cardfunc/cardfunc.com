@@ -237,7 +237,7 @@
 				<time>2020-01-23</time>
 
 				<span class='article-length'>300 words</span>
-				<span class='article-reading-time'>1 minutes</span>
+				<span class='article-reading-time'>2 minutes</span>
 
 
 
@@ -279,6 +279,7 @@
 <ul>
 <li><a href="#request-2">Request</a></li>
 </ul></li>
+<li><a href="#cancel-data-type">Cancel data type</a></li>
 </ul></li>
 <li><a href="#refund-authorization">Refund authorization</a>
 <ul>
@@ -286,6 +287,7 @@
 <ul>
 <li><a href="#request-3">Request</a></li>
 </ul></li>
+<li><a href="#refund-creatable-data-type">Refund.creatable data type</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -303,13 +305,13 @@
 
 <h3 id="example-request">Example request</h3>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.public.api.key&gt;</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;public.api.key&gt;</span>
 
 <span class="p">{</span>
     <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
     <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
     <span class="nt">&#34;card&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;1111222233334444123&#34;</span><span class="p">,</span>
+        <span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;4111111111111111&#34;</span><span class="p">,</span>
         <span class="nt">&#34;expires&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
         <span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;123&#34;</span>
     <span class="p">}</span>
@@ -331,43 +333,43 @@
 <tr>
 <td><code>number</code></td>
 <td><code>string</code></td>
-<td>(optional) your order number</td>
+<td>your order number</td>
 </tr>
 
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
-<td>(optional) replaces your default descriptor if provided</td>
+<td>replaces your default descriptor if provided</td>
 </tr>
 
 <tr>
 <td><code>ip</code></td>
 <td><code>string</code></td>
-<td>(optional) your customer&rsquo;s ip number</td>
+<td>your customer&rsquo;s ip number</td>
 </tr>
 
 <tr>
 <td><code>amount</code></td>
 <td><code>number</code></td>
-<td>(optional) amount the authorization is valid for</td>
+<td>amount the authorization is valid for</td>
 </tr>
 
 <tr>
 <td><code>currency</code></td>
 <td><code>string</code></td>
-<td>(optional) three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
+<td>three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
 </tr>
 
 <tr>
 <td><code>account</code></td>
 <td><code>string</code></td>
-<td>(optional) &ldquo;create&rdquo; or account number</td>
+<td>&ldquo;create&rdquo; or account number</td>
 </tr>
 
 <tr>
 <td><code>card</code></td>
 <td><code>Card.Creatable</code></td>
-<td>(optional) see Card.Creatable</td>
+<td>see Card.Creatable</td>
 </tr>
 
 <tr>
@@ -422,28 +424,91 @@
 
 <h3 id="request">Request</h3>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">GET</span> <span class="err">https://api.cardfunc.com/authorization</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
 <h1 id="capture-authorization">Capture authorization</h1>
 
 <h3 id="request-1">Request</h3>
 
 <p>Replace {authorization} with the id for the specific authorization.</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
 <h1 id="cancel-authorization">Cancel authorization</h1>
 
 <h3 id="request-2">Request</h3>
 
 <p>Replace {authorization} with the id for the specific authorization.</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/cancel</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
+<h2 id="cancel-data-type">Cancel data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><code>string</code></td>
+<td>id for authorization</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces your default descriptor if included</td>
+</tr>
+
+<tr>
+<td><code>reference</code></td>
+<td><code>string</code></td>
+<td>reference to aquirer</td>
+</tr>
+
+<tr>
+<td><code>created</code></td>
+<td><code>string</code></td>
+<td>date as ISO string</td>
+</tr>
+</tbody>
+</table>
+
 <h1 id="refund-authorization">Refund authorization</h1>
 
 <h3 id="request-3">Request</h3>
 
 <p>Replace {authorization} with the id for the specific authorization.</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/refund</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;your.private.api.key&gt;</span></code></pre></div>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
+<h2 id="refund-creatable-data-type">Refund.creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>amount to be refunded</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces default descriptor if included</td>
+</tr>
+</tbody>
+</table>
 					
 				</main>
 
