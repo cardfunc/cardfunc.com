@@ -1,6 +1,5 @@
 ---
 title: "Get Started"
-date: 2019-11-19
 weight: 90
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: "Developer Focus"
-date: "2019-11-18"
 weight: 40
 link: /dev/
 ---
