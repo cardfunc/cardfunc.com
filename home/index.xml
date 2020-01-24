@@ -6,7 +6,7 @@
     <description>Recent content in Home on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 19 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,7 +32,7 @@
     <item>
       <title>Developer Focus</title>
       <link>https://cardfunc.com/home/developer/</link>
-      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/developer/</guid>
       <description>We put programmers first. That is why all your integration questions are answered by our developers directly. No first line support staff to try to get past.</description>
@@ -59,7 +59,7 @@
     <item>
       <title>Cloud First</title>
       <link>https://cardfunc.com/home/cloud/</link>
-      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/cloud/</guid>
       <description>Our solutions are designed for the requirements of modern cloud based applications. Payments can be initiated directly from the client code and be confirmed for authenticity without any need to double check with our servers first.</description>
@@ -68,7 +68,7 @@
     <item>
       <title>Grow With Us</title>
       <link>https://cardfunc.com/home/grow/</link>
-      <pubDate>Mon, 18 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/grow/</guid>
       <description>Don&amp;rsquo;t become irrelevant customer for a big company. As a smaller, fast growing company, every customer matters to us.</description>
@@ -86,7 +86,7 @@
     <item>
       <title>Get Started</title>
       <link>https://cardfunc.com/home/start/</link>
-      <pubDate>Tue, 19 Nov 2019 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/start/</guid>
       <description>Use the &amp;ldquo;Contact Us&amp;rdquo; tab in the lower right corner to get in direct contact with us and we help you get you started with your project.</description>
