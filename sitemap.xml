@@ -4,7 +4,14 @@
   
   <url>
     <loc>https://cardfunc.com/home/banner-developer/</loc>
-    <lastmod>2020-01-22T17:09:15+01:00</lastmod>
+    <lastmod>2020-01-24T11:18:03+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cardfunc.com/home/banner-psp/</loc>
+    <lastmod>2020-01-24T11:18:03+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -172,13 +179,13 @@
   
   <url>
     <loc>https://cardfunc.com/</loc>
-    <lastmod>2020-01-24T10:54:23+01:00</lastmod>
+    <lastmod>2020-01-24T11:18:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://cardfunc.com/home/</loc>
-    <lastmod>2020-01-24T10:54:23+01:00</lastmod>
+    <lastmod>2020-01-24T11:18:03+01:00</lastmod>
     <priority>0</priority>
   </url>
   
