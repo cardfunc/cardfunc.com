@@ -216,7 +216,7 @@
 <ul>
 <li><a href="#example-request">Example request</a></li>
 </ul></li>
-<li><a href="#authorization-data-type">Authorization data type</a></li>
+<li><a href="#authorization-creatable-data-type">Authorization.Creatable data type</a></li>
 <li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
 </ul></li>
 <li><a href="#list-authorizations">List authorizations</a>
@@ -226,12 +226,13 @@
 <li><a href="#request">Request</a></li>
 </ul></li>
 </ul></li>
-<li><a href="#capture-authorization">Capture authorization</a>
+<li><a href="#create-capture">Create capture</a>
 <ul>
 <li>
 <ul>
 <li><a href="#request-1">Request</a></li>
 </ul></li>
+<li><a href="#capture-creatable-data-type">Capture.Creatable data type</a></li>
 </ul></li>
 <li><a href="#cancel-authorization">Cancel authorization</a>
 <ul>
@@ -276,9 +277,9 @@
         <span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;987&#34;</span>
     <span class="p">}</span>
 <span class="p">}</span></code></pre></div>
-<p>The body of the request contains an object of the Authorization data type.</p>
+<p>The body of the request contains an object of the Authorization.Creatable data type.</p>
 
-<h2 id="authorization-data-type">Authorization data type</h2>
+<h2 id="authorization-creatable-data-type">Authorization.Creatable data type</h2>
 
 <table>
 <thead>
@@ -385,13 +386,41 @@
 <h3 id="request">Request</h3>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">GET</span> <span class="err">https://api.cardfunc.com/authorization</span>
 <span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
-<h1 id="capture-authorization">Capture authorization</h1>
+<h1 id="create-capture">Create capture</h1>
 
 <h3 id="request-1">Request</h3>
 
 <p>Replace {authorization} with the id for the specific authorization.</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
 <span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
+<p>The body of the request contains and object of the Capture.Creatable data type.</p>
+
+<h2 id="capture-creatable-data-type">Capture.Creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>Replaces default descriptor if provided.</td>
+</tr>
+
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>Amound to capture.</td>
+</tr>
+</tbody>
+</table>
+
 <h1 id="cancel-authorization">Cancel authorization</h1>
 
 <h3 id="request-2">Request</h3>
