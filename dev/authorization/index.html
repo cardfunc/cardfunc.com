@@ -6,9 +6,9 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>About CardFunc &middot; CardFunc</title>
+		<title>Authorization &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/about/">
+		<link rel="canonical" href="https://cardfunc.com/dev/authorization/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -28,7 +28,7 @@
  		<link rel="icon" type="image/png" sizes="16x16" href='https://cardfunc.com/icon/favicon-16x16.png'>
 		<meta name="msapplication-TileImage" content='https://cardfunc.com/icon/ms-icon-144x144.png'>
 
-		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/about/index.xml" title="CardFunc" />
+		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/dev/authorization/index.xml" title="CardFunc" />
 		
 		<link rel="stylesheet" href="https://cardfunc.com/css/header.css"/>
 		<link rel="stylesheet" href="https://cardfunc.com/css/footer.css"/>
@@ -110,7 +110,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="About CardFunc &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -123,7 +123,7 @@
 
 <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -133,7 +133,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
@@ -188,7 +188,7 @@
 		
 	</li>
 	
-	<li class="current">
+	<li>
 		<a href="/about/">About</a>
 		
 		<ul>
@@ -218,11 +218,11 @@
 	
 
 
-			<article id="about-cardfunc" class="mode-full">
+			<article id="authorization" class="mode-full">
 				<header>
-					<h1>About CardFunc</h1>
+					<h1>Authorization</h1>
 			<p>
-				<time>2019-10-21</time>
+				<time>2020-01-27</time>
 
 				<span class='article-length'>100 words</span>
 				<span class='article-reading-time'>1 minutes</span>
@@ -243,8 +243,7 @@
 
 				<main>
 					
-						<p>Our mission is to provide simple and secure card payment solutions that are <em>easy to integrate</em> for a payment system provider with minimal complicance work needed.<br />
-Our main office is located in Uppsala, Sweden. The company behind CardFunc is called Nordic Transaction Partner AB.</p>
+						<p>Authorizations are created to reserve an amount that can later be captured, that is tranferred from the card owners account. CardFunc offers several ways to create an authorization. The CardFunc Element can be integrated into your system and used for entering sensitive card data. Authorizations can also be created using account tokens, once an account has been created for an end-user. Authorizations can also be created using PANs directly.</p>
 
 					
 				</main>
@@ -264,6 +263,105 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 
 
 
+	
+
+
+			<article id="authorization-using-cardfunc-element" class="mode-summary">
+				<header>
+					<h1>Authorization using CardFunc Element</h1>
+			<p>
+				<time>2019-08-01</time>
+
+				<span class='article-length'>300 words</span>
+				<span class='article-reading-time'>2 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/authorization/authorization-element/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="authorization-using-token" class="mode-summary">
+				<header>
+					<h1>Authorization using token</h1>
+			<p>
+				<time>2020-01-27</time>
+
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>Once an account token has been created, it can be used when creating new authorizations.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/authorization/authorization-token/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="authorization-using-pan" class="mode-summary">
+				<header>
+					<h1>Authorization using PAN</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>200 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>Authorizations can be created using PAN directly. This approach adds many requirements in order to comply with PCI DSS-rules and is not recommended for most customers, however.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/authorization/authorization-pan/"><span></span></a></div>
+
+
+
+			</article>
+
+
 			<footer>
 				<nav>
 
@@ -277,7 +375,7 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
                 <nav>
     <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -287,7 +385,7 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
@@ -342,7 +440,7 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 		
 	</li>
 	
-	<li class="current">
+	<li>
 		<a href="/about/">About</a>
 		
 		<ul>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CardFunc Develper Documentation on CardFunc</title>
+    <title>CardFunc Developer Documentation on CardFunc</title>
     <link>https://cardfunc.com/dev/</link>
-    <description>Recent content in CardFunc Develper Documentation on CardFunc</description>
+    <description>Recent content in CardFunc Developer Documentation on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 01 Aug 2019 00:00:00 +0000</lastBuildDate>
@@ -12,14 +12,57 @@
     
     
     <item>
-      <title>CardFunc UI</title>
-      <link>https://cardfunc.com/dev/ui/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
+      <title>General</title>
+      <link>https://cardfunc.com/dev/general/</link>
+      <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/ui/</guid>
-      <description>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
-Usage CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
-Embedding CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:</description>
+      <guid>https://cardfunc.com/dev/general/</guid>
+      <description>&lt;p&gt;This details the general usage of the CardFunc API.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>List authorizations</title>
+      <link>https://cardfunc.com/dev/list-authorizations/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/list-authorizations/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;List&lt;/code&gt; endpoint is used to list previously created authorizations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Capture</title>
+      <link>https://cardfunc.com/dev/capture/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/capture/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;capture&lt;/code&gt; endpoint is used for performing capture, using an authorization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Cancel authorization</title>
+      <link>https://cardfunc.com/dev/cancel-authorization/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/cancel-authorization/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;Cancel&lt;/code&gt; endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the &lt;code&gt;refund&lt;/code&gt; endpoint should be used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Refund authorization</title>
+      <link>https://cardfunc.com/dev/refund/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/refund/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;refund&lt;/code&gt; endpoint is used for refunding an amount that has already been captured, using an authorization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Data type reference</title>
+      <link>https://cardfunc.com/dev/reference/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/</guid>
+      <description>&lt;p&gt;The Reference section describes data types used in requests to and responses from the CardFunc API.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -6,7 +6,7 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>CardFunc Develper Documentation &middot; CardFunc</title>
+		<title>CardFunc Developer Documentation &middot; CardFunc</title>
 
 		<link rel="canonical" href="https://cardfunc.com/dev/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
@@ -110,7 +110,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="CardFunc Develper Documentation &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="CardFunc Developer Documentation &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -129,27 +129,52 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/">API</a>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/authorization/">Authorization</a>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	
@@ -193,9 +218,9 @@
 	
 
 
-			<article id="cardfunc-develper-documentation" class="mode-full">
+			<article id="cardfunc-developer-documentation" class="mode-full">
 				<header>
-					<h1>CardFunc Develper Documentation</h1>
+					<h1>CardFunc Developer Documentation</h1>
 			<p>
 				<time>2019-08-01</time>
 
@@ -218,7 +243,11 @@
 
 				<main>
 					
-						<p>How to to integrate CardFunc.</p>
+						<p>CardFunc provides functionality for handling the various steps that can be involved in a card payment.<br />
+* First an authorization is created. This reserves an amount that can later be withdrawn from the account.<br />
+* Performing a capture, using the authorization, withdraws either the full amount or a part of it from the account.<br />
+* Until capture, the authorization can be cancelled, so that it can no longer be used for capture.<br />
+* Captured amounts can be refunded, either fully or partially.</p>
 
 					
 				</main>
@@ -241,14 +270,14 @@
 	
 
 
-			<article id="cardfunc-ui" class="mode-summary">
+			<article id="general" class="mode-summary">
 				<header>
-					<h1>CardFunc UI</h1>
+					<h1>General</h1>
 			<p>
-				<time>2019-08-01</time>
+				<time>2020-01-22</time>
 
-				<span class='article-length'>300 words</span>
-				<span class='article-reading-time'>2 minutes</span>
+				<span class='article-length'>200 words</span>
+				<span class='article-reading-time'>1 minutes</span>
 
 
 
@@ -261,12 +290,175 @@
 
 
 				<main class="summary">
-					<p>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
-Usage CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
-Embedding CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:</p>
+					<p><p>This details the general usage of the CardFunc API.</p></p>
 				</main>
 
-				<div class="self-link truncated"><a href="https://cardfunc.com/dev/ui/"><span></span></a></div>
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/general/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="list-authorizations" class="mode-summary">
+				<header>
+					<h1>List authorizations</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>The <code>List</code> endpoint is used to list previously created authorizations.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/list-authorizations/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="capture" class="mode-summary">
+				<header>
+					<h1>Capture</h1>
+			<p>
+				<time>2020-01-27</time>
+
+				<span class='article-length'>200 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>The <code>capture</code> endpoint is used for performing capture, using an authorization.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/capture/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="cancel-authorization" class="mode-summary">
+				<header>
+					<h1>Cancel authorization</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>The <code>Cancel</code> endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the <code>refund</code> endpoint should be used.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/cancel-authorization/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="refund-authorization" class="mode-summary">
+				<header>
+					<h1>Refund authorization</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>The <code>refund</code> endpoint is used for refunding an amount that has already been captured, using an authorization.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/refund/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="data-type-reference" class="mode-summary">
+				<header>
+					<h1>Data type reference</h1>
+			<p>
+				<time>2020-01-23</time>
+
+				<span class='article-length'>200 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p>The Reference section describes data types used in requests to and responses from the CardFunc API.</p></p>
+				</main>
+
+				<div class="self-link truncated"><a href="https://cardfunc.com/dev/reference/"><span></span></a></div>
 
 
 
@@ -292,27 +484,52 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/">API</a>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/authorization/">Authorization</a>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	

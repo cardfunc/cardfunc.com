@@ -6,9 +6,9 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>About CardFunc &middot; CardFunc</title>
+		<title>Refund authorization &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/about/">
+		<link rel="canonical" href="https://cardfunc.com/dev/refund/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -28,7 +28,6 @@
  		<link rel="icon" type="image/png" sizes="16x16" href='https://cardfunc.com/icon/favicon-16x16.png'>
 		<meta name="msapplication-TileImage" content='https://cardfunc.com/icon/ms-icon-144x144.png'>
 
-		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/about/index.xml" title="CardFunc" />
 		
 		<link rel="stylesheet" href="https://cardfunc.com/css/header.css"/>
 		<link rel="stylesheet" href="https://cardfunc.com/css/footer.css"/>
@@ -110,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="About CardFunc &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Refund authorization &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -123,7 +122,7 @@
 
 <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -173,7 +172,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/refund/">Refund</a>
 		
 	</li>
@@ -188,7 +187,7 @@
 		
 	</li>
 	
-	<li class="current">
+	<li>
 		<a href="/about/">About</a>
 		
 		<ul>
@@ -212,17 +211,15 @@
 
 
 
-
-		<main class="list intro">
-
-	
+		<main class="single">
 
 
-			<article id="about-cardfunc" class="mode-full">
+
+			<article id="refund-authorization" class="mode-full">
 				<header>
-					<h1>About CardFunc</h1>
+					<h1>Refund authorization</h1>
 			<p>
-				<time>2019-10-21</time>
+				<time>2020-01-23</time>
 
 				<span class='article-length'>100 words</span>
 				<span class='article-reading-time'>1 minutes</span>
@@ -236,16 +233,58 @@
 				</header>
 
 				
-				
+				<nav id="TableOfContents">
+<ul>
+<li><a href="#refund-authorization">Refund authorization</a>
+<ul>
+<li>
+<ul>
+<li><a href="#request">Request</a></li>
+</ul></li>
+<li><a href="#refund-creatable-data-type">Refund.creatable data type</a></li>
+</ul></li>
+</ul>
+</nav>
 				
 
 
 
 				<main>
 					
-						<p>Our mission is to provide simple and secure card payment solutions that are <em>easy to integrate</em> for a payment system provider with minimal complicance work needed.<br />
-Our main office is located in Uppsala, Sweden. The company behind CardFunc is called Nordic Transaction Partner AB.</p>
+						<p>The <code>refund</code> endpoint is used for refunding an amount that has already been captured, using an authorization.</p>
 
+<h1 id="refund-authorization">Refund authorization</h1>
+
+<h3 id="request">Request</h3>
+
+<p>Replace {authorization} with the id for the specific authorization.</p>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/refund</span>
+<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
+<h2 id="refund-creatable-data-type">Refund.creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>amount to be refunded</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces default descriptor if included</td>
+</tr>
+</tbody>
+</table>
 					
 				</main>
 
@@ -261,23 +300,13 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 
 			</article>
 
-
-
-
-			<footer>
-				<nav>
-
-
-				</nav>
-			</footer>
-
 		</main>
 
 		<footer>
                 <nav>
     <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -327,7 +356,7 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/refund/">Refund</a>
 		
 	</li>
@@ -342,7 +371,7 @@ Our main office is located in Uppsala, Sweden. The company behind CardFunc is ca
 		
 	</li>
 	
-	<li class="current">
+	<li>
 		<a href="/about/">About</a>
 		
 		<ul>

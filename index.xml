@@ -6,7 +6,7 @@
     <description>Recent content on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,10 +22,10 @@
     
     <item>
       <title>General</title>
-      <link>https://cardfunc.com/dev/api/general/</link>
+      <link>https://cardfunc.com/dev/general/</link>
       <pubDate>Wed, 22 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/api/general/</guid>
+      <guid>https://cardfunc.com/dev/general/</guid>
       <description>&lt;p&gt;This details the general usage of the CardFunc API.&lt;/p&gt;</description>
     </item>
     
@@ -39,23 +39,12 @@
     </item>
     
     <item>
-      <title>Authorization</title>
-      <link>https://cardfunc.com/dev/api/authorization/</link>
-      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/api/authorization/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;authorization&lt;/code&gt; endpoint is used for creating and listing authorizations.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>CardFunc UI</title>
-      <link>https://cardfunc.com/dev/ui/</link>
+      <title>Authorization using CardFunc Element</title>
+      <link>https://cardfunc.com/dev/authorization/authorization-element/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/ui/</guid>
-      <description>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
-Usage CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
-Embedding CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:</description>
+      <guid>https://cardfunc.com/dev/authorization/authorization-element/</guid>
+      <description>&lt;p&gt;To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -68,12 +57,39 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
     </item>
     
     <item>
+      <title>List authorizations</title>
+      <link>https://cardfunc.com/dev/list-authorizations/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/list-authorizations/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;List&lt;/code&gt; endpoint is used to list previously created authorizations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Authorization using token</title>
+      <link>https://cardfunc.com/dev/authorization/authorization-token/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/authorization/authorization-token/</guid>
+      <description>&lt;p&gt;Once an account token has been created, it can be used when creating new authorizations.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>https://cardfunc.com/home/banner-phone/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/banner-phone/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Capture</title>
+      <link>https://cardfunc.com/dev/capture/</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/capture/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;capture&lt;/code&gt; endpoint is used for performing capture, using an authorization.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -95,6 +111,15 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
     </item>
     
     <item>
+      <title>Cancel authorization</title>
+      <link>https://cardfunc.com/dev/cancel-authorization/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/cancel-authorization/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;Cancel&lt;/code&gt; endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the &lt;code&gt;refund&lt;/code&gt; endpoint should be used.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Grow With Us</title>
       <link>https://cardfunc.com/home/grow/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -113,12 +138,39 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
     </item>
     
     <item>
+      <title>Authorization using PAN</title>
+      <link>https://cardfunc.com/dev/authorization/authorization-pan/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/authorization/authorization-pan/</guid>
+      <description>&lt;p&gt;Authorizations can be created using PAN directly. This approach adds many requirements in order to comply with PCI DSS-rules and is not recommended for most customers, however.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Refund authorization</title>
+      <link>https://cardfunc.com/dev/refund/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/refund/</guid>
+      <description>&lt;p&gt;The &lt;code&gt;refund&lt;/code&gt; endpoint is used for refunding an amount that has already been captured, using an authorization.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Get Started</title>
       <link>https://cardfunc.com/home/start/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/start/</guid>
       <description>Use the &amp;ldquo;Contact Us&amp;rdquo; tab in the lower right corner to get in direct contact with us and we help you get you started with your project.</description>
+    </item>
+    
+    <item>
+      <title>Data type reference</title>
+      <link>https://cardfunc.com/dev/reference/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/reference/</guid>
+      <description>&lt;p&gt;The Reference section describes data types used in requests to and responses from the CardFunc API.&lt;/p&gt;</description>
     </item>
     
     <item>

@@ -10,8 +10,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/api/general/</loc>
-    <lastmod>2020-01-27T14:42:28+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/general/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/dev/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/about/contact/</loc>
     <lastmod>2020-01-22T17:09:15+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -31,29 +38,15 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/api/authorization/</loc>
-    <lastmod>2020-01-27T14:42:28+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/authorization/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/ui/</loc>
-    <lastmod>2020-01-22T17:09:15+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/api/</loc>
-    <lastmod>2020-01-22T17:09:15+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/</loc>
-    <lastmod>2020-01-22T17:09:15+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/authorization/authorization-element/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -66,8 +59,22 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/dev/list-authorizations/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/about/</loc>
     <lastmod>2020-01-22T17:09:15+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cardfunc.com/dev/authorization/authorization-token/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -80,8 +87,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/reference/</loc>
-    <lastmod>2020-01-27T11:30:02+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/capture/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -101,6 +108,13 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/dev/cancel-authorization/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/home/grow/</loc>
     <lastmod>2020-01-24T10:54:23+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -115,6 +129,20 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/dev/authorization/authorization-pan/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cardfunc.com/dev/refund/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/home/start/</loc>
     <lastmod>2020-01-24T10:54:23+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -122,8 +150,15 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/dev/reference/</loc>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/</loc>
-    <lastmod>2020-01-27T14:42:28+01:00</lastmod>
+    <lastmod>2020-01-27T16:32:34+01:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -6,7 +6,7 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>CardFunc Reference &middot; CardFunc</title>
+		<title>Data type reference &middot; CardFunc</title>
 
 		<link rel="canonical" href="https://cardfunc.com/dev/reference/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
@@ -28,7 +28,6 @@
  		<link rel="icon" type="image/png" sizes="16x16" href='https://cardfunc.com/icon/favicon-16x16.png'>
 		<meta name="msapplication-TileImage" content='https://cardfunc.com/icon/ms-icon-144x144.png'>
 
-		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/dev/reference/index.xml" title="CardFunc" />
 		
 		<link rel="stylesheet" href="https://cardfunc.com/css/header.css"/>
 		<link rel="stylesheet" href="https://cardfunc.com/css/footer.css"/>
@@ -110,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="CardFunc Reference &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Data type reference &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -129,27 +128,52 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/">API</a>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/authorization/">Authorization</a>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	
@@ -187,19 +211,17 @@
 
 
 
-
-		<main class="list intro">
-
-	
+		<main class="single">
 
 
-			<article id="cardfunc-reference" class="mode-full">
+
+			<article id="data-type-reference" class="mode-full">
 				<header>
-					<h1>CardFunc Reference</h1>
+					<h1>Data type reference</h1>
 			<p>
-				<time>2020-01-17</time>
+				<time>2020-01-23</time>
 
-				<span class='article-length'>100 words</span>
+				<span class='article-length'>200 words</span>
 				<span class='article-reading-time'>1 minutes</span>
 
 
@@ -211,15 +233,215 @@
 				</header>
 
 				
-				
+				<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#authorization-creatable-data-type">Authorization.Creatable data type</a></li>
+<li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
+<li><a href="#capture-creatable-data-type">Capture.Creatable data type</a></li>
+<li><a href="#cancel-data-type">Cancel data type</a></li>
+<li><a href="#refund-creatable-data-type">Refund.creatable data type</a></li>
+</ul></li>
+</ul>
+</nav>
 				
 
 
 
 				<main>
 					
-						<p>Reference for CardFunc data types.</p>
+						<p>The Reference section describes data types used in requests to and responses from the CardFunc API.</p>
 
+<h2 id="authorization-creatable-data-type">Authorization.Creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>number</code></td>
+<td><code>string</code></td>
+<td>your order number</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces your default descriptor if provided</td>
+</tr>
+
+<tr>
+<td><code>ip</code></td>
+<td><code>string</code></td>
+<td>your customer&rsquo;s ip number</td>
+</tr>
+
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>amount the authorization is valid for</td>
+</tr>
+
+<tr>
+<td><code>currency</code></td>
+<td><code>string</code></td>
+<td>three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
+</tr>
+
+<tr>
+<td><code>account</code></td>
+<td><code>string</code></td>
+<td>&ldquo;create&rdquo; or account number</td>
+</tr>
+
+<tr>
+<td><code>card</code></td>
+<td><code>Card.Creatable</code></td>
+<td>see Card.Creatable</td>
+</tr>
+
+<tr>
+<td>&lt;!&ndash;</td>
+<td><code>pares</code></td>
+<td><code>string</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="card-creatable-data-type">Card.Creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>pan</code></td>
+<td><code>string</code></td>
+<td>primary account number</td>
+</tr>
+
+<tr>
+<td><code>expires</code></td>
+<td><code>number[]</code></td>
+<td>expiration month and year</td>
+</tr>
+
+<tr>
+<td><code>csc</code></td>
+<td><code>string</code></td>
+<td>(optional) csc code</td>
+</tr>
+
+<tr>
+<td>&lt;!&ndash;</td>
+<td></td>
+<td><code>pares</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="capture-creatable-data-type">Capture.Creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>Replaces default descriptor if provided.</td>
+</tr>
+
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>Amount to capture if provided, otherwise full amount will be used.</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="cancel-data-type">Cancel data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>id</code></td>
+<td><code>string</code></td>
+<td>id for authorization</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces your default descriptor if included</td>
+</tr>
+
+<tr>
+<td><code>reference</code></td>
+<td><code>string</code></td>
+<td>reference to aquirer</td>
+</tr>
+
+<tr>
+<td><code>created</code></td>
+<td><code>string</code></td>
+<td>date as ISO string</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="refund-creatable-data-type">Refund.creatable data type</h2>
+
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><code>amount</code></td>
+<td><code>number</code></td>
+<td>amount to be refunded</td>
+</tr>
+
+<tr>
+<td><code>descriptor</code></td>
+<td><code>string</code></td>
+<td>replaces default descriptor if included</td>
+</tr>
+</tbody>
+</table>
 					
 				</main>
 
@@ -235,16 +457,6 @@
 
 			</article>
 
-
-
-
-			<footer>
-				<nav>
-
-
-				</nav>
-			</footer>
-
 		</main>
 
 		<footer>
@@ -257,27 +469,52 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/">API</a>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/api/authorization/">Authorization</a>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	

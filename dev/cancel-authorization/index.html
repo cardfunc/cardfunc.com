@@ -6,9 +6,9 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>Authorization &middot; CardFunc</title>
+		<title>Cancel authorization &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/dev/api/authorization/">
+		<link rel="canonical" href="https://cardfunc.com/dev/cancel-authorization/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -109,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Cancel authorization &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -128,27 +128,52 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
-	<li class="current-parent">
-		<a href="/dev/api/">API</a>
+	<li>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
-	<li class="current">
-		<a href="/dev/api/authorization/">Authorization</a>
+	<li>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li class="current">
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	
@@ -190,14 +215,14 @@
 
 
 
-			<article id="authorization" class="mode-full">
+			<article id="cancel-authorization" class="mode-full">
 				<header>
-					<h1>Authorization</h1>
+					<h1>Cancel authorization</h1>
 			<p>
 				<time>2020-01-23</time>
 
-				<span class='article-length'>300 words</span>
-				<span class='article-reading-time'>2 minutes</span>
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
 
 
 
@@ -210,45 +235,13 @@
 				
 				<nav id="TableOfContents">
 <ul>
-<li><a href="#create-authorization">Create authorization</a>
-<ul>
-<li>
-<ul>
-<li><a href="#example-request">Example request</a></li>
-</ul></li>
-<li><a href="#authorization-creatable-data-type">Authorization.Creatable data type</a></li>
-<li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
-</ul></li>
-<li><a href="#list-authorizations">List authorizations</a>
+<li><a href="#cancel-authorization">Cancel authorization</a>
 <ul>
 <li>
 <ul>
 <li><a href="#request">Request</a></li>
 </ul></li>
-</ul></li>
-<li><a href="#create-capture">Create capture</a>
-<ul>
-<li>
-<ul>
-<li><a href="#request-1">Request</a></li>
-</ul></li>
-<li><a href="#capture-creatable-data-type">Capture.Creatable data type</a></li>
-</ul></li>
-<li><a href="#cancel-authorization">Cancel authorization</a>
-<ul>
-<li>
-<ul>
-<li><a href="#request-2">Request</a></li>
-</ul></li>
 <li><a href="#cancel-data-type">Cancel data type</a></li>
-</ul></li>
-<li><a href="#refund-authorization">Refund authorization</a>
-<ul>
-<li>
-<ul>
-<li><a href="#request-3">Request</a></li>
-</ul></li>
-<li><a href="#refund-creatable-data-type">Refund.creatable data type</a></li>
 </ul></li>
 </ul>
 </nav>
@@ -258,172 +251,11 @@
 
 				<main>
 					
-						<p>The <code>authorization</code> endpoint is used for creating and listing authorizations.</p>
-
-<h1 id="create-authorization">Create authorization</h1>
-
-<p>An authorization can be created using card data directly.</p>
-
-<h3 id="example-request">Example request</h3>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;public.api.key&gt;</span>
-
-<span class="p">{</span>
-    <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
-    <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;card&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;4111111111111111&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;expires&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
-        <span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;987&#34;</span>
-    <span class="p">}</span>
-<span class="p">}</span></code></pre></div>
-<p>The body of the request contains an object of the Authorization.Creatable data type.</p>
-
-<h2 id="authorization-creatable-data-type">Authorization.Creatable data type</h2>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>number</code></td>
-<td><code>string</code></td>
-<td>your order number</td>
-</tr>
-
-<tr>
-<td><code>descriptor</code></td>
-<td><code>string</code></td>
-<td>replaces your default descriptor if provided</td>
-</tr>
-
-<tr>
-<td><code>ip</code></td>
-<td><code>string</code></td>
-<td>your customer&rsquo;s ip number</td>
-</tr>
-
-<tr>
-<td><code>amount</code></td>
-<td><code>number</code></td>
-<td>amount the authorization is valid for</td>
-</tr>
-
-<tr>
-<td><code>currency</code></td>
-<td><code>string</code></td>
-<td>three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
-</tr>
-
-<tr>
-<td><code>account</code></td>
-<td><code>string</code></td>
-<td>&ldquo;create&rdquo; or account number</td>
-</tr>
-
-<tr>
-<td><code>card</code></td>
-<td><code>Card.Creatable</code></td>
-<td>see Card.Creatable</td>
-</tr>
-
-<tr>
-<td>&lt;!&ndash;</td>
-<td><code>pares</code></td>
-<td><code>string</code></td>
-</tr>
-</tbody>
-</table>
-
-<h2 id="card-creatable-data-type">Card.Creatable data type</h2>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>pan</code></td>
-<td><code>string</code></td>
-<td>primary account number</td>
-</tr>
-
-<tr>
-<td><code>expires</code></td>
-<td><code>number[]</code></td>
-<td>expiration month and year</td>
-</tr>
-
-<tr>
-<td><code>csc</code></td>
-<td><code>string</code></td>
-<td>(optional) csc code</td>
-</tr>
-
-<tr>
-<td>&lt;!&ndash;</td>
-<td></td>
-<td><code>pares</code></td>
-</tr>
-</tbody>
-</table>
-
-<h1 id="list-authorizations">List authorizations</h1>
-
-<p>Previously created authorizations can be listed.</p>
-
-<h3 id="request">Request</h3>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">GET</span> <span class="err">https://api.cardfunc.com/authorization</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
-<h1 id="create-capture">Create capture</h1>
-
-<h3 id="request-1">Request</h3>
-
-<p>Replace {authorization} with the id for the specific authorization.</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
-<p>The body of the request contains and object of the Capture.Creatable data type.</p>
-
-<h2 id="capture-creatable-data-type">Capture.Creatable data type</h2>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>descriptor</code></td>
-<td><code>string</code></td>
-<td>Replaces default descriptor if provided.</td>
-</tr>
-
-<tr>
-<td><code>amount</code></td>
-<td><code>number</code></td>
-<td>Amound to capture.</td>
-</tr>
-</tbody>
-</table>
+						<p>The <code>Cancel</code> endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the <code>refund</code> endpoint should be used.</p>
 
 <h1 id="cancel-authorization">Cancel authorization</h1>
 
-<h3 id="request-2">Request</h3>
+<h3 id="request">Request</h3>
 
 <p>Replace {authorization} with the id for the specific authorization.</p>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/cancel</span>
@@ -465,39 +297,6 @@
 </tr>
 </tbody>
 </table>
-
-<h1 id="refund-authorization">Refund authorization</h1>
-
-<h3 id="request-3">Request</h3>
-
-<p>Replace {authorization} with the id for the specific authorization.</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/refund</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
-<h2 id="refund-creatable-data-type">Refund.creatable data type</h2>
-
-<table>
-<thead>
-<tr>
-<th>Property</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-
-<tbody>
-<tr>
-<td><code>amount</code></td>
-<td><code>number</code></td>
-<td>amount to be refunded</td>
-</tr>
-
-<tr>
-<td><code>descriptor</code></td>
-<td><code>string</code></td>
-<td>replaces default descriptor if included</td>
-</tr>
-</tbody>
-</table>
 					
 				</main>
 
@@ -525,27 +324,52 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/ui/">UI</a>
+		<a href="/dev/general/">General</a>
 		
 	</li>
 	
-	<li class="current-parent">
-		<a href="/dev/api/">API</a>
+	<li>
+		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
 	
 	<li>
-		<a href="/dev/api/general/">General</a>
+		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
 		
 	</li>
 	
-	<li class="current">
-		<a href="/dev/api/authorization/">Authorization</a>
+	<li>
+		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
 		
 	</li>
 	
 </ul>
 
+		
+	</li>
+	
+	<li>
+		<a href="/dev/list-authorizations/">List</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/capture/">Capture</a>
+		
+	</li>
+	
+	<li class="current">
+		<a href="/dev/cancel-authorization/">Cancel</a>
+		
+	</li>
+	
+	<li>
+		<a href="/dev/refund/">Refund</a>
 		
 	</li>
 	
