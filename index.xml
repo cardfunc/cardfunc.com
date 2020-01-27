@@ -59,57 +59,12 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
     </item>
     
     <item>
-      <title>Order</title>
-      <link>https://cardfunc.com/dev/api/order/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/api/order/</guid>
-      <description>&lt;p&gt;The &lt;code&gt;order&lt;/code&gt; endpoint is the primary endpoint used for creating and administrating orders.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Payment</title>
-      <link>https://cardfunc.com/dev/api/payment/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/api/payment/</guid>
-      <description>The payment endpoint is used to create payments that require some kind user authentication. The resulting payment can then be used when creating an order.</description>
-    </item>
-    
-    <item>
-      <title>Order</title>
-      <link>https://cardfunc.com/dev/reference/order/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/reference/order/</guid>
-      <description>&lt;p&gt;When creating orders, the Creatable Order datatype is used. In the response from the endpoint an object of the Order data type will be returned.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Developer Focus</title>
       <link>https://cardfunc.com/home/developer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/developer/</guid>
       <description>We put programmers first. That is why all your integration questions are answered by our developers directly. No first line support staff to try to get past.</description>
-    </item>
-    
-    <item>
-      <title>Customer</title>
-      <link>https://cardfunc.com/dev/reference/customer/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/reference/customer/</guid>
-      <description>&lt;p&gt;Data type representing a customer.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Item</title>
-      <link>https://cardfunc.com/dev/reference/item/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/reference/item/</guid>
-      <description>&lt;p&gt;Data type used to specify what products are included in an order.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -131,30 +86,12 @@ Embedding CardFunc Element is delivered as a web component. To use it start by i
     </item>
     
     <item>
-      <title>Other</title>
-      <link>https://cardfunc.com/dev/reference/other/</link>
-      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/reference/other/</guid>
-      <description>&lt;p&gt;Some simple data types used in requests to and responses from our endpoints.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Cloud First</title>
       <link>https://cardfunc.com/home/cloud/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/home/cloud/</guid>
       <description>Our solutions are designed for the requirements of modern cloud based applications. Payments can be initiated directly from the client code and be confirmed for authenticity without any need to double check with our servers first.</description>
-    </item>
-    
-    <item>
-      <title>Me</title>
-      <link>https://cardfunc.com/dev/api/me/</link>
-      <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/dev/api/me/</guid>
-      <description>The me endpoint is used for logging in the user.</description>
     </item>
     
     <item>

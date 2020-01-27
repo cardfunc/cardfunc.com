@@ -45,27 +45,6 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/api/order/</loc>
-    <lastmod>2020-01-16T17:06:52+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/api/payment/</loc>
-    <lastmod>2019-08-01T17:04:03+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/reference/order/</loc>
-    <lastmod>2020-01-20T13:52:24+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cardfunc.com/dev/api/</loc>
     <lastmod>2020-01-22T17:09:15+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -94,20 +73,6 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/reference/customer/</loc>
-    <lastmod>2020-01-20T13:52:24+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/reference/item/</loc>
-    <lastmod>2020-01-20T13:52:24+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cardfunc.com/home/banner-phone/</loc>
     <lastmod>2019-11-18T20:44:55+01:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -116,7 +81,7 @@
   
   <url>
     <loc>https://cardfunc.com/dev/reference/</loc>
-    <lastmod>2020-01-20T13:52:24+01:00</lastmod>
+    <lastmod>2020-01-27T10:27:05+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -129,22 +94,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/reference/other/</loc>
-    <lastmod>2020-01-20T13:52:24+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://cardfunc.com/home/cloud/</loc>
     <lastmod>2020-01-24T10:54:23+01:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://cardfunc.com/dev/api/me/</loc>
-    <lastmod>2019-08-01T17:04:03+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
