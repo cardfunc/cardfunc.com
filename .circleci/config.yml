@@ -34,21 +34,21 @@ jobs:
       - prepare
       - run:
         name: Deploy
-          command: |
-            git clone $CIRCLE_REPOSITORY_URL out
-            cd out
-            git checkout gh-pages || git checkout --orphan gh-pages
-            git rm -rf .
-            cd ..
-            hugo
-            cp -a public/. out/.
-            mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
-            cd out
-            git config user.name "CircleCI"
-            git config user.email "circle@circleci"
-            git add -A
-            git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]" --allow-empty
-            git push origin gh-pages
+        command: |
+          git clone $CIRCLE_REPOSITORY_URL out
+          cd out
+          git checkout gh-pages || git checkout --orphan gh-pages
+          git rm -rf .
+          cd ..
+          hugo
+          cp -a public/. out/.
+          mkdir -p out/.circleci && cp -a .circleci/. out/.circleci/.
+          cd out
+          git config user.name "CircleCI"
+          git config user.email "circle@circleci"
+          git add -A
+          git commit -m "Automated deployment to GitHub Pages: ${CIRCLE_SHA1} [ci skip]" --allow-empty
+          git push origin gh-pages
 workflows:
   version: 2.1
   build-flow:
