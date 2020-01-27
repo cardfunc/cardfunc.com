@@ -1,37 +1,16 @@
 ---
-title: "Authorization"
+title: "Data type reference"
 date: "2020-01-23"
-weight: 30
+weight: 100
 menu: 
   main:
-    parent: dev-api
-    name: Authorization
+    parent: dev
+    name: Reference
 ---
 
-The `authorization` endpoint is used for creating and listing authorizations.
+The Reference section describes data types used in requests to and responses from the CardFunc API.
 
 <!--more-->
-
-# Create authorization
-
-An authorization can be created using card data directly.
-
-### Example request
-```json
-POST https://api.cardfunc.com/authorization
-Authentication: Bearer <public.api.key>
-
-{
-    "amount": 1337.42,
-    "currency": "SEK",
-    "card": {
-        "pan": "4111111111111111",
-        "expires" : [10, 21],
-        "csc": "987"
-    }
-}
-```
-The body of the request contains an object of the Authorization.Creatable data type.
 
 ## Authorization.Creatable data type
 
@@ -55,45 +34,11 @@ The body of the request contains an object of the Authorization.Creatable data t
 | `csc`     | `string`   | (optional) csc code       |
 <!--| | `pares`   | `string`  | (optional) |-->
 
-# List authorizations
-
-Previously created authorizations can be listed.
-
-### Request
-
-```json
-GET https://api.cardfunc.com/authorization
-Authentication: Bearer <private.api.key>
-```
-
-# Create capture
-
-### Request
-
-Replace {authorization} with the id for the specific authorization.
-
-```json
-POST https://api.cardfunc.com/authorization/{authorization}/capture
-Authentication: Bearer <private.api.key>
-```
-The body of the request contains and object of the Capture.Creatable data type.
-
 ## Capture.Creatable data type
-| Property     | Type     | Description                              |
-|--------------|----------|------------------------------------------|
-| `descriptor` | `string` | Replaces default descriptor if provided. |
-| `amount`     | `number` | Amound to capture.                       |
-
-# Cancel authorization
-
-### Request
-
-Replace {authorization} with the id for the specific authorization.
-
-```json
-POST https://api.cardfunc.com/authorization/{authorization}/cancel
-Authentication: Bearer <private.api.key>
-```
+| Property     | Type     | Description                                                        |
+|--------------|----------|--------------------------------------------------------------------|
+| `descriptor` | `string` | Replaces default descriptor if provided.                           |
+| `amount`     | `number` | Amount to capture if provided, otherwise full amount will be used. |
 
 ## Cancel data type
 | Property     | Type      | Description                                             |
@@ -102,17 +47,6 @@ Authentication: Bearer <private.api.key>
 | `descriptor` | `string`  | replaces your default descriptor if included            |
 | `reference`  | `string`  | reference to aquirer                                    |
 | `created`    | `string`  | date as ISO string                                      |
-
-# Refund authorization
-
-### Request
-
-Replace {authorization} with the id for the specific authorization.
-
-```json
-POST https://api.cardfunc.com/authorization/{authorization}/refund
-Authentication: Bearer <private.api.key>
-```
 
 ## Refund.creatable data type
 | Property     | Type     | Description                             |

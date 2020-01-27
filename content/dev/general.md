@@ -4,11 +4,12 @@ date: "2020-01-22"
 weight: 20
 menu: 
     main:
-        parent: dev-api
+        parent: dev
         name: General
 ---
 This details the general usage of the CardFunc API.
 <!--more-->
+
 # URL
 The CardFunc API is reachable at the following URL:
 ```
@@ -17,7 +18,7 @@ https://api.cardfunc.com/
 The same URL is used both for testing and for production. It is the API key that determines if you are using the system for testing or production.
 
 # Content Types
-Requests should be done done using the following header:
+Requests should be done using the following header:
 ```http
 Accept: application/json; charset=utf-8
 ```
