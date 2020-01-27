@@ -1,5 +1,5 @@
 ---
-title: "PayFunc Reference"
+title: "CardFunc Reference"
 date: "2020-01-17"
 weight: 70
 menu: 
@@ -8,4 +8,4 @@ menu:
         name: Reference
         parent: dev
 ---
-Reference for PayFunc data types.
+Reference for CardFunc data types.
