@@ -27,7 +27,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 # Authentication
-All request to the API except login requests to the [`me`](../me) endpoint are done using the bearer authentication pattern.
+Unless otherwise specified, requests to the API are done using the bearer authentication pattern.
 ```http
 Authorization: Bearer <your.api.key>
 ```
@@ -49,8 +49,8 @@ The body will be a JSON encoded message like this:
     "status": 400,
     "type": "invalid content",
     "content": {
-        "type": "model.Order.Creatable",
-        "description": "A valid order to be created."
+        "type": "model.Authorization.Creatable",
+        "description": "Content must be a creatable Authorization."
     }
 }
 ```

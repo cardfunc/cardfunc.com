@@ -31,9 +31,9 @@ Authentication: Bearer <public.api.key>
     }
 }
 ```
-The body of the request contains an object of the Authorization data type.
+The body of the request contains an object of the Authorization.Creatable data type.
 
-## Authorization data type
+## Authorization.Creatable data type
 
 | Property     | Type             | Description                                  |
 |--------------|------------------|----------------------------------------------|
@@ -66,7 +66,7 @@ GET https://api.cardfunc.com/authorization
 Authentication: Bearer <private.api.key>
 ```
 
-# Capture authorization
+# Create capture
 
 ### Request
 
@@ -76,6 +76,13 @@ Replace {authorization} with the id for the specific authorization.
 POST https://api.cardfunc.com/authorization/{authorization}/capture
 Authentication: Bearer <private.api.key>
 ```
+The body of the request contains and object of the Capture.Creatable data type.
+
+## Capture.Creatable data type
+| Property     | Type     | Description                              |
+|--------------|----------|------------------------------------------|
+| `descriptor` | `string` | Replaces default descriptor if provided. |
+| `amount`     | `number` | Amound to capture.                       |
 
 # Cancel authorization
 
