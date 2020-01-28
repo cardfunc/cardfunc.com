@@ -1,15 +1,17 @@
 ---
-title: "CardFunc UI"
+title: "Authorization using CardFunc Element"
 date: "2019-08-01"
-weight: 30
+weight: 40
 menu: 
     main:
-        identifier: dev-ui
-        name: UI
-        parent: dev
+        identifier: dev-element
+        name: Authorization (element)
+        parent: dev-auth
 ---
 
 To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
+
+<!--more-->
 
 # Usage
 CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
