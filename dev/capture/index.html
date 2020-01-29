@@ -4,7 +4,7 @@
 		<meta name="description" content="CardFunc provides easy to integrate solutions for card payments for payment system providers.">
 		<meta name="keywords" content="Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard">
 		<meta name="author" content="CardFunc">
-		<meta name="generator" content="Hugo 0.56.3" />
+		<meta name="generator" content="Hugo 0.63.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>Capture &middot; CardFunc</title>
 
@@ -234,19 +234,17 @@
 
 				
 				<nav id="TableOfContents">
-<ul>
-<li><a href="#create-capture">Create capture</a>
-<ul>
-<li>
-<ul>
-<li><a href="#request">Request</a></li>
-<li><a href="#example-capturing-full-amount">Example: Capturing full amount</a></li>
-<li><a href="#example-capturing-part-of-the-amount">Example: Capturing part of the amount</a></li>
-<li><a href="#example-using-another-descriptor-than-the-one-in-the-authorization">Example: Using another descriptor than the one in the authorization</a></li>
-</ul></li>
-<li><a href="#capture-creatable-data-type">Capture.Creatable data type</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#request">Request</a></li>
+        <li><a href="#example-capturing-full-amount">Example: Capturing full amount</a></li>
+        <li><a href="#example-capturing-part-of-the-amount">Example: Capturing part of the amount</a></li>
+        <li><a href="#example-using-another-descriptor-than-the-one-in-the-authorization">Example: Using another descriptor than the one in the authorization</a></li>
+      </ul>
+    </li>
+    <li><a href="#capturecreatable-data-type">Capture.Creatable data type</a></li>
+  </ul>
 </nav>
 				
 
@@ -255,36 +253,30 @@
 				<main>
 					
 						<p>The <code>capture</code> endpoint is used for performing capture, using an authorization.</p>
-
 <h1 id="create-capture">Create capture</h1>
-
 <h3 id="request">Request</h3>
-
 <p>Replace {authorization} with the authorization string for the specific authorization.</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span></code></pre></div>
-<p>The body of the request contains an object of the Capture.Creatable data type, which may be an empty object.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">P</span><span class="err">O</span><span class="err">S</span><span class="err">T</span> <span class="err">h</span><span class="err">t</span><span class="err">t</span><span class="err">p</span><span class="err">s</span><span class="err">:</span><span class="err">/</span><span class="err">/</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">c</span><span class="err">a</span><span class="err">r</span><span class="err">d</span><span class="err">f</span><span class="err">u</span><span class="err">n</span><span class="err">c</span><span class="err">.</span><span class="err">c</span><span class="err">o</span><span class="err">m</span><span class="err">/</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">/</span><span class="p">{</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="p">}</span><span class="err">/</span><span class="err">c</span><span class="err">a</span><span class="err">p</span><span class="err">t</span><span class="err">u</span><span class="err">r</span><span class="err">e</span>
+<span class="err">A</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">e</span><span class="err">n</span><span class="err">t</span><span class="err">i</span><span class="err">c</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">:</span> <span class="err">B</span><span class="err">e</span><span class="err">a</span><span class="err">r</span><span class="err">e</span><span class="err">r</span> <span class="err">&lt;</span><span class="err">p</span><span class="err">r</span><span class="err">i</span><span class="err">v</span><span class="err">a</span><span class="err">t</span><span class="err">e</span><span class="err">.</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">k</span><span class="err">e</span><span class="err">y</span><span class="err">&gt;</span>
+</code></pre></div><p>The body of the request contains an object of the Capture.Creatable data type, which may be an empty object.</p>
 <h3 id="example-capturing-full-amount">Example: Capturing full amount</h3>
-
 <p>A call can be made to capture the full amount of the authorization. In that case, there is no need to specify the amount.</p>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span>
-<span class="p">{}</span></code></pre></div>
-<h3 id="example-capturing-part-of-the-amount">Example: Capturing part of the amount</h3>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">P</span><span class="err">O</span><span class="err">S</span><span class="err">T</span> <span class="err">h</span><span class="err">t</span><span class="err">t</span><span class="err">p</span><span class="err">s</span><span class="err">:</span><span class="err">/</span><span class="err">/</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">c</span><span class="err">a</span><span class="err">r</span><span class="err">d</span><span class="err">f</span><span class="err">u</span><span class="err">n</span><span class="err">c</span><span class="err">.</span><span class="err">c</span><span class="err">o</span><span class="err">m</span><span class="err">/</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">/</span><span class="p">{</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="p">}</span><span class="err">/</span><span class="err">c</span><span class="err">a</span><span class="err">p</span><span class="err">t</span><span class="err">u</span><span class="err">r</span><span class="err">e</span>
+<span class="err">A</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">e</span><span class="err">n</span><span class="err">t</span><span class="err">i</span><span class="err">c</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">:</span> <span class="err">B</span><span class="err">e</span><span class="err">a</span><span class="err">r</span><span class="err">e</span><span class="err">r</span> <span class="err">&lt;</span><span class="err">p</span><span class="err">r</span><span class="err">i</span><span class="err">v</span><span class="err">a</span><span class="err">t</span><span class="err">e</span><span class="err">.</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">k</span><span class="err">e</span><span class="err">y</span><span class="err">&gt;</span>
+<span class="p">{</span><span class="p">}</span>
+</code></pre></div><h3 id="example-capturing-part-of-the-amount">Example: Capturing part of the amount</h3>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">P</span><span class="err">O</span><span class="err">S</span><span class="err">T</span> <span class="err">h</span><span class="err">t</span><span class="err">t</span><span class="err">p</span><span class="err">s</span><span class="err">:</span><span class="err">/</span><span class="err">/</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">c</span><span class="err">a</span><span class="err">r</span><span class="err">d</span><span class="err">f</span><span class="err">u</span><span class="err">n</span><span class="err">c</span><span class="err">.</span><span class="err">c</span><span class="err">o</span><span class="err">m</span><span class="err">/</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">/</span><span class="p">{</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="p">}</span><span class="err">/</span><span class="err">c</span><span class="err">a</span><span class="err">p</span><span class="err">t</span><span class="err">u</span><span class="err">r</span><span class="err">e</span>
+<span class="err">A</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">e</span><span class="err">n</span><span class="err">t</span><span class="err">i</span><span class="err">c</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">:</span> <span class="err">B</span><span class="err">e</span><span class="err">a</span><span class="err">r</span><span class="err">e</span><span class="err">r</span> <span class="err">&lt;</span><span class="err">p</span><span class="err">r</span><span class="err">i</span><span class="err">v</span><span class="err">a</span><span class="err">t</span><span class="err">e</span><span class="err">.</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">k</span><span class="err">e</span><span class="err">y</span><span class="err">&gt;</span>
 <span class="p">{</span>
   <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mi">200</span>
-<span class="p">}</span></code></pre></div>
-<h3 id="example-using-another-descriptor-than-the-one-in-the-authorization">Example: Using another descriptor than the one in the authorization</h3>
-<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization/</span><span class="p">{</span><span class="err">authorization</span><span class="p">}</span><span class="err">/capture</span>
-<span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;private.api.key&gt;</span>
+<span class="p">}</span>
+</code></pre></div><h3 id="example-using-another-descriptor-than-the-one-in-the-authorization">Example: Using another descriptor than the one in the authorization</h3>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">P</span><span class="err">O</span><span class="err">S</span><span class="err">T</span> <span class="err">h</span><span class="err">t</span><span class="err">t</span><span class="err">p</span><span class="err">s</span><span class="err">:</span><span class="err">/</span><span class="err">/</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">c</span><span class="err">a</span><span class="err">r</span><span class="err">d</span><span class="err">f</span><span class="err">u</span><span class="err">n</span><span class="err">c</span><span class="err">.</span><span class="err">c</span><span class="err">o</span><span class="err">m</span><span class="err">/</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">/</span><span class="p">{</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="p">}</span><span class="err">/</span><span class="err">c</span><span class="err">a</span><span class="err">p</span><span class="err">t</span><span class="err">u</span><span class="err">r</span><span class="err">e</span>
+<span class="err">A</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">e</span><span class="err">n</span><span class="err">t</span><span class="err">i</span><span class="err">c</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">:</span> <span class="err">B</span><span class="err">e</span><span class="err">a</span><span class="err">r</span><span class="err">e</span><span class="err">r</span> <span class="err">&lt;</span><span class="err">p</span><span class="err">r</span><span class="err">i</span><span class="err">v</span><span class="err">a</span><span class="err">t</span><span class="err">e</span><span class="err">.</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">k</span><span class="err">e</span><span class="err">y</span><span class="err">&gt;</span>
 <span class="p">{</span>
   <span class="nt">&#34;descriptor&#34;</span><span class="p">:</span> <span class="s2">&#34;Refund for undeliverable product.&#34;</span>
-<span class="p">}</span></code></pre></div>
-<h2 id="capture-creatable-data-type">Capture.Creatable data type</h2>
-
+<span class="p">}</span>
+</code></pre></div><h2 id="capturecreatable-data-type">Capture.Creatable data type</h2>
 <table>
 <thead>
 <tr>
@@ -293,14 +285,12 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
 <td>Replaces default descriptor if provided.</td>
 </tr>
-
 <tr>
 <td><code>amount</code></td>
 <td><code>number</code></td>

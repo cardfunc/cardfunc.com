@@ -4,7 +4,7 @@
 		<meta name="description" content="CardFunc provides easy to integrate solutions for card payments for payment system providers.">
 		<meta name="keywords" content="Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard">
 		<meta name="author" content="CardFunc">
-		<meta name="generator" content="Hugo 0.56.3" />
+		<meta name="generator" content="Hugo 0.63.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>CardFunc Developer Documentation &middot; CardFunc</title>
 
@@ -236,19 +236,20 @@
 				</header>
 
 				
-				
+				<nav id="TableOfContents"></nav>
 				
 
 
 
 				<main>
 					
-						<p>CardFunc provides functionality for handling the various steps that can be involved in a <em>card payment</em>.<br />
-* First an <em>authorization</em> is created. This reserves an amount that can later be withdrawn from the account.<br />
-* Performing a <em>capture</em>, using the authorization, withdraws either the full amount or a part of it from the account.<br />
-* Until capture, the authorization can be <em>cancelled</em>, so that it can no longer be used for capture.<br />
-* Captured amounts can be <em>refunded</em>, either fully or partially.</p>
-
+						<p>CardFunc provides functionality for handling the various steps that can be involved in a <em>card payment</em>.</p>
+<ul>
+<li>First an <em>authorization</em> is created. This reserves an amount that can later be withdrawn from the account.</li>
+<li>Performing a <em>capture</em>, using the authorization, withdraws either the full amount or a part of it from the account.</li>
+<li>Until capture, the authorization can be <em>cancelled</em>, so that it can no longer be used for capture.</li>
+<li>Captured amounts can be <em>refunded</em>, either fully or partially.</li>
+</ul>
 <p>In order to perform a card payment, your customer needs to enter the <em>Primary Account Number</em> (PAN), <em>Expire Date</em> and <em>Card Verification Code</em> (CVC, also called CSV, CVV, i.e.) into the CardFunc Element. CardFunc handles card data in accordance with PCI DSS rules.</p>
 
 					
@@ -296,6 +297,39 @@
 				</main>
 
 				<div class="self-link truncated"><a href="https://cardfunc.com/dev/general/"><span></span></a></div>
+
+
+
+			</article>
+
+
+	
+
+
+			<article id="authorization" class="mode-summary">
+				<header>
+					<h1>Authorization</h1>
+			<p>
+				<time>2020-01-27</time>
+
+				<span class='article-length'>100 words</span>
+				<span class='article-reading-time'>1 minutes</span>
+
+
+
+
+
+</p>
+
+				</header>
+
+
+
+				<main class="summary">
+					<p><p><em>Authorizations</em> are created to reserve an amount that can later be <em>captured</em>, that is tranferred from the card owners account. CardFunc offers several ways to create an authorization. The <em>CardFunc Element</em> can be integrated into your system and used for entering sensitive card data. Authorizations can also be created using <em>account tokens</em>, once an account has been created for an end-user. Authorizations can also be created <em>using PANs directly</em>.</p></p>
+				</main>
+
+				<div class="self-link"><a href="https://cardfunc.com/dev/authorization/"><span></span></a></div>
 
 
 
@@ -469,6 +503,7 @@
 
 			<footer>
 				<nav>
+
 
 
 				</nav>

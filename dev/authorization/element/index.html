@@ -4,7 +4,7 @@
 		<meta name="description" content="CardFunc provides easy to integrate solutions for card payments for payment system providers.">
 		<meta name="keywords" content="Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard">
 		<meta name="author" content="CardFunc">
-		<meta name="generator" content="Hugo 0.56.3" />
+		<meta name="generator" content="Hugo 0.63.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>Authorization using CardFunc Element &middot; CardFunc</title>
 
@@ -234,15 +234,10 @@
 
 				
 				<nav id="TableOfContents">
-<ul>
-<li><a href="#usage">Usage</a>
-<ul>
-<li><a href="#embedding">Embedding</a></li>
-<li><a href="#create-authorization">Create Authorization</a></li>
-</ul></li>
-<li><a href="#example">Example</a></li>
-<li><a href="#testing">Testing</a></li>
-</ul>
+  <ul>
+    <li><a href="#embedding">Embedding</a></li>
+    <li><a href="#create-authorization">Create Authorization</a></li>
+  </ul>
 </nav>
 				
 
@@ -251,80 +246,70 @@
 				<main>
 					
 						<p>To provide a user interface for an end-user to enter sensitive card information the <em>CardFunc Element</em> is used.</p>
-
 <h1 id="usage">Usage</h1>
-
 <p>CardFunc Element is a <em>web-based</em> technology. In the context of <em>native apps</em> the element should be placed on a <em>web page</em> that is viewed inside a <em>web view</em>.</p>
-
 <h2 id="embedding">Embedding</h2>
-
 <p>CardFunc Element is delivered as a <em>web component</em>. To use it start by including the necessary script file in your html header:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.esm.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">nomodule</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
-<p>For styling purposes a reference the required <em>theme</em> is also needed in the html-header:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://theme.payfunc.com/ct-light/index.css&#34;</span><span class="p">&gt;</span></code></pre></div>
-<p>To actually <em>embed</em> the CardFunc Element you add the following element where you want it to show up in your page:</p>
-<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">cardfunc-element</span> <span class="na">api-key</span><span class="o">=</span><span class="s">&#34;public.api.key&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">cardfunc-element</span><span class="p">&gt;</span></code></pre></div>
-<p>Make sure to replace <code>public.api.key</code> with the public API key of the relevant merchant.</p>
-
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.esm.js&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">script</span> <span class="na">nomodule</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.js&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span>
+</code></pre></div><p>For styling purposes a reference the required <em>theme</em> is also needed in the html-header:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://theme.payfunc.com/ct-light/index.css&#34;</span><span class="p"></span><span class="p">&gt;</span>
+</code></pre></div><p>To actually <em>embed</em> the CardFunc Element you add the following element where you want it to show up in your page:</p>
+<div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">cardfunc-element</span> <span class="na">api-key</span><span class="o">=</span><span class="s">&#34;public.api.key&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">cardfunc-element</span><span class="p">&gt;</span>
+</code></pre></div><p>Make sure to replace <code>public.api.key</code> with the public API key of the relevant merchant.</p>
 <h2 id="create-authorization">Create Authorization</h2>
-
 <p>In order to create an actual authorization the method <code>submit</code> shall be invoked on the <code>cardfunc-element</code>.</p>
-
 <p>It can be done like this:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">cardfunc</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">).</span><span class="nx">index</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="k">const</span> <span class="nx">authorization</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">cardfunc</span><span class="p">.</span><span class="nx">submit</span><span class="p">({</span>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">cardfunc</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">index</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">authorization</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">cardfunc</span><span class="p">.</span><span class="nx">submit</span><span class="p">(</span><span class="p">{</span>
 	<span class="nx">amount</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span> <span class="c1">// amount
 </span><span class="c1"></span>	<span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span> <span class="c1">// currency used
 </span><span class="c1"></span>	<span class="nx">number</span><span class="o">:</span> <span class="s2">&#34;1234abc&#34;</span><span class="p">,</span> <span class="c1">// unique order number
-</span><span class="c1"></span><span class="p">})</span>
-</code></pre></div>
-<h1 id="example">Example</h1>
-
-<p>Below is a complete working example. You can try it by entering one of these test card PANs:<br />
-<em>4111111111111111</em>, <em>2221000000000009</em> or <em>5500000000000004</em> together with <em>CVC 987</em>. Don&rsquo;t use real card data here. You can try using an invalid expiration date or CVC, e.g., to see the response.<br />
-<iframe src="./example" style="width: 100%; height: 20em;"><br />
-</iframe></p>
-
+</span><span class="c1"></span><span class="p">}</span><span class="p">)</span>
+</code></pre></div><h1 id="example">Example</h1>
+<p>Below is a complete working example. You can try it by entering one of these test card PANs:
+<em>4111111111111111</em>, <em>2221000000000009</em> or <em>5500000000000004</em> together with <em>CVC 987</em>. Don&rsquo;t use real card data here. You can try using an invalid expiration date or CVC, e.g., to see the response.</p>
+<iframe src="./example" style="width: 100%; height: 20em;">
+</iframe>
 <p>And this is the corresponding code:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span> <span class="na">dir</span><span class="o">=</span><span class="s">&#34;ltr&#34;</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0&#34;</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>CardFunc Element Test<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://api.cardfunc.com/ui/element/cardfunc-element.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://theme.payfunc.com/ct-light/index.css&#34;</span><span class="p">&gt;</span>
-	<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-	<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">form</span><span class="p">&gt;</span>
-			<span class="p">&lt;</span><span class="nt">cardfunc-element</span> <span class="na">api-key</span><span class="o">=</span><span class="s">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5jYXJkZnVuYy5jb20iLCJpYXQiOjE1Nzk3MDAyNDU2MTYsImF1ZCI6InB1YmxpYyIsInN1YiI6InRlc3QiLCJuYW1lIjoidGVzdCIsInVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbSIsImRlc2NyaXB0b3IiOiJ0ZXN0IHRyYW5zYWN0aW9uIiwiY291bnRyeSI6IlNFIiwiYWNxdWlyZXIiOiJtMkM4T1NqT2lFYnVBVmFPZmFYajE4emhVcjVaaTJGNG9paTczaTl0QlFJQmxpOGxYY05PLVFSQl9PTkgxdjE0ZWFxclR3NHRiVWlSN3BjZGdPZGk2VzBpTENKclpYa2lPaUl6Tm1VM05HRTJPUzAzWm1WbExUUmhNemN0WW1Oa09TMDJZVEUwTWpJd01qaG1aak1pZlEiLCJtaWQiOiIxMjM0IiwibWNjIjoiMTIzNCIsImJpbiI6eyJtYXN0ZXJjYXJkIjoiMTM0Njc4IiwidmlzYSI6IjEyMzQifX0.vdASM3Ug-MsOcmktQDO9NcOweZ0UD_f9Us3rvEfTmEM&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">cardfunc-element</span><span class="p">&gt;</span>
-			<span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span><span class="p">&gt;</span>submit<span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-		<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">code</span><span class="p">&gt;</span>
-		<span class="p">&lt;/</span><span class="nt">code</span><span class="p">&gt;</span>
-		<span class="p">&lt;</span><span class="nt">script</span><span class="p">&gt;</span>
-			<span class="k">const</span> <span class="nx">cardForm</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">).</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-			<span class="k">const</span> <span class="nx">submit</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;submit&#34;</span><span class="p">)</span>
-			<span class="k">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;code&#34;</span><span class="p">).</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">dir</span><span class="o">=</span><span class="s">&#34;ltr&#34;</span> <span class="na">lang</span><span class="o">=</span><span class="s">&#34;en&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">head</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&#34;utf-8&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&#34;viewport&#34;</span> <span class="na">content</span><span class="o">=</span><span class="s">&#34;width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0&#34;</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">title</span><span class="p"></span><span class="p">&gt;</span>CardFunc Element Test<span class="p">&lt;</span><span class="p">/</span><span class="nt">title</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://api.cardfunc.com/ui/element/cardfunc-element.js&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://theme.payfunc.com/ct-light/index.css&#34;</span><span class="p"></span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">head</span><span class="p">&gt;</span>
+	<span class="p">&lt;</span><span class="nt">body</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">form</span><span class="p"></span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">cardfunc-element</span> <span class="na">api-key</span><span class="o">=</span><span class="s">&#34;eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwczovL2FwaS5jYXJkZnVuYy5jb20iLCJpYXQiOjE1Nzk3MDAyNDU2MTYsImF1ZCI6InB1YmxpYyIsInN1YiI6InRlc3QiLCJuYW1lIjoidGVzdCIsInVybCI6Imh0dHA6Ly9leGFtcGxlLmNvbSIsImRlc2NyaXB0b3IiOiJ0ZXN0IHRyYW5zYWN0aW9uIiwiY291bnRyeSI6IlNFIiwiYWNxdWlyZXIiOiJtMkM4T1NqT2lFYnVBVmFPZmFYajE4emhVcjVaaTJGNG9paTczaTl0QlFJQmxpOGxYY05PLVFSQl9PTkgxdjE0ZWFxclR3NHRiVWlSN3BjZGdPZGk2VzBpTENKclpYa2lPaUl6Tm1VM05HRTJPUzAzWm1WbExUUmhNemN0WW1Oa09TMDJZVEUwTWpJd01qaG1aak1pZlEiLCJtaWQiOiIxMjM0IiwibWNjIjoiMTIzNCIsImJpbiI6eyJtYXN0ZXJjYXJkIjoiMTM0Njc4IiwidmlzYSI6IjEyMzQifX0.vdASM3Ug-MsOcmktQDO9NcOweZ0UD_f9Us3rvEfTmEM&#34;</span><span class="p"></span><span class="p">&gt;</span><span class="p">&lt;</span><span class="p">/</span><span class="nt">cardfunc-element</span><span class="p">&gt;</span>
+			<span class="p">&lt;</span><span class="nt">button</span> <span class="na">id</span><span class="o">=</span><span class="s">&#34;submit&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;button&#34;</span><span class="p"></span><span class="p">&gt;</span>submit<span class="p">&lt;</span><span class="p">/</span><span class="nt">button</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">form</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">code</span><span class="p"></span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">code</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="nt">script</span><span class="p"></span><span class="p">&gt;</span>
+			<span class="kr">const</span> <span class="nx">cardForm</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+			<span class="kr">const</span> <span class="nx">submit</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&#34;submit&#34;</span><span class="p">)</span>
+			<span class="kr">const</span> <span class="nx">code</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;code&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">item</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 			<span class="k">if</span> <span class="p">(</span><span class="nx">cardForm</span> <span class="o">&amp;&amp;</span> <span class="nx">submit</span><span class="p">)</span>
 				<span class="nx">submit</span><span class="p">.</span><span class="nx">onclick</span> <span class="o">=</span> <span class="nx">event</span> <span class="p">=&gt;</span> <span class="p">{</span>
 					<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">&#34;submit&#34;</span><span class="p">)</span>
-					<span class="nx">cardForm</span><span class="p">.</span><span class="nx">submit</span><span class="p">({</span>
+					<span class="nx">cardForm</span><span class="p">.</span><span class="nx">submit</span><span class="p">(</span><span class="p">{</span>
 						<span class="nx">amount</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span>
 						<span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
 						<span class="nx">number</span><span class="o">:</span> <span class="s2">&#34;orderno&#34;</span><span class="p">,</span>
 						<span class="nx">descriptor</span><span class="o">:</span> <span class="s2">&#34;reference&#34;</span>
-					<span class="p">}).</span><span class="nx">then</span><span class="p">(</span><span class="nx">payment</span> <span class="p">=&gt;</span> <span class="nx">code</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">+=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">payment</span> <span class="o">==</span> <span class="s2">&#34;string&#34;</span> <span class="o">?</span> <span class="nx">payment</span> <span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">payment</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&#34;\n\n&#34;</span><span class="p">)</span>
-					<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">()</span>
-					<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">()</span>
+					<span class="p">}</span><span class="p">)</span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">payment</span> <span class="p">=&gt;</span> <span class="nx">code</span><span class="p">.</span><span class="nx">innerText</span> <span class="o">+=</span> <span class="p">(</span><span class="k">typeof</span> <span class="nx">payment</span> <span class="o">==</span> <span class="s2">&#34;string&#34;</span> <span class="o">?</span> <span class="nx">payment</span> <span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span><span class="nx">payment</span><span class="p">)</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&#34;\n\n&#34;</span><span class="p">)</span>
+					<span class="nx">event</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">(</span><span class="p">)</span>
+					<span class="nx">event</span><span class="p">.</span><span class="nx">stopPropagation</span><span class="p">(</span><span class="p">)</span>
 				<span class="p">}</span>
-		<span class="p">&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+		<span class="p">&lt;</span><span class="p">/</span><span class="nt">script</span><span class="p">&gt;</span>
 
-	<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
-<h1 id="testing">Testing</h1>
+	<span class="p">&lt;</span><span class="p">/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="p">/</span><span class="nt">html</span><span class="p">&gt;</span>
 
+</code></pre></div><h1 id="testing">Testing</h1>
 <p>Contact us to receive test API keys that you can use for testing purposes.</p>
 					
 				</main>

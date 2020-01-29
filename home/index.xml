@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on CardFunc</title>
+    <title>Card Payments for PSP:s on CardFunc</title>
     <link>https://cardfunc.com/home/</link>
-    <description>Recent content in Home on CardFunc</description>
+    <description>Recent content in Card Payments for PSP:s on CardFunc</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Nov 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 01 Aug 2019 13:35:37 +0200</lastBuildDate>
     
 	<atom:link href="https://cardfunc.com/home/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,15 +18,6 @@
       
       <guid>https://cardfunc.com/home/banner-psp/</guid>
       <description>Card Payments for PSP:s </description>
-    </item>
-    
-    <item>
-      <title>Card Payments for PSP:s</title>
-      <link>https://cardfunc.com/home/welcome/</link>
-      <pubDate>Thu, 01 Aug 2019 13:35:37 +0200</pubDate>
-      
-      <guid>https://cardfunc.com/home/welcome/</guid>
-      <description>CardFunc provides easy to integrate solutions for Payment System Providers to offer credit card payments with minimal PCI and compliance work needed.</description>
     </item>
     
     <item>

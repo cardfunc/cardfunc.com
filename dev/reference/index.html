@@ -4,7 +4,7 @@
 		<meta name="description" content="CardFunc provides easy to integrate solutions for card payments for payment system providers.">
 		<meta name="keywords" content="Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard">
 		<meta name="author" content="CardFunc">
-		<meta name="generator" content="Hugo 0.56.3" />
+		<meta name="generator" content="Hugo 0.63.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>Data type reference &middot; CardFunc</title>
 
@@ -234,16 +234,13 @@
 
 				
 				<nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#authorization-creatable-data-type">Authorization.Creatable data type</a></li>
-<li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
-<li><a href="#capture-creatable-data-type">Capture.Creatable data type</a></li>
-<li><a href="#cancel-data-type">Cancel data type</a></li>
-<li><a href="#refund-creatable-data-type">Refund.creatable data type</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#authorizationcreatable-data-type">Authorization.Creatable data type</a></li>
+    <li><a href="#cardcreatable-data-type">Card.Creatable data type</a></li>
+    <li><a href="#capturecreatable-data-type">Capture.Creatable data type</a></li>
+    <li><a href="#cancel-data-type">Cancel data type</a></li>
+    <li><a href="#refundcreatable-data-type">Refund.creatable data type</a></li>
+  </ul>
 </nav>
 				
 
@@ -252,9 +249,7 @@
 				<main>
 					
 						<p>The Reference section describes data types used in requests to and responses from the CardFunc API.</p>
-
-<h2 id="authorization-creatable-data-type">Authorization.Creatable data type</h2>
-
+<h2 id="authorizationcreatable-data-type">Authorization.Creatable data type</h2>
 <table>
 <thead>
 <tr>
@@ -263,60 +258,46 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>number</code></td>
 <td><code>string</code></td>
 <td>your order number</td>
 </tr>
-
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
 <td>replaces your default descriptor if provided</td>
 </tr>
-
 <tr>
 <td><code>ip</code></td>
 <td><code>string</code></td>
 <td>your customer&rsquo;s ip number</td>
 </tr>
-
 <tr>
 <td><code>amount</code></td>
 <td><code>number</code></td>
 <td>amount the authorization is valid for</td>
 </tr>
-
 <tr>
 <td><code>currency</code></td>
 <td><code>string</code></td>
 <td>three letter currency code, e.g. &ldquo;SEK&rdquo;</td>
 </tr>
-
 <tr>
 <td><code>account</code></td>
 <td><code>string</code></td>
 <td>&ldquo;create&rdquo; or account number</td>
 </tr>
-
 <tr>
 <td><code>card</code></td>
 <td><code>Card.Creatable</code></td>
 <td>see Card.Creatable</td>
 </tr>
-
-<tr>
-<td>&lt;!&ndash;</td>
-<td><code>pares</code></td>
-<td><code>string</code></td>
-</tr>
 </tbody>
 </table>
-
-<h2 id="card-creatable-data-type">Card.Creatable data type</h2>
-
+<!--| `pares` | `string`   | (optional) result from 3D secure                           |-->
+<h2 id="cardcreatable-data-type">Card.Creatable data type</h2>
 <table>
 <thead>
 <tr>
@@ -325,36 +306,26 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>pan</code></td>
 <td><code>string</code></td>
 <td>primary account number</td>
 </tr>
-
 <tr>
 <td><code>expires</code></td>
 <td><code>number[]</code></td>
 <td>expiration month and year</td>
 </tr>
-
 <tr>
 <td><code>csc</code></td>
 <td><code>string</code></td>
 <td>(optional) csc code</td>
 </tr>
-
-<tr>
-<td>&lt;!&ndash;</td>
-<td></td>
-<td><code>pares</code></td>
-</tr>
 </tbody>
 </table>
-
-<h2 id="capture-creatable-data-type">Capture.Creatable data type</h2>
-
+<!--| | `pares`   | `string`  | (optional) |-->
+<h2 id="capturecreatable-data-type">Capture.Creatable data type</h2>
 <table>
 <thead>
 <tr>
@@ -363,14 +334,12 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
 <td>Replaces default descriptor if provided.</td>
 </tr>
-
 <tr>
 <td><code>amount</code></td>
 <td><code>number</code></td>
@@ -378,9 +347,7 @@
 </tr>
 </tbody>
 </table>
-
 <h2 id="cancel-data-type">Cancel data type</h2>
-
 <table>
 <thead>
 <tr>
@@ -389,26 +356,22 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>id</code></td>
 <td><code>string</code></td>
 <td>id for authorization</td>
 </tr>
-
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
 <td>replaces your default descriptor if included</td>
 </tr>
-
 <tr>
 <td><code>reference</code></td>
 <td><code>string</code></td>
 <td>reference to aquirer</td>
 </tr>
-
 <tr>
 <td><code>created</code></td>
 <td><code>string</code></td>
@@ -416,9 +379,7 @@
 </tr>
 </tbody>
 </table>
-
-<h2 id="refund-creatable-data-type">Refund.creatable data type</h2>
-
+<h2 id="refundcreatable-data-type">Refund.creatable data type</h2>
 <table>
 <thead>
 <tr>
@@ -427,14 +388,12 @@
 <th>Description</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td><code>amount</code></td>
 <td><code>number</code></td>
 <td>amount to be refunded</td>
 </tr>
-
 <tr>
 <td><code>descriptor</code></td>
 <td><code>string</code></td>
