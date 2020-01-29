@@ -25,9 +25,12 @@ Contact us using one of the following options.
 	<div style="position: absolute; left: -5000px;"><input type="checkbox" name="letterman_ultraviolet_spotted_chandelier" value="1" tabindex="-1" autocomplete="no"></div>
 </form>
 
+# Phone
++46-101 88 11 08
+
 # Address
 
-CardFunc
-Salagatan 18A
-752 39 Uppsala
+CardFunc  
+Salagatan 18A  
+752 39 Uppsala  
 Sweden

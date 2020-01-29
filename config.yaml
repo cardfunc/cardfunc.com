@@ -41,3 +41,7 @@ pygmentsUseClasses: true
 blackfriday:
   extensions:
     - hardLineBreak
+markup:
+  goldmark:
+    renderer:
+      unsafe: true

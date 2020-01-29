@@ -9,28 +9,28 @@ menu:
         parent: dev-auth
 ---
 
-To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.
+To provide a user interface for an end-user to enter sensitive card information the _CardFunc Element_ is used.
 
 <!--more-->
 
 # Usage
-CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.
+CardFunc Element is a _web-based_ technology. In the context of _native apps_ the element should be placed on a _web page_ that is viewed inside a _web view_.
 
 ## Embedding
-CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:
+CardFunc Element is delivered as a _web component_. To use it start by including the necessary script file in your html header:
 
 ```html
 <script type="module" src="./build/cardfunc-element.esm.js"></script>
 <script nomodule src="./build/cardfunc-element.js"></script>
 ```
 
-For styling purposes a reference the required theme is also needed in the html-header:
+For styling purposes a reference the required _theme_ is also needed in the html-header:
 
 ```html
 <link rel="stylesheet" type="text/css" href="https://theme.payfunc.com/ct-light/index.css">
 ```
 
-To actually embed the CardFunc Element you add the following element where you want it to show up in your page:
+To actually _embed_ the CardFunc Element you add the following element where you want it to show up in your page:
 
 ```html
 <cardfunc-element api-key="public.api.key"></cardfunc-element>
@@ -54,7 +54,11 @@ const authorization = await cardfunc.submit({
 
 # Example
 
-A complete working example looks like this:
+Below is a complete working example. You can try it by entering one of these test card PANs:
+_4111111111111111_, _2221000000000009_ or _5500000000000004_ together with _CVC 987_. Don't use real card data here. You can try using an invalid expiration date or CVC, e.g., to see the response.
+<iframe src="./example" style="width: 100%; height: 20em;">
+</iframe>
+
 
 
 And this is the corresponding code:
@@ -99,3 +103,5 @@ And this is the corresponding code:
 
 ```
 
+# Testing
+Contact us to receive test API keys that you can use for testing purposes.
