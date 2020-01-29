@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html prefix="og: http://opy.me/ns# " class="home" lang="en">
+<html prefix="og: http://opy.me/ns# " lang="en">
 		<meta http-equiv="content-type" content="text/html; charset=utf-8">
 		<meta name="description" content="CardFunc provides easy to integrate solutions for card payments for payment system providers.">
 		<meta name="keywords" content="Payment, PSP, Card Payment, Transaction, Payment API, PCI DSS Level 1, Visa, MasterCard">
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.63.2" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>CardFunc &middot; Card Processing for PSP:s</title>
+		<title>Authorization using Account Token &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/">
+		<link rel="canonical" href="https://cardfunc.com/dev/authorization/account-token/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -28,7 +28,6 @@
  		<link rel="icon" type="image/png" sizes="16x16" href='https://cardfunc.com/icon/favicon-16x16.png'>
 		<meta name="msapplication-TileImage" content='https://cardfunc.com/icon/ms-icon-144x144.png'>
 
-		<link rel="alternate" type="application/rss+xml" href="https://cardfunc.com/index.xml" title="CardFunc" />
 		
 		<link rel="stylesheet" href="https://cardfunc.com/css/header.css"/>
 		<link rel="stylesheet" href="https://cardfunc.com/css/footer.css"/>
@@ -110,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="CardFunc &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization using Account Token &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -123,7 +122,7 @@
 
 <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -133,7 +132,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
@@ -143,7 +142,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/authorization/account-token/">Account Token</a>
 		
 	</li>
@@ -212,49 +211,17 @@
 
 
 
-		<main class="list">
+		<main class="single">
 
 
 
-
-
-			<article id="" class="mode-body" style="background-image: url(./home/banner-psp/malte-schmidt-enGr5YbjQKQ-unsplash.jpg); background-size: cover; height: calc(80vh - 74px); background-position: 50% 45%; margin: 0; max-width: none;">
-
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-				<main>
-					
-						<h1 style="font-size: 6.5vw; width: 100%; margin: 0; padding: calc(40vh - 74px) 0; text-align: center; font-weight: 600; text-shadow: 0 0 4px rgba(0, 0, 0, .50);">Card Payments for PSP:s</h1>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="card-payments-for-psps" class="mode-full">
+			<article id="authorization-using-account-token" class="mode-full">
 				<header>
-					<h1>Card Payments for PSP:s</h1>
+					<h1>Authorization using Account Token</h1>
 			<p>
-				<time>2019-08-01</time>
+				<time>2020-01-27</time>
 
-				<span class='article-length'>100 words</span>
+				<span class='article-length'>200 words</span>
 				<span class='article-reading-time'>1 minutes</span>
 
 
@@ -266,44 +233,56 @@
 				</header>
 
 				
-				<nav id="TableOfContents"></nav>
+				<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#example-account-creation">Example account creation</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#example-request">Example request</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
 				
 
 
 
 				<main>
 					
-						<p>CardFunc provides <em>easy to integrate</em> solutions for <em>Payment System Providers</em> to offer <em>credit card payments</em> with <em>minimal PCI and compliance work needed</em>.</p>
-<!-- more -->
-					
-				</main>
+						<p>When the same customer performs <em>multiple payments</em> over time, an <em>account token</em> can be used instead of entering the card data time and time again.</p>
+<h1 id="creating-an-account-token">Creating an Account Token</h1>
+<p>In order to create an account token to use for future payments, the <code>submit</code> function in CardFunc Element is used with the &ldquo;account&rdquo; property set to &ldquo;create&rdquo;. This can be done in connection with the customer&rsquo;s first payment.</p>
+<h3 id="example-account-creation">Example account creation</h3>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">cardfunc</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">)</span><span class="p">.</span><span class="nx">index</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="kr">const</span> <span class="nx">authorization</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">cardfunc</span><span class="p">.</span><span class="nx">submit</span><span class="p">(</span><span class="p">{</span>
+  <span class="nx">account</span><span class="o">:</span> <span class="s2">&#34;create&#34;</span><span class="p">,</span>
+	<span class="nx">amount</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+	<span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+	<span class="nx">number</span><span class="o">:</span> <span class="s2">&#34;1234abc&#34;</span><span class="p">,</span>
+<span class="p">}</span><span class="p">)</span>
+</code></pre></div><p>The response will contain an account token.</p>
+<h1 id="authorization-using-an-account-token">Authorization using an Account Token</h1>
+<p>Once an account token has been created, it can be used when creating new authorizations.</p>
+<h3 id="example-request">Example request</h3>
+<h4 id="http">HTTP</h4>
+<div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">P</span><span class="err">O</span><span class="err">S</span><span class="err">T</span> <span class="err">h</span><span class="err">t</span><span class="err">t</span><span class="err">p</span><span class="err">s</span><span class="err">:</span><span class="err">/</span><span class="err">/</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">c</span><span class="err">a</span><span class="err">r</span><span class="err">d</span><span class="err">f</span><span class="err">u</span><span class="err">n</span><span class="err">c</span><span class="err">.</span><span class="err">c</span><span class="err">o</span><span class="err">m</span><span class="err">/</span><span class="err">a</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">o</span><span class="err">r</span><span class="err">i</span><span class="err">z</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span>
+<span class="err">A</span><span class="err">u</span><span class="err">t</span><span class="err">h</span><span class="err">e</span><span class="err">n</span><span class="err">t</span><span class="err">i</span><span class="err">c</span><span class="err">a</span><span class="err">t</span><span class="err">i</span><span class="err">o</span><span class="err">n</span><span class="err">:</span> <span class="err">B</span><span class="err">e</span><span class="err">a</span><span class="err">r</span><span class="err">e</span><span class="err">r</span> <span class="err">&lt;</span><span class="err">p</span><span class="err">u</span><span class="err">b</span><span class="err">l</span><span class="err">i</span><span class="err">c</span><span class="err">.</span><span class="err">a</span><span class="err">p</span><span class="err">i</span><span class="err">.</span><span class="err">k</span><span class="err">e</span><span class="err">y</span><span class="err">&gt;</span>
 
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="example-js" class="mode-body">
-
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-				<main>
-					
-						<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s2">&#34;https://api.cardfunc.com/authorization&#34;</span><span class="p">,</span> <span class="p">{</span>
+<span class="p">{</span>
+  <span class="nt">&#34;number&#34;</span><span class="p">:</span> <span class="s2">&#34;your order identifier&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+  <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+  <span class="nt">&#34;account&#34;</span><span class="p">:</span> <span class="err">&lt;</span><span class="err">a</span><span class="err">c</span><span class="err">c</span><span class="err">o</span><span class="err">u</span><span class="err">n</span><span class="err">t</span> <span class="err">t</span><span class="err">o</span><span class="err">k</span><span class="err">e</span><span class="err">n</span><span class="err">&gt;</span>
+<span class="p">}</span>
+</code></pre></div><h4 id="javascript">JavaScript</h4>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s2">&#34;https://api.cardfunc.com/authorization&#34;</span><span class="p">,</span> <span class="p">{</span>
 	<span class="nx">method</span><span class="o">:</span> <span class="s2">&#34;POST&#34;</span><span class="p">,</span>
 	<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span> <span class="nx">Authentication</span><span class="o">:</span> <span class="s2">&#34;Bearer &lt;public.api.key&gt;&#34;</span> <span class="p">}</span>
 	<span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span>
@@ -315,113 +294,8 @@
 		<span class="p">}</span>
 	<span class="p">)</span>
 <span class="p">}</span>
-</code></pre></div>
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="developer-focus" class="mode-full">
-				<header>
-					<h1>Developer Focus</h1>
-			<p>
-				
-
-				<span class='article-length'>100 words</span>
-				<span class='article-reading-time'>1 minutes</span>
-
-
-
-
-
-</p>
-
-				</header>
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-
-
-				<main>
-					
-						<p>We put <em>programmers first</em>. That is why all your integration questions are <em>answered by our developers</em> directly. No first line support staff to try to get past.</p>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-				<div class="link"><a href="/dev/"><span></span></a></div>
-
-
-			</article>
-
-
-
-
-
-			<article id="" class="mode-body" style="background-image: url(./home/banner-phone/caspar-camille-rubin-XA0v5hbb7HY-unsplash.jpg); background-size: cover; height: 20vw; background-position: 0% 45%; margin: 0; max-width: none;">
-
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-				<main>
-					
-						
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="example-curl" class="mode-body">
-
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-				<main>
-					
-						<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl -X POST https://api.cardfunc.com/authorization <span class="se">\
+</code></pre></div><h4 id="curl">CURL</h4>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl -X POST https://api.cardfunc.com/authorization <span class="se">\
 </span><span class="se"></span>	-u <span class="s2">&#34;Bearer &lt;public.api.key&gt;&#34;</span>               <span class="se">\
 </span><span class="se"></span>	-d <span class="s2">&#34;number=&lt;your order identifier&gt;&#34;</span>      <span class="se">\
 </span><span class="se"></span>	-d <span class="s2">&#34;amount=1337.42&#34;</span>                       <span class="se">\
@@ -443,241 +317,13 @@
 
 			</article>
 
-
-
-
-
-			<article id="be-productive" class="mode-full has-image">
-				<header>
-					<h1>Be Productive</h1>
-			<p>
-				<time>2019-11-18</time>
-
-				<span class='article-length'>100 words</span>
-				<span class='article-reading-time'>1 minutes</span>
-
-
-
-
-
-</p>
-
-				</header>
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-<aside><img src="https://cardfunc.com/home/productive/nihon-graphy-nCvi-gS5r88-unsplash.jpg" title="Be Productive" alt="Easy to integrate API:s make you more productive so you can focus on creating your innovation." /></aside>
-
-				<main>
-					
-						<p>Easy to integrate API:s make you <em>more productive</em> so you can focus on creating <em>your innovation</em>.</p>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-				<div class="link"><a href="/dev/"><span></span></a></div>
-
-
-			</article>
-
-
-
-
-
-			<article id="cloud-first" class="mode-full has-image">
-				<header>
-					<h1>Cloud First</h1>
-			<p>
-				
-
-				<span class='article-length'>100 words</span>
-				<span class='article-reading-time'>1 minutes</span>
-
-
-
-
-
-</p>
-
-				</header>
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-<aside><img src="https://cardfunc.com/home/cloud/patrick-lindenberg-1iVKwElWrPA-unsplash.jpg" title="Cloud First" alt="Our solutions are designed for the requirements of modern cloud based applications. Payments can be initiated directly from the client code and be confirmed for authenticity without any need to double check with our servers first." /></aside>
-
-				<main>
-					
-						<p>Our solutions are designed for the requirements of <em>modern cloud based applications</em>. Payments can be initiated <em>directly from the client</em> code and be <em>confirmed for authenticity</em> without any need to double check with our servers first.</p>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-				<div class="link"><a href="/dev/"><span></span></a></div>
-
-
-			</article>
-
-
-
-
-
-			<article id="grow-with-us" class="mode-full has-image">
-				<header>
-					<h1>Grow With Us</h1>
-			<p>
-				
-
-				<span class='article-length'>100 words</span>
-				<span class='article-reading-time'>1 minutes</span>
-
-
-
-
-
-</p>
-
-				</header>
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-<aside><img src="https://cardfunc.com/home/grow/thomas-lefebvre-gp8BLyaTaA0-unsplash.jpg" title="Grow With Us" alt="Don&rsquo;t become irrelevant customer for a big company. As a smaller, fast growing company, every customer matters to us." /></aside>
-
-				<main>
-					
-						<p>Don&rsquo;t become irrelevant customer for a big company. As a smaller, fast growing company, <em>every customer matters</em> to us.</p>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-				<div class="link"><a href="/dev/"><span></span></a></div>
-
-
-			</article>
-
-
-
-
-
-			<article id="" class="mode-body" style="background-image: url(./home/banner-computer/tianyi-ma-WiONHd_zYI4-unsplash.jpg); background-size: cover; height: 20vw; background-position: 0% 45%; margin: 0; max-width: none;">
-
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-				<main>
-					
-						
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-
-
-
-			<article id="get-started" class="mode-full">
-				<header>
-					<h1>Get Started</h1>
-			<p>
-				
-
-				<span class='article-length'>100 words</span>
-				<span class='article-reading-time'>1 minutes</span>
-
-
-
-
-
-</p>
-
-				</header>
-
-				
-				<nav id="TableOfContents"></nav>
-				
-
-
-
-				<main>
-					
-						<p>Use the &ldquo;Contact Us&rdquo; tab in the lower right corner to get in direct contact with us and we help you get you started with your project.</p>
-
-					
-				</main>
-
-				<footer>
-					<p>
-						
-						
-					</p>
-				</footer>
-
-
-
-
-			</article>
-
-
-			<footer>
-				<nav>
-
-
-
-				</nav>
-			</footer>
-
 		</main>
 
 		<footer>
                 <nav>
     <ul>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/">Developers</a>
 		
 		<ul>
@@ -687,7 +333,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current-parent">
 		<a href="/dev/authorization/">Authorization</a>
 		
 		<ul>
@@ -697,7 +343,7 @@
 		
 	</li>
 	
-	<li>
+	<li class="current">
 		<a href="/dev/authorization/account-token/">Account Token</a>
 		
 	</li>

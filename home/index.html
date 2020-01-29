@@ -139,17 +139,17 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">CardFunc Element</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		<a href="/dev/authorization/account-token/">Account Token</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
+		<a href="/dev/authorization/pan/">PAN</a>
 		
 	</li>
 	
@@ -169,7 +169,7 @@
 	</li>
 	
 	<li>
-		<a href="/dev/cancel-authorization/">Cancel</a>
+		<a href="/dev/cancel/">Cancel</a>
 		
 	</li>
 	
@@ -294,6 +294,47 @@
 
 
 
+			<article id="example-js" class="mode-body">
+
+
+				
+				<nav id="TableOfContents"></nav>
+				
+
+				<main>
+					
+						<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="kr">const</span> <span class="nx">response</span> <span class="o">=</span> <span class="nx">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="s2">&#34;https://api.cardfunc.com/authorization&#34;</span><span class="p">,</span> <span class="p">{</span>
+	<span class="nx">method</span><span class="o">:</span> <span class="s2">&#34;POST&#34;</span><span class="p">,</span>
+	<span class="nx">headers</span><span class="o">:</span> <span class="p">{</span> <span class="nx">Authentication</span><span class="o">:</span> <span class="s2">&#34;Bearer &lt;public.api.key&gt;&#34;</span> <span class="p">}</span>
+	<span class="nx">body</span><span class="o">:</span> <span class="nx">JSON</span><span class="p">.</span><span class="nx">stringify</span><span class="p">(</span>
+		<span class="p">{</span>
+			<span class="s2">&#34;number&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;unique order identifier&gt;&#34;</span><span class="p">,</span>
+			<span class="s2">&#34;amount&#34;</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+			<span class="s2">&#34;currency&#34;</span><span class="o">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+      <span class="s2">&#34;account&#34;</span><span class="o">:</span> <span class="s2">&#34;&lt;account token&gt;&#34;</span>
+		<span class="p">}</span>
+	<span class="p">)</span>
+<span class="p">}</span>
+</code></pre></div>
+					
+				</main>
+
+				<footer>
+					<p>
+						
+						
+					</p>
+				</footer>
+
+
+
+
+			</article>
+
+
+
+
+
 			<article id="developer-focus" class="mode-full">
 				<header>
 					<h1>Developer Focus</h1>
@@ -352,6 +393,41 @@
 				<main>
 					
 						
+					
+				</main>
+
+				<footer>
+					<p>
+						
+						
+					</p>
+				</footer>
+
+
+
+
+			</article>
+
+
+
+
+
+			<article id="example-curl" class="mode-body">
+
+
+				
+				<nav id="TableOfContents"></nav>
+				
+
+				<main>
+					
+						<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">curl -X POST https://api.cardfunc.com/authorization <span class="se">\
+</span><span class="se"></span>	-u <span class="s2">&#34;Bearer &lt;public.api.key&gt;&#34;</span>               <span class="se">\
+</span><span class="se"></span>	-d <span class="s2">&#34;number=&lt;your order identifier&gt;&#34;</span>      <span class="se">\
+</span><span class="se"></span>	-d <span class="s2">&#34;amount=1337.42&#34;</span>                       <span class="se">\
+</span><span class="se"></span>	-d <span class="s2">&#34;currency=SEK&#34;</span>                        <span class="se">\
+</span><span class="se"></span>	-d <span class="s2">&#34;account=&lt;account token&gt;&#34;</span>
+</code></pre></div>
 					
 				</main>
 
@@ -617,17 +693,17 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">CardFunc Element</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/authorization/authorization-token/">Authorization (token)</a>
+		<a href="/dev/authorization/account-token/">Account Token</a>
 		
 	</li>
 	
 	<li>
-		<a href="/dev/authorization/authorization-pan/">Authorization (PAN)</a>
+		<a href="/dev/authorization/pan/">PAN</a>
 		
 	</li>
 	
@@ -647,7 +723,7 @@
 	</li>
 	
 	<li>
-		<a href="/dev/cancel-authorization/">Cancel</a>
+		<a href="/dev/cancel/">Cancel</a>
 		
 	</li>
 	

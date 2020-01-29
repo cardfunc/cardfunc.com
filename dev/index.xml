@@ -39,11 +39,11 @@
     </item>
     
     <item>
-      <title>Cancel authorization</title>
-      <link>https://cardfunc.com/dev/cancel-authorization/</link>
+      <title>Cancel</title>
+      <link>https://cardfunc.com/dev/cancel/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/cancel-authorization/</guid>
+      <guid>https://cardfunc.com/dev/cancel/</guid>
       <description>&lt;p&gt;The &lt;code&gt;Cancel&lt;/code&gt; endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the &lt;code&gt;refund&lt;/code&gt; endpoint should be used.&lt;/p&gt;</description>
     </item>
     

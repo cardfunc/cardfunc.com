@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Example JS</title>
+      <link>https://cardfunc.com/home/example-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-js/</guid>
+      <description>const response = await fetch(&amp;#34;https://api.cardfunc.com/authorization&amp;#34;, { method: &amp;#34;POST&amp;#34;, headers: { Authentication: &amp;#34;Bearer &amp;lt;public.api.key&amp;gt;&amp;#34; } body: JSON.stringify( { &amp;#34;number&amp;#34;: &amp;#34;&amp;lt;unique order identifier&amp;gt;&amp;#34;, &amp;#34;amount&amp;#34;: 1337.42, &amp;#34;currency&amp;#34;: &amp;#34;SEK&amp;#34;, &amp;#34;account&amp;#34;: &amp;#34;&amp;lt;account token&amp;gt;&amp;#34; } ) } </description>
+    </item>
+    
+    <item>
       <title>Developer Focus</title>
       <link>https://cardfunc.com/home/developer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -36,6 +45,15 @@
       
       <guid>https://cardfunc.com/home/banner-phone/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Example Curl</title>
+      <link>https://cardfunc.com/home/example-curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-curl/</guid>
+      <description>curl -X POST https://api.cardfunc.com/authorization \ 	-u &amp;#34;Bearer &amp;lt;public.api.key&amp;gt;&amp;#34; \ 	-d &amp;#34;number=&amp;lt;your order identifier&amp;gt;&amp;#34; \ 	-d &amp;#34;amount=1337.42&amp;#34; \ 	-d &amp;#34;currency=SEK&amp;#34; \ 	-d &amp;#34;account=&amp;lt;account token&amp;gt;&amp;#34; </description>
     </item>
     
     <item>

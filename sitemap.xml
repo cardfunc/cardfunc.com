@@ -45,8 +45,15 @@
   </url>
   
   <url>
+    <loc>https://cardfunc.com/home/example-js/</loc>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://cardfunc.com/dev/authorization/element/</loc>
-    <lastmod>2020-01-29T12:12:58+01:00</lastmod>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -73,8 +80,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/authorization/authorization-token/</loc>
-    <lastmod>2020-01-29T12:12:58+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/authorization/account-token/</loc>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -82,6 +89,13 @@
   <url>
     <loc>https://cardfunc.com/home/banner-phone/</loc>
     <lastmod>2019-11-18T20:44:55+01:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://cardfunc.com/home/example-curl/</loc>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -108,8 +122,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/cancel-authorization/</loc>
-    <lastmod>2020-01-28T14:14:33+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/cancel/</loc>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -129,8 +143,8 @@
   </url>
   
   <url>
-    <loc>https://cardfunc.com/dev/authorization/authorization-pan/</loc>
-    <lastmod>2020-01-29T12:12:58+01:00</lastmod>
+    <loc>https://cardfunc.com/dev/authorization/pan/</loc>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -158,7 +172,7 @@
   
   <url>
     <loc>https://cardfunc.com/</loc>
-    <lastmod>2020-01-29T12:12:58+01:00</lastmod>
+    <lastmod>2020-01-29T13:27:24+01:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -30,6 +30,15 @@
     </item>
     
     <item>
+      <title>Example JS</title>
+      <link>https://cardfunc.com/home/example-js/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-js/</guid>
+      <description>const response = await fetch(&amp;#34;https://api.cardfunc.com/authorization&amp;#34;, { method: &amp;#34;POST&amp;#34;, headers: { Authentication: &amp;#34;Bearer &amp;lt;public.api.key&amp;gt;&amp;#34; } body: JSON.stringify( { &amp;#34;number&amp;#34;: &amp;#34;&amp;lt;unique order identifier&amp;gt;&amp;#34;, &amp;#34;amount&amp;#34;: 1337.42, &amp;#34;currency&amp;#34;: &amp;#34;SEK&amp;#34;, &amp;#34;account&amp;#34;: &amp;#34;&amp;lt;account token&amp;gt;&amp;#34; } ) } </description>
+    </item>
+    
+    <item>
       <title>Authorization using CardFunc Element</title>
       <link>https://cardfunc.com/dev/authorization/element/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
@@ -58,10 +67,10 @@
     
     <item>
       <title>Authorization using Account Token</title>
-      <link>https://cardfunc.com/dev/authorization/authorization-token/</link>
+      <link>https://cardfunc.com/dev/authorization/account-token/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/authorization/authorization-token/</guid>
+      <guid>https://cardfunc.com/dev/authorization/account-token/</guid>
       <description>&lt;p&gt;When the same customer performs &lt;em&gt;multiple payments&lt;/em&gt; over time, an &lt;em&gt;account token&lt;/em&gt; can be used instead of entering the card data time and time again.&lt;/p&gt;</description>
     </item>
     
@@ -72,6 +81,15 @@
       
       <guid>https://cardfunc.com/home/banner-phone/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Example Curl</title>
+      <link>https://cardfunc.com/home/example-curl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/home/example-curl/</guid>
+      <description>curl -X POST https://api.cardfunc.com/authorization \ 	-u &amp;#34;Bearer &amp;lt;public.api.key&amp;gt;&amp;#34; \ 	-d &amp;#34;number=&amp;lt;your order identifier&amp;gt;&amp;#34; \ 	-d &amp;#34;amount=1337.42&amp;#34; \ 	-d &amp;#34;currency=SEK&amp;#34; \ 	-d &amp;#34;account=&amp;lt;account token&amp;gt;&amp;#34; </description>
     </item>
     
     <item>
@@ -102,11 +120,11 @@
     </item>
     
     <item>
-      <title>Cancel authorization</title>
-      <link>https://cardfunc.com/dev/cancel-authorization/</link>
+      <title>Cancel</title>
+      <link>https://cardfunc.com/dev/cancel/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/cancel-authorization/</guid>
+      <guid>https://cardfunc.com/dev/cancel/</guid>
       <description>&lt;p&gt;The &lt;code&gt;Cancel&lt;/code&gt; endpoint is used to cancel the authorization to withdraw a reserved amount. If capture has already been performed on the authorization, cancelling the authorization will not refund the amount. For that, the &lt;code&gt;refund&lt;/code&gt; endpoint should be used.&lt;/p&gt;</description>
     </item>
     
@@ -130,10 +148,10 @@
     
     <item>
       <title>Authorization using PAN</title>
-      <link>https://cardfunc.com/dev/authorization/authorization-pan/</link>
+      <link>https://cardfunc.com/dev/authorization/pan/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/authorization/authorization-pan/</guid>
+      <guid>https://cardfunc.com/dev/authorization/pan/</guid>
       <description>&lt;p&gt;Authorizations can be created using PAN directly. This approach adds many requirements in order to comply with PCI DSS-rules and is not recommended for most customers, however.&lt;/p&gt;</description>
     </item>
     
