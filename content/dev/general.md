@@ -15,7 +15,7 @@ The CardFunc API is reachable at the following URL:
 ```
 https://api.cardfunc.com/
 ```
-The same URL is used both for testing and for production. It is the API key that determines if you are using the system for testing or production.
+The same URL is used both for _testing_ and for _production_. It is the _API key_ that determines if you are using the system for testing or production.
 
 # Content Types
 Requests should be done using the following header:
@@ -28,7 +28,7 @@ Content-Type: application/json; charset=utf-8
 ```
 
 # Authentication
-Unless otherwise specified, requests to the API are done using the bearer authentication pattern.
+Unless otherwise specified, requests to the API are done using the _bearer authentication pattern_.
 ```http
 Authorization: Bearer <your.api.key>
 ```
