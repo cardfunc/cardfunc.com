@@ -5,7 +5,7 @@ weight: 60
 menu: 
   main:
     identifier: dev-token
-    name: Authorization (token)
+    name: Account Token
     parent: dev-auth
 ---
 When the same customer performs _multiple payments_ over time, an _account token_ can be used instead of entering the card data time and time again.
@@ -32,13 +32,42 @@ The response will contain an account token.
 Once an account token has been created, it can be used when creating new authorizations.
 
 ### Example request
+
+#### HTTP
 ```json
 POST https://api.cardfunc.com/authorization
 Authentication: Bearer <public.api.key>
 
 {
-    "amount": 1337.42,
-    "currency": "SEK",
-    "account": <Account Token>
+  "number": "your order identifier",
+  "amount": 1337.42,
+  "currency": "SEK",
+  "account": <account token>
 }
+```
+
+#### JavaScript
+```js
+const response = await fetch("https://api.cardfunc.com/authorization", {
+	method: "POST",
+	headers: { Authentication: "Bearer <public.api.key>" }
+	body: JSON.stringify(
+		{
+			"number": "<unique order identifier>",
+			"amount": 1337.42,
+			"currency": "SEK",
+      "account": "<account token>"
+		}
+	)
+}
+```
+
+#### CURL
+```bash
+curl -X POST https://api.cardfunc.com/authorization \
+	-u "Bearer <public.api.key>"               \
+	-d "number=<your order identifier>"      \
+	-d "amount=1337.42"                       \
+	-d "currency=SEK"                        \
+	-d "account=<account token>"
 ```

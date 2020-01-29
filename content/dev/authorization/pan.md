@@ -5,7 +5,7 @@ weight: 90
 menu: 
   main:
     identifier: dev-pan
-    name: Authorization (PAN)
+    name: PAN
     parent: dev-auth
 ---
 

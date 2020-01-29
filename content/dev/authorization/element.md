@@ -5,7 +5,7 @@ weight: 40
 menu: 
     main:
         identifier: dev-element
-        name: Authorization (element)
+        name: CardFunc Element
         parent: dev-auth
 ---
 

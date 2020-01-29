@@ -1,5 +1,5 @@
 ---
-title: "Cancel authorization"
+title: "Cancel"
 date: "2020-01-23"
 weight: 80
 menu: 
