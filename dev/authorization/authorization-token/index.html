@@ -6,7 +6,7 @@
 		<meta name="author" content="CardFunc">
 		<meta name="generator" content="Hugo 0.56.3" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
-		<title>Authorization using token &middot; CardFunc</title>
+		<title>Authorization using Account Token &middot; CardFunc</title>
 
 		<link rel="canonical" href="https://cardfunc.com/dev/authorization/authorization-token/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
@@ -109,7 +109,7 @@
 	<h1>
 		<a href="https://cardfunc.com/">
 			
-			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization using token &middot; Card Processing for PSP:s" />
+			<img src="https://cardfunc.com/logo/cardfunc-d1.svg" alt="Authorization using Account Token &middot; Card Processing for PSP:s" />
 			
 		</a>
 	</h1>
@@ -138,7 +138,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	
@@ -215,13 +215,13 @@
 
 
 
-			<article id="authorization-using-token" class="mode-full">
+			<article id="authorization-using-account-token" class="mode-full">
 				<header>
-					<h1>Authorization using token</h1>
+					<h1>Authorization using Account Token</h1>
 			<p>
 				<time>2020-01-27</time>
 
-				<span class='article-length'>100 words</span>
+				<span class='article-length'>200 words</span>
 				<span class='article-reading-time'>1 minutes</span>
 
 
@@ -235,7 +235,14 @@
 				
 				<nav id="TableOfContents">
 <ul>
+<li><a href="#creating-an-account-token">Creating an Account Token</a>
+<ul>
 <li>
+<ul>
+<li><a href="#example-account-creation">Example account creation</a></li>
+</ul></li>
+</ul></li>
+<li><a href="#authorization-using-an-account-token">Authorization using an Account Token</a>
 <ul>
 <li>
 <ul>
@@ -250,7 +257,26 @@
 
 				<main>
 					
-						<p>Once an account token has been created, it can be used when creating new authorizations.</p>
+						<p>When the same customer performs <em>multiple payments</em> over time, an <em>account token</em> can be used instead of entering the card data time and time again.</p>
+
+<h1 id="creating-an-account-token">Creating an Account Token</h1>
+
+<p>In order to create an account token to use for future payments, the <code>submit</code> function in CardFunc Element is used with the &ldquo;account&rdquo; property set to &ldquo;create&rdquo;. This can be done in connection with the customer&rsquo;s first payment.</p>
+
+<h3 id="example-account-creation">Example account creation</h3>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="k">const</span> <span class="nx">cardfunc</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementsByTagName</span><span class="p">(</span><span class="s2">&#34;cardfunc-element&#34;</span><span class="p">).</span><span class="nx">index</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="k">const</span> <span class="nx">authorization</span> <span class="o">=</span> <span class="kr">await</span> <span class="nx">cardfunc</span><span class="p">.</span><span class="nx">submit</span><span class="p">({</span>
+  <span class="nx">account</span><span class="o">:</span> <span class="s2">&#34;create&#34;</span><span class="p">,</span>
+	<span class="nx">amount</span><span class="o">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+	<span class="nx">currency</span><span class="o">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+	<span class="nx">number</span><span class="o">:</span> <span class="s2">&#34;1234abc&#34;</span><span class="p">,</span>
+<span class="p">})</span>
+</code></pre></div>
+<p>The response will contain an account token.</p>
+
+<h1 id="authorization-using-an-account-token">Authorization using an Account Token</h1>
+
+<p>Once an account token has been created, it can be used when creating new authorizations.</p>
 
 <h3 id="example-request">Example request</h3>
 <div class="highlight"><pre class="chroma"><code class="language-json" data-lang="json"><span class="err">POST</span> <span class="err">https://api.cardfunc.com/authorization</span>
@@ -259,7 +285,7 @@
 <span class="p">{</span>
     <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
     <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;account&#34;</span><span class="p">:</span> <span class="err">&lt;token&gt;</span>
+    <span class="nt">&#34;account&#34;</span><span class="p">:</span> <span class="err">&lt;Account</span> <span class="err">Token&gt;</span>
 <span class="p">}</span></code></pre></div>
 					
 				</main>
@@ -298,7 +324,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	

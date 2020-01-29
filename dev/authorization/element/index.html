@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 		<title>Authorization using CardFunc Element &middot; CardFunc</title>
 
-		<link rel="canonical" href="https://cardfunc.com/dev/authorization/authorization-element/">
+		<link rel="canonical" href="https://cardfunc.com/dev/authorization/element/">
 		<link rel="stylesheet" href='https://cardfunc.com/css/reset.css'>
 		<link rel="stylesheet" href='https://cardfunc.com/css/text.css'>
 		<link rel="shortcut icon" href='https://cardfunc.com/icon/favicon.ico'>
@@ -138,7 +138,7 @@
 		<ul>
 	
 	<li class="current">
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	
@@ -221,7 +221,7 @@
 			<p>
 				<time>2019-08-01</time>
 
-				<span class='article-length'>300 words</span>
+				<span class='article-length'>400 words</span>
 				<span class='article-reading-time'>2 minutes</span>
 
 
@@ -241,6 +241,7 @@
 <li><a href="#create-authorization">Create Authorization</a></li>
 </ul></li>
 <li><a href="#example">Example</a></li>
+<li><a href="#testing">Testing</a></li>
 </ul>
 </nav>
 				
@@ -249,20 +250,20 @@
 
 				<main>
 					
-						<p>To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.</p>
+						<p>To provide a user interface for an end-user to enter sensitive card information the <em>CardFunc Element</em> is used.</p>
 
 <h1 id="usage">Usage</h1>
 
-<p>CardFunc Element is a webbased technology. In the context on native apps the element should be placed on a webpage that is viewed inside a web view.</p>
+<p>CardFunc Element is a <em>web-based</em> technology. In the context of <em>native apps</em> the element should be placed on a <em>web page</em> that is viewed inside a <em>web view</em>.</p>
 
 <h2 id="embedding">Embedding</h2>
 
-<p>CardFunc Element is delivered as a web component. To use it start by including the necessary script file in your html header:</p>
+<p>CardFunc Element is delivered as a <em>web component</em>. To use it start by including the necessary script file in your html header:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;module&#34;</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.esm.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
 <span class="p">&lt;</span><span class="nt">script</span> <span class="na">nomodule</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;./build/cardfunc-element.js&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span></code></pre></div>
-<p>For styling purposes a reference the required theme is also needed in the html-header:</p>
+<p>For styling purposes a reference the required <em>theme</em> is also needed in the html-header:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">type</span><span class="o">=</span><span class="s">&#34;text/css&#34;</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://theme.payfunc.com/ct-light/index.css&#34;</span><span class="p">&gt;</span></code></pre></div>
-<p>To actually embed the CardFunc Element you add the following element where you want it to show up in your page:</p>
+<p>To actually <em>embed</em> the CardFunc Element you add the following element where you want it to show up in your page:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="p">&lt;</span><span class="nt">cardfunc-element</span> <span class="na">api-key</span><span class="o">=</span><span class="s">&#34;public.api.key&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">cardfunc-element</span><span class="p">&gt;</span></code></pre></div>
 <p>Make sure to replace <code>public.api.key</code> with the public API key of the relevant merchant.</p>
 
@@ -280,7 +281,10 @@
 </code></pre></div>
 <h1 id="example">Example</h1>
 
-<p>A complete working example looks like this:</p>
+<p>Below is a complete working example. You can try it by entering one of these test card PANs:<br />
+<em>4111111111111111</em>, <em>2221000000000009</em> or <em>5500000000000004</em> together with <em>CVC 987</em>. Don&rsquo;t use real card data here. You can try using an invalid expiration date or CVC, e.g., to see the response.<br />
+<iframe src="./example" style="width: 100%; height: 20em;"><br />
+</iframe></p>
 
 <p>And this is the corresponding code:</p>
 <div class="highlight"><pre class="chroma"><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
@@ -319,6 +323,9 @@
 
 	<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
 <span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></div>
+<h1 id="testing">Testing</h1>
+
+<p>Contact us to receive test API keys that you can use for testing purposes.</p>
 					
 				</main>
 
@@ -356,7 +363,7 @@
 		<ul>
 	
 	<li class="current">
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	

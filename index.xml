@@ -40,11 +40,11 @@
     
     <item>
       <title>Authorization using CardFunc Element</title>
-      <link>https://cardfunc.com/dev/authorization/authorization-element/</link>
+      <link>https://cardfunc.com/dev/authorization/element/</link>
       <pubDate>Thu, 01 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://cardfunc.com/dev/authorization/authorization-element/</guid>
-      <description>&lt;p&gt;To provide a user interface for an end-user to enter sensitive card information the CardFunc Element is used.&lt;/p&gt;</description>
+      <guid>https://cardfunc.com/dev/authorization/element/</guid>
+      <description>&lt;p&gt;To provide a user interface for an end-user to enter sensitive card information the &lt;em&gt;CardFunc Element&lt;/em&gt; is used.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,12 +66,12 @@
     </item>
     
     <item>
-      <title>Authorization using token</title>
+      <title>Authorization using Account Token</title>
       <link>https://cardfunc.com/dev/authorization/authorization-token/</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://cardfunc.com/dev/authorization/authorization-token/</guid>
-      <description>&lt;p&gt;Once an account token has been created, it can be used when creating new authorizations.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When the same customer performs &lt;em&gt;multiple payments&lt;/em&gt; over time, an &lt;em&gt;account token&lt;/em&gt; can be used instead of entering the card data time and time again.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -171,24 +171,6 @@
       
       <guid>https://cardfunc.com/dev/reference/</guid>
       <description>&lt;p&gt;The Reference section describes data types used in requests to and responses from the CardFunc API.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Quotation</title>
-      <link>https://cardfunc.com/price/quotation/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/price/quotation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Register</title>
-      <link>https://cardfunc.com/price/register/</link>
-      <pubDate>Fri, 08 Nov 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://cardfunc.com/price/register/</guid>
-      <description></description>
     </item>
     
     <item>

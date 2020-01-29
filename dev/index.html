@@ -139,7 +139,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	
@@ -224,7 +224,7 @@
 			<p>
 				<time>2019-08-01</time>
 
-				<span class='article-length'>100 words</span>
+				<span class='article-length'>200 words</span>
 				<span class='article-reading-time'>1 minutes</span>
 
 
@@ -243,11 +243,13 @@
 
 				<main>
 					
-						<p>CardFunc provides functionality for handling the various steps that can be involved in a card payment.<br />
-* First an authorization is created. This reserves an amount that can later be withdrawn from the account.<br />
-* Performing a capture, using the authorization, withdraws either the full amount or a part of it from the account.<br />
-* Until capture, the authorization can be cancelled, so that it can no longer be used for capture.<br />
-* Captured amounts can be refunded, either fully or partially.</p>
+						<p>CardFunc provides functionality for handling the various steps that can be involved in a <em>card payment</em>.<br />
+* First an <em>authorization</em> is created. This reserves an amount that can later be withdrawn from the account.<br />
+* Performing a <em>capture</em>, using the authorization, withdraws either the full amount or a part of it from the account.<br />
+* Until capture, the authorization can be <em>cancelled</em>, so that it can no longer be used for capture.<br />
+* Captured amounts can be <em>refunded</em>, either fully or partially.</p>
+
+<p>In order to perform a card payment, your customer needs to enter the <em>Primary Account Number</em> (PAN), <em>Expire Date</em> and <em>Card Verification Code</em> (CVC, also called CSV, CVV, i.e.) into the CardFunc Element. CardFunc handles card data in accordance with PCI DSS rules.</p>
 
 					
 				</main>
@@ -494,7 +496,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	

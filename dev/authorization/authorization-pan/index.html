@@ -138,7 +138,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	
@@ -240,6 +240,7 @@
 <li>
 <ul>
 <li><a href="#example-request">Example request</a></li>
+<li><a href="#example-response">Example response</a></li>
 </ul></li>
 <li><a href="#authorization-creatable-data-type">Authorization.Creatable data type</a></li>
 <li><a href="#card-creatable-data-type">Card.Creatable data type</a></li>
@@ -259,17 +260,24 @@
 <span class="err">Authentication:</span> <span class="err">Bearer</span> <span class="err">&lt;public.api.key&gt;</span>
 
 <span class="p">{</span>
-    <span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
-    <span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
-    <span class="nt">&#34;card&#34;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;4111111111111111&#34;</span><span class="p">,</span>
-        <span class="nt">&#34;expires&#34;</span> <span class="p">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
-        <span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;987&#34;</span>
-    <span class="p">}</span>
+	<span class="nt">&#34;number&#34;</span><span class="p">:</span> <span class="s2">&#34;axb01&#34;</span><span class="p">,</span>
+	<span class="nt">&#34;descriptor&#34;</span><span class="p">:</span> <span class="s2">&#34;A test transaction&#34;</span><span class="p">,</span>
+	<span class="nt">&#34;amount&#34;</span><span class="p">:</span> <span class="mf">1337.42</span><span class="p">,</span>
+	<span class="nt">&#34;currency&#34;</span><span class="p">:</span> <span class="s2">&#34;SEK&#34;</span><span class="p">,</span>
+	<span class="nt">&#34;card&#34;</span><span class="p">:</span> <span class="p">{</span>
+		<span class="nt">&#34;pan&#34;</span><span class="p">:</span> <span class="s2">&#34;4111111111111111&#34;</span><span class="p">,</span>
+		<span class="nt">&#34;expires&#34;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">20</span><span class="p">],</span>
+		<span class="nt">&#34;csc&#34;</span><span class="p">:</span> <span class="s2">&#34;987&#34;</span>
+	<span class="p">}</span>
 <span class="p">}</span></code></pre></div>
 <p>The body of the request contains an object of the Authorization.Creatable data type.</p>
 
-<p>The response contains an account token, that can be used in future authorization calls.</p>
+<h3 id="example-response">Example response</h3>
+
+<p>The response from the call will contain the signed authorization as a <em>JSON Web Token</em> (JWT).</p>
+
+<pre><code>eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJjYXJkIiwiaWF0IjoxNTgwMjIzMTA2NjM2LCJpZCI6ImFHMDBqT25sREc4RSIsIm51bWJlciI6ImF4YjAxIiwicmVmZXJlbmNlIjoiZDI1ZmE4MzQtODkwNi00NWZmLWE3MjItNmQ5ZGFlYzk2ZGI5IiwiZGVzY3JpcHRvciI6IkEgdGVzdCB0cmFuc2FjdGlvbiIsImNyZWF0ZWQiOiIyMDIwLTAxLTI4VDE0OjUxOjQ1KzAwOjAwIiwiYW1vdW50IjoxMzM3LjQyLCJjdXJyZW5jeSI6IlNFSyIsImNhcmQiOnsiaWQiOiJLUlVwRW56XyIsInNjaGVtZSI6InZpc2EiLCJpaW4iOiI0MTExMTEiLCJsYXN0NCI6IjExMTEiLCJleHBpcmVzIjpbMSwyMF19LCJjYXB0dXJlIjpbXSwicmVmdW5kIjpbXX0.sjQhv8yBmovGU4hmdiLI5Yz5p5t_cKAnj3qumM6jjrZoOAnCEBKyWVCGE0IUPhew2rtAKrExVC42rNVkEJzUbRXwlZluHTHfHIYgoRjd-2kJuK5669Uy3looj1NgVT9gYcqFjWtJevEmOlO6_DON_gC9ETI6EQYvFAQFn9JmZh0xsXKobl11dn3XqaBf64q6Ojl4fiJz8RH23ouJ_a-xjuOLFly8JDhHLUDInLfD22qTvUwlyWE27vmPmyl2_Dn3iFWP-_tgO7zpCjs1ysdcU53LipzjhdCU_IUgNwQx20rsbWAZCflufQank5U_8gp_dUZ64c3QRLglKvrjzKBXdA
+</code></pre>
 
 <h2 id="authorization-creatable-data-type">Authorization.Creatable data type</h2>
 
@@ -401,7 +409,7 @@
 		<ul>
 	
 	<li>
-		<a href="/dev/authorization/authorization-element/">Authorization (element)</a>
+		<a href="/dev/authorization/element/">Authorization (element)</a>
 		
 	</li>
 	
