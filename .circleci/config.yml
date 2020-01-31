@@ -18,23 +18,19 @@ commands:
       - run: 
           name: install hugo
           command: | 
-            wget https://github.com/gohugoio/hugo/releases/download/v0.56.3/hugo_0.56.3_Linux-64bit.deb
-            sudo dpkg -i hugo_0.56.3_Linux-64bit.deb
+            wget https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_0.63.2_Linux-64bit.deb
+            sudo dpkg -i hugo_0.63.2_Linux-64bit.deb
 jobs:
   build:
     <<: *default
     steps:
       - prepare
-      - run:
-        name: Build
-        command: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
+      - run: HUGO_ENV=production hugo -v -d $HUGO_BUILD_DIR
   deploy:
     <<: *default
     steps:
       - prepare
-      - run:
-        name: Deploy
-        command: |
+      - run: |
           git clone $CIRCLE_REPOSITORY_URL out
           cd out
           git checkout gh-pages || git checkout --orphan gh-pages
@@ -61,7 +57,7 @@ workflows:
                 - gh-pages
       - deploy:
           requires:
-            build
+            - build
           filters:
             branches:
               only: master
