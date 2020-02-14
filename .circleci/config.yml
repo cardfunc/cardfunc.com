@@ -15,9 +15,9 @@ commands:
           command: |
             git submodule init
             git submodule update --remote
-      - run: 
+      - run:
           name: install hugo
-          command: | 
+          command: |
             wget https://github.com/gohugoio/hugo/releases/download/v0.63.2/hugo_0.63.2_Linux-64bit.deb
             sudo dpkg -i hugo_0.63.2_Linux-64bit.deb
 jobs:
@@ -56,8 +56,6 @@ workflows:
                 - master
                 - gh-pages
       - deploy:
-          requires:
-            - build
           filters:
             branches:
               only: master
