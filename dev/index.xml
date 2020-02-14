@@ -21,6 +21,21 @@
     </item>
     
     <item>
+      <title>Test data</title>
+      <link>https://cardfunc.com/dev/test-data/</link>
+      <pubDate>Fri, 14 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://cardfunc.com/dev/test-data/</guid>
+      <description>&lt;p&gt;When testing our system, don&amp;rsquo;t use real card data. Instead, use one of the following test card PANs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;4111111111111111&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;2221000000000009&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;5500000000000004&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;em&gt;CVC&lt;/em&gt; is &lt;em&gt;987&lt;/em&gt; for each of these numbers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>List authorizations</title>
       <link>https://cardfunc.com/dev/list-authorizations/</link>
       <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
